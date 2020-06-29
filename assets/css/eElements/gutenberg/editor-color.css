@@ -1,0 +1,60 @@
+/*
+* idealx WP Theme
+* General Color background for editor color palette 
+====================================================
+*
+*/
+
+.has-roseanna-idealx-gradient-background {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 175, 189) 0%,
+    rgba(255, 195, 160) 100%
+  );
+}
+
+.has-purple-love-idealx-gradient-background {
+  background: linear-gradient(
+    135deg,
+    rgba(204, 43, 94) 0%,
+    rgba(117, 58, 136) 100%
+  );
+}
+.has-soft-blue-color-background-color {
+  background: #778beb;
+}
+
+.has-flamingo-pink-color-background-color {
+  background: #f78fb3;
+}
+.has-brewed-mustard-color-background-color {
+  background: #e77f67;
+}
+.has-tigerlily-additional-color-background-color {
+  background: #e15f41;
+}
+.has-idealx-black-color-background-color {
+  background: #000000;
+}
+.has-idealx-wite-color-background-color {
+  background: #ffffff;
+}
+
+.has-soft-blue-color-color {
+  color: #778beb;
+}
+.has-tigerlily-additional-color-color {
+  color: #e15f41;
+}
+.has-brewed-mustard-color-color {
+  color: #e77f67;
+}
+.has-flamingo-pink-color-color {
+  color: #f78fb3;
+}
+.has-deal-black-color-color {
+  color: #000000;
+}
+.has-idealx-wite-color-color {
+  color: #ffffff;
+}

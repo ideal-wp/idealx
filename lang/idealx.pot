@@ -1,0 +1,2022 @@
+# Copyright (C) 2020 Mohamed Taman
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: idealx 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/idealx\n"
+"POT-Creation-Date: 2020-06-29 01:01:37+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:22
+msgid "Page Not Found"
+msgstr ""
+
+#: 404.php:24
+msgid "Back Home"
+msgstr ""
+
+#: comments.php:23
+msgid "Join the discussion"
+msgstr ""
+
+#: comments.php:24 includes/partials/page-header/header-single.php:71
+#: includes/partials/page-header/header-single.php:113
+#: includes/template-parts/blog/countant.php:40
+msgid "No Comments"
+msgstr ""
+
+#: comments.php:24 includes/partials/page-header/header-single.php:71
+#: includes/partials/page-header/header-single.php:113
+#: includes/template-parts/blog/countant.php:40
+msgid "One Comment"
+msgstr ""
+
+#: comments.php:24 includes/partials/page-header/header-single.php:71
+#: includes/partials/page-header/header-single.php:113
+#: includes/template-parts/blog/countant.php:40
+msgid "% Comments"
+msgstr ""
+
+#: comments.php:56 comments.php:58
+msgid "My comment is.."
+msgstr ""
+
+#: comments.php:64
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:65
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: comments.php:66
+msgid "Cancel Reply"
+msgstr ""
+
+#: comments.php:67
+msgid "Submit Comment"
+msgstr ""
+
+#: comments.php:73
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: comments.php:79
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
+msgstr ""
+
+#: comments.php:95
+msgid "Name"
+msgstr ""
+
+#: comments.php:101
+msgid "Email"
+msgstr ""
+
+#: comments.php:108 standard/helpers/all-wp-support.php:204
+msgid "Website"
+msgstr ""
+
+#: comments.php:113
+msgid "Save my name, email, and website in this browser for the next time I comment."
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:45
+#: includes/admin/inc/theme-page/panels/panel-options.php:23
+msgid "Home Hero Section"
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:47
+msgid "Here you can customize home hero section."
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:62
+#: includes/admin/framework/kirki/config/panels/panel-hero.php:17
+msgid "Disable Home Hero Section"
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:69
+#: idealx/classes/customizer/class-customizer-hero-section.php:155
+#: idealx/classes/customizer/class-customizer-hero-section.php:196
+msgid "No"
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:70
+#: idealx/classes/customizer/class-customizer-hero-section.php:156
+#: idealx/classes/customizer/class-customizer-hero-section.php:197
+msgid "Yes"
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:82
+msgid "Hero section heading Text"
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:96
+msgid "Add subheading text"
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:110
+msgid "Chose your Hero section font color"
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:123
+msgid "Chose your Hero section background color"
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:136
+msgid "Add Image Background to Hero section"
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:150
+msgid "Remove Secondary Button"
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:166
+msgid "Secondary Button Text"
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:178
+msgid "Secondary Button Link"
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:191
+msgid "Remove primary Button"
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:207
+msgid "primary Button Text"
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:219
+msgid "primary Button Link"
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:232
+msgid "Chose your Brimary Button Background color"
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:244
+msgid "Chose your Brimary Button Background Hover color"
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:257
+msgid "Chose your Brimary Button Text color"
+msgstr ""
+
+#: idealx/classes/customizer/class-customizer-hero-section.php:269
+msgid "Chose your Brimary Button Text Hover color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:17
+#: includes/admin/inc/theme-page/panels/panel-options.php:54
+msgid "Blog"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:21
+msgid "Blog Home Styling"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:29
+#: includes/admin/framework/kirki/config/panels/panel-page.php:57
+msgid "Cards Style"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:30
+msgid "Add cards style to posts in blog home"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:39
+msgid "Scrollspy Animations"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:40
+msgid "Lood Posts on animations, Ex. if you scroll down a page, and an element appears in the viewport for the first time, you can trigger a smooth animation to fade in the element."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:49
+msgid "Select Animation To Use Within Lood Posts"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:52
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:265
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:520
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:710
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:79
+msgid "Select an option..."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:56
+msgid "fade"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:57
+msgid "scale up"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:58
+msgid "scale down"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:59
+msgid "shake"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:60
+msgid "slide top"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:61
+msgid "slide bottom"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:62
+msgid "slide left"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:63
+msgid "slide right"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:64
+msgid "slide top small"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:65
+msgid "slide bottom small"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:66
+msgid "slide left small"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:67
+msgid "slide right small"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:68
+msgid "slide top medium"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:69
+msgid "slide bottom medium"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:70
+msgid "slide left medium"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:71
+msgid "slide right medium"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:78
+msgid "Repeat Animati on Scroll up and down"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:79
+msgid "Applies the Animati every time the element is on Scroll view up or down."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:87
+msgid "Single post Styling"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:95
+msgid ""
+"Remove Featured Image From Inside The Post\n"
+"  "
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:97
+msgid "Remove The Featured Image Inside the Single Post"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-blog.php:106
+msgid ""
+"Add Cards style to single post\n"
+"  "
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:16
+#: includes/admin/framework/kirki/config/panels/panel-general.php:20
+msgid "General Settings"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:21
+msgid "Welcome to the idealx options panel! You can switch between option sections."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:29
+msgid "General background color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:30
+msgid "Pick a background color for the theme"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:40
+msgid "General Font Color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:41
+msgid "Choose the general font color for the site"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:49
+msgid "General Color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:57
+#: standard/helpers/editor-color.php:64
+msgid "Primary Color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:58
+msgid "Choose the Primary Color for the site"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:67
+#: standard/helpers/editor-color.php:69
+msgid "Secondary Color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:68
+msgid "Choose the Secondary Color for the site"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:77
+#: standard/helpers/editor-color.php:74
+msgid "Sub Additional Color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:78
+#: includes/admin/framework/kirki/config/panels/panel-general.php:88
+msgid "Applicable theme items will have an option to choose this as color."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:87
+msgid "Sub Additional Color #2"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:97
+#: standard/helpers/editor-color.php:169
+msgid "Color Gradient"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:98
+#: includes/admin/framework/kirki/config/panels/panel-general.php:119
+msgid "Applicable theme elements will have the option to choose this as a color (i.e. buttons, icons etc..)"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:103
+#: includes/admin/framework/kirki/config/panels/panel-general.php:124
+msgid "from"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:104
+#: includes/admin/framework/kirki/config/panels/panel-general.php:125
+msgid "to"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:118
+msgid "Sub Color Gradient"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:137
+msgid "Extra Setting"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:138
+msgid "More Extra Setting & Functionality."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:146
+msgid "Remove Totop"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:147
+msgid "If It Enable will Remove Back Totop ."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:152
+#: includes/admin/framework/kirki/config/panels/panel-general.php:242
+#: includes/admin/framework/kirki/config/panels/panel-general.php:329
+#: includes/admin/framework/kirki/config/panels/panel-general.php:350
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:144
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:467
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:482
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:506
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:596
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:697
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:36
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:52
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:67
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:97
+msgid "Enable"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:153
+#: includes/admin/framework/kirki/config/panels/panel-general.php:243
+#: includes/admin/framework/kirki/config/panels/panel-general.php:330
+#: includes/admin/framework/kirki/config/panels/panel-general.php:351
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:145
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:468
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:483
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:507
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:597
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:698
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:35
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:51
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:68
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:98
+msgid "Disable"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:159
+msgid "Code Insert"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:160
+msgid "Here you Can add and insert CSS / Js code."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:169
+msgid "HTML Code"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:170
+msgid "Insert custom HTML Code inside head tag if you would like added to the site Head or wp_head"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:182
+msgid "CSS Code"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:183
+msgid "Insert custom CSS you would like added to the site head"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:195
+msgid "Js Code"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:196
+msgid "Insert custom Js you would like added to the site Footer (Insert the code without <script> </script>)"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:207
+msgid "Advanced"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:208
+msgid "Advanced setting and control with security."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:217
+msgid "Dynamic Style"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:218
+msgid ""
+"choose how the theme will load the dynamic style idealx theme offers 3 way for loading dynamic style,\n"
+"            Inline: output directly inline within the HTML head. This option is useful for preventing caching of the styles.\n"
+"            WP ajax: theme will load the dynamic style by wp ajax. Write file: Writes the dynamic CSS into a file using WP-filesystem."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:226
+msgid "Inline"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:227
+msgid "WP ajax"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:228
+msgid "Write file"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:236
+msgid "Stop Write the file"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:237
+msgid "this will chutdown writing the file any more swich it to on if you finsh design the theme"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:263
+msgid "Stop writing the file! if you finished design"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:265
+msgid "you have to stop writing the file after you finished your design and refresh the page, More Info in the documentation"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:284
+msgid "file is stop writing"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:286
+msgid "if you want to rewrite it swiych to on"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:305
+msgid "Switch Off Minify Dynamic Style "
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:306
+msgid "switch to Unminify to remove Dynamic css Minifier/Compressor "
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:311
+msgid "Unminify"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:312
+msgid "Minify"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:320
+msgid "Force cache"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:321
+msgid ""
+"switch allow to cache the dynamic style\n"
+"  his option is useful for preventing caching of the styles if youre still developing and using minification/ caching plugins.\n"
+"  f it is on the system will cache the file and if is off will no cache for dynamic style, default is off,\n"
+"  "
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:344
+msgid "Allow SVG files"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-general.php:345
+msgid "Security is the main reason behind the limitation on file types that users can upload, Enable this to allow SVG files to be uploaded"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:17
+#: includes/admin/framework/kirki/config/panels/panel-header.php:248
+#: includes/admin/inc/theme-page/panels/panel-options.php:46
+msgid "Pages Header"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:22
+msgid "Page Header"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:23
+msgid "Global Page Header Options"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:31
+msgid "Single Post"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:32
+msgid "Global Single Post Header Options"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:40
+msgid "Disable Blog Header "
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:41
+msgid " This Option will Remove Blog Page Header"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:50
+msgid " Header Background "
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:51
+msgid "if you enable it will write overall blog post header background"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:61
+#: includes/admin/framework/kirki/config/panels/panel-header.php:177
+#: includes/admin/framework/kirki/config/panels/panel-header.php:266
+msgid "Chose Background"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:62
+#: includes/admin/framework/kirki/config/panels/panel-header.php:178
+#: includes/admin/framework/kirki/config/panels/panel-header.php:267
+msgid "Choose and adjust the settings as appropriate for you"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:88
+msgid "Blog Header Padding"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:89
+msgid "Add and adjust the default Blog header padding Top & Bottom"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:102
+msgid " Featured images Header Background "
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:103
+msgid "if you enable it will add post featured image as background"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:112
+msgid "Blog Header overlay Color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:124
+msgid "Blog Header general Text Color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:133
+msgid "Post title Font option"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:159
+msgid "Archives Header"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:160
+msgid "Global Archives Header Options"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:168
+msgid "Disable Archives Page Header "
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:195
+msgid "Archives Header overlay Color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:207
+msgid "Archives Header Padding"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:208
+msgid "Choose and adjust the default Archives header padding Top & Bottom"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:220
+msgid "Archives title Font option"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:239
+msgid "Archives Header general Text Color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:249
+msgid "Global Pages Header Options"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:257
+msgid "Disable pages Page Header "
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:290
+msgid "Pages Header overlay Color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:308
+msgid "Pages Header Padding"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:309
+msgid "Choose and adjust the default Pages header padding Top & Bottom"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:326
+msgid "Pages title Font option"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-header.php:350
+msgid "Pages Header general Text"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-hero.php:26
+msgid "Disable Home Hero Section on Blog Home"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-hero.php:35
+msgid "Disable Home Hero Section on Front Page"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-hero.php:48
+msgid "Chose your Hero section overlay color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-hero.php:60
+msgid "Hero Section Background Control"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-hero.php:82
+msgid "Adjust Height with Padding Top & Bottom For Hero Section"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:16
+#: includes/admin/inc/theme-page/panels/panel-options.php:31
+msgid "Menu & Navigation"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:17
+msgid "Header Content & Layout - Controls the position of the Header Content."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:22
+msgid "Menu Layout Controls"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:30
+msgid "Layout Controls"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:31
+msgid "Controls the general layout of the header."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:48
+msgid "Menu Button Text"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:57
+msgid "Menu Button Link"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:66
+msgid "Button Background"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:82
+msgid "Button Background On Hover"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:98
+msgid "Button Text Color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:114
+msgid "Button Text Color On Hover"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:130
+msgid "Logo"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:138
+msgid "Use Image for Logo"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:139
+msgid "Enable it if you want tou use image logo if it Disable theme will use your site name from site  site name"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:152
+msgid "Logo Text Font"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:153
+msgid "Select the Logo Text Font"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:182
+msgid "Upload a site logo"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:183
+msgid "You can upload a logo image to appear in place of your site title"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:200
+msgid "Logo Height ,"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:217
+msgid "Mobile Logo Upload"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:218
+msgid "chose mobile devices logo"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:235
+msgid "Menu Styling"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:242
+msgid "Header Height"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:251
+msgid "Choose a background color for menu"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:252
+msgid "Pick a background color for the header menu ."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:261
+msgid "Select Header Box Shadow"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:262
+msgid "Please select your header box shadow here."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:278
+msgid "Navigation & Header Font"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:279
+msgid "Select the properties of the navigation & Header Font"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:299
+msgid "Header Link Hover color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:303
+msgid "hover"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:304
+msgid "active"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:313
+msgid "Mobile Menu"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:314
+msgid "Controls the Off Canvas Menu & Mobile Menu."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:322
+msgid "Mobile Menu Style"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:325
+msgid "Select Menu Style..."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:329
+msgid "Off-canvas"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:330
+msgid "Modal"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:338
+msgid "Open side"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:339
+msgid "Flip off-canvas to the ...? side."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:342
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:368
+msgid "Select Open side..."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:346
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:83
+msgid "Right"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:347
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:84
+msgid "Left"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:364
+msgid "Off-canvas Animation modes"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:365
+msgid "Select Off-canvas Animation Style"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:372
+msgid "Slide"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:373
+msgid "Push"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:374
+msgid "reveal"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:375
+msgid "none"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:392
+msgid "Off-canvas Background Color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:410
+msgid "Off-canvas Overlay Background Color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:430
+msgid "Off-canvas font"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:451
+msgid "Effects & Animation"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:452
+msgid "Header Effects & Animation Menu Styling - Controls the position of the Header Content."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:461
+msgid "Reveal Header on Scroll"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:462
+msgid "hide header & show header when start to scroll back up"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:476
+msgid "Sticky Navbar"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:477
+msgid " always remain Navbar to be at the top of the screen even when scrolling down the page."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:500
+msgid " Transparent Header"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:501
+msgid " When using an image or colored background for the hero section of your website, you might want to turn the navbar transparent. Just swich it to Transparent Navbar and also you can control it from page or force it."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:516
+msgid "Color mode options for Transparent Header "
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:517
+msgid "Select Option the light option to improve the visibility of objects on dark backgrounds in a light style. When using a dark style, Select the . option dark to elements on a light background."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:524
+msgid "Light"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:525
+msgid "Dark"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:532
+msgid "Choose a Font color for light mood"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:540
+msgid "Choose a Font color for dark mood"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:548
+msgid "Upload a site logo for Transparent Header in light mode"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:565
+msgid "Upload a site logo for Transparent Header in dark mode"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:582
+msgid "Top Navbar / user navbar"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:590
+msgid "Enable user top Navbar"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:591
+msgid "show / hide user navbar. "
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:605
+msgid "Choose a background color for top nav"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:606
+msgid "Pick a background color for the user navbar (default: #333)."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:622
+msgid "Choose a Font color for top nav"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:623
+msgid "Pick a Font color for the user navbar (default: #fff)."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:637
+msgid "Link Color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:638
+msgid "Controls the color of text links in top navbar."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:642
+msgid "Color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:643
+msgid "Hover"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:644
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:663
+msgid "Add The Text In The Left Area"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:665
+#: includes/partials/header/user-navbar.php:14
+msgid "yourname@yoursite.com"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:672
+msgid "Add The Text In The Right Area"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:674
+#: includes/partials/header/user-navbar.php:20
+msgid "Your Phone Here"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:683
+msgid "Search & Icon"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:684
+msgid "Controls the Header Search and Icon."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:692
+msgid "Enable Search icon in Navbar"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:706
+msgid "Select Search Header Stayle"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:707
+msgid "Please select Search Header Stayle here."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-page.php:17
+#: includes/admin/inc/theme-page/panels/panel-options.php:58
+msgid "Page Styling"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-page.php:21
+msgid "Page Controls"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-page.php:29
+msgid "Design your container will scale to a maximum width"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-page.php:43
+msgid "Page Contant Padding"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-page.php:44
+msgid "top and bottom padding to page contant"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-page.php:58
+msgid "Add cards style to Page Countant"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:17
+#: includes/admin/inc/theme-page/panels/panel-options.php:50
+msgid "Sidebar"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:21
+msgid "Sidebar Controls"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:29
+msgid "Disable Blog Sidebar"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:30
+msgid "Switch To Disable Blog Sidebar, this option will Remove the blog sidebar if is on"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:45
+msgid "Disable Page Sidebar"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:46
+msgid "this option will Remove Page sidebar if is on"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:61
+msgid "Woocommerce Sidebar"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:62
+msgid "this option will enable Woocommerce sidebar if is on"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:76
+msgid "Sidebar position"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:92
+msgid "Enable Sticky Sidebar"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:17
+#: includes/admin/inc/theme-page/panels/panel-options.php:35
+msgid "Typography"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:23
+msgid "General Typography"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:24
+msgid "This tab contains general typography options."
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:32
+msgid "Body Font Family"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:33
+msgid "General Site font Setting"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:56
+msgid "Headers Typography"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:64
+msgid "Heading 1"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:87
+msgid "Heading 2"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:109
+msgid "Heading 3"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:134
+msgid "Heading 4"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:157
+msgid "Heading 5"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:179
+msgid "Heading 6"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:199
+msgid "Headers Responsive"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:207
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:222
+msgid "H1 Small Desktop"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:237
+msgid "H1 Phone"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:252
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:266
+msgid "H2 Small Desktop"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:280
+msgid "H2 Phone"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:295
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:309
+msgid "h3 Small Desktop"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:323
+msgid "h3 Phone"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:338
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:352
+msgid "h4 Small Desktop"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:366
+msgid "h4 Phone"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:381
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:395
+msgid "h5 Small Desktop"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:409
+msgid "h5 Phone"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:424
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:438
+msgid "h6 Small Desktop"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-typography.php:452
+msgid "h6 Phone"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-woocommerce.php:17
+msgid "idealx Woocommerce"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-woocommerce.php:23
+msgid "shop Header"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-woocommerce.php:24
+msgid "Global Woocommerce Shop Header"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-woocommerce.php:32
+msgid "Chose Shop Header Background Options"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-woocommerce.php:33
+msgid "Choose and adjust the settings as appropriate for your Shop Header"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-woocommerce.php:55
+msgid "Shop Header overlay Color"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-woocommerce.php:73
+msgid "shop Header Padding"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-woocommerce.php:74
+msgid "Choose and adjust the default shop header padding Top & Bottom"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-woocommerce.php:91
+msgid "Shop title Font option"
+msgstr ""
+
+#: includes/admin/framework/kirki/config/panels/panel-woocommerce.php:116
+msgid "Shop Header Description Font Options"
+msgstr ""
+
+#: includes/admin/inc/notices/notices.php:21
+msgid "idealx Is Now Installed And Ready To Use!"
+msgstr ""
+
+#: includes/admin/inc/notices/notices.php:22
+msgid "Get ready to build something beautiful. Start Installation/Update Of Recommended Plugins Needed"
+msgstr ""
+
+#: includes/admin/inc/theme-page/ideal-options.php:20
+msgid "Welcome to idealx"
+msgstr ""
+
+#: includes/admin/inc/theme-page/ideal-options.php:23
+msgid "Thank you for choosing idealx as your WordPress theme!"
+msgstr ""
+
+#: includes/admin/inc/theme-page/ideal-options.php:27
+msgid "Getting started"
+msgstr ""
+
+#: includes/admin/inc/theme-page/ideal-options.php:28
+msgid "options"
+msgstr ""
+
+#: includes/admin/inc/theme-page/panels/panel-header.php:22
+msgid "idealx is an idea born in 2020 and grows up"
+msgstr ""
+
+#: includes/admin/inc/theme-page/panels/panel-header.php:24
+msgid "Visit the theme page on Github"
+msgstr ""
+
+#: includes/admin/inc/theme-page/panels/panel-options.php:13
+msgid "Quick Links to Customizer Settings:"
+msgstr ""
+
+#: includes/admin/inc/theme-page/panels/panel-options.php:27
+msgid "General Settings "
+msgstr ""
+
+#: includes/admin/inc/theme-page/panels/panel-options.php:70
+msgid "Please active or instal Kriki Plugin to use The full Options"
+msgstr ""
+
+#: includes/admin/inc/theme-page/panels/panel-start.php:10
+msgid "Important Notice"
+msgstr ""
+
+#: includes/admin/inc/theme-page/panels/panel-start.php:14
+msgid "Please install and activate the recommended plugins and any of the desired optional plugins which you wish to use on your site, Or Watch the video below, to know how to start"
+msgstr ""
+
+#: includes/admin/inc/theme-page/panels/panel-start.php:21
+msgid "Begin Installing Plugins"
+msgstr ""
+
+#: includes/admin/inc/theme-page/panels/panel-start.php:28
+msgid "Toggle The Video"
+msgstr ""
+
+#: includes/admin/inc/theme-page/panels/panel-start.php:40
+msgid "The idealx Theme is in the first release So Now The documentation is under construction and you can visit our documentation site ."
+msgstr ""
+
+#: includes/admin/inc/theme-page/panels/panel-start.php:43
+msgid "DOCUMENTATION"
+msgstr ""
+
+#: includes/admin/inc/theme-page/panels/panel-start.php:48
+msgid "Support"
+msgstr ""
+
+#: includes/admin/inc/theme-page/panels/panel-start.php:50
+msgid "Got any questions? Please Go idealx WordPress Theme Support Page Ask away and we will get back to you shortly.."
+msgstr ""
+
+#: includes/admin/inc/theme-page/panels/panel-start.php:56
+msgid "Please Rate us"
+msgstr ""
+
+#: includes/admin/inc/theme-page/panels/panel-start.php:58
+msgid " We understand that there can be no success, without excellent support. Could you please do us a BIG favor and give it a 5-star rating on WordPress? This would boost our motivation and help other users make a comfortable decision while choosing the idealx theme."
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:330
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:332
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:370
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:375
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:380
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:386
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:827
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2533
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:387
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:388
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#. translators: 1: plugin name.
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:390
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:392
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:394
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:396
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:934
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:934
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:937
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:937
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:1121
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:1982
+msgid "TGMPA v%s"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2342
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2388
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2392
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2396
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2400
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2603
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2608
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2614
+msgid "Activate %2$s"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:3498
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:3501
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:3503
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:3507
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:3509
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:3509
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:3509
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:3512
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:3515
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:3517
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+
+#: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:3520
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/partials/header/menu/menu-serch.php:67
+msgid "Search"
+msgstr ""
+
+#: includes/partials/header/menu/menu-serch.php:90
+#: includes/partials/header/menu/menu-serch.php:104
+#: includes/partials/search-notfound.php:26
+msgid "Search..."
+msgstr ""
+
+#: includes/partials/home-hero-section/herro-section.php:32
+#: includes/partials/home-hero-section/herro-section.php:41
+msgid "Edit this by going to your Dashboard -> Appearance -> Customise -> Home Hero Section"
+msgstr ""
+
+#: includes/partials/home-hero-section/herro-section.php:50
+msgid "Secondary"
+msgstr ""
+
+#: includes/partials/home-hero-section/herro-section.php:60
+msgid "Primary"
+msgstr ""
+
+#: includes/partials/page-header/header-archives.php:31
+msgid " Daily Archives"
+msgstr ""
+
+#: includes/partials/page-header/header-archives.php:35
+msgid " Monthly Archives"
+msgstr ""
+
+#: includes/partials/page-header/header-archives.php:39
+msgid " Yearly Archives"
+msgstr ""
+
+#: includes/partials/page-header/header-archives.php:43
+msgid " Author Archives"
+msgstr ""
+
+#: includes/partials/page-header/header-archives.php:46
+msgid "Archives"
+msgstr ""
+
+#: includes/partials/page-header/header-serch.php:23
+#: standard/helpers/breadcrumb.php:35
+msgid "Search Results: "
+msgstr ""
+
+#: includes/partials/page-header/header-single.php:66
+#: includes/partials/page-header/header-single.php:105
+msgid "F jS, Y"
+msgstr ""
+
+#: includes/partials/search-notfound.php:16
+msgid "Sorry,Your search:"
+msgstr ""
+
+#: includes/partials/search-notfound.php:18
+msgid "did not match any documents"
+msgstr ""
+
+#: includes/partials/search-notfound.php:22
+msgid "Please try again with some different keywords,Type keyword & press enter."
+msgstr ""
+
+#: includes/template-parts/blog/countant.php:47
+msgid "Continue reading %s"
+msgstr ""
+
+#: includes/template-parts/blog/countant.php:53
+#: includes/template-parts/search.php:31
+msgid "Read More"
+msgstr ""
+
+#: includes/template-parts/blog/countant.php:60
+msgid "By"
+msgstr ""
+
+#: includes/template-parts/search.php:24
+msgid "&#26;"
+msgstr ""
+
+#: includes/template-parts/single-post/content.php:45
+msgid "Pages:"
+msgstr ""
+
+#: includes/template-parts/single-post/content.php:51
+msgid "Next page"
+msgstr ""
+
+#: includes/template-parts/single-post/content.php:52
+msgid "Previous page"
+msgstr ""
+
+#. translators: %s: Name of current post
+
+#: standard/helpers/all-wp-support.php:99
+msgid "Continue reading "
+msgstr ""
+
+#: standard/helpers/all-wp-support.php:153
+msgid "Previous:"
+msgstr ""
+
+#: standard/helpers/all-wp-support.php:157
+msgid "Next:"
+msgstr ""
+
+#: standard/helpers/all-wp-support.php:200
+msgid "All posts"
+msgstr ""
+
+#: standard/helpers/breadcrumb.php:19
+msgid "Home"
+msgstr ""
+
+#: standard/helpers/category .php:54
+msgid "View all posts in %s"
+msgstr ""
+
+#: standard/helpers/comment-walker.php:33
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: standard/helpers/comment-walker.php:35
+msgid "Comment awaiting approval"
+msgstr ""
+
+#: standard/helpers/comment-walker.php:40
+msgid "Reply"
+msgstr ""
+
+#: standard/helpers/comment-walker.php:41
+msgid "Edit"
+msgstr ""
+
+#: standard/helpers/comment-walker.php:60
+msgid "Comments are closed."
+msgstr ""
+
+#: standard/helpers/editor-color.php:79
+msgid "Sub Additional Color plus"
+msgstr ""
+
+#: standard/helpers/editor-color.php:85
+msgid "Soft Blue"
+msgstr ""
+
+#: standard/helpers/editor-color.php:91
+msgid "Brewed Mustard"
+msgstr ""
+
+#: standard/helpers/editor-color.php:97
+msgid "Tigerlily"
+msgstr ""
+
+#: standard/helpers/editor-color.php:103
+msgid "Flamingo Pink"
+msgstr ""
+
+#: standard/helpers/editor-color.php:108
+msgid "idealx Black"
+msgstr ""
+
+#: standard/helpers/editor-color.php:113
+msgid "idealx white"
+msgstr ""
+
+#: standard/helpers/editor-color.php:175
+msgid "Sub Color Gradient "
+msgstr ""
+
+#: standard/helpers/editor-color.php:180
+msgid "Roseanna"
+msgstr ""
+
+#: standard/helpers/editor-color.php:185
+msgid "Purple Love"
+msgstr ""
+
+#: standard/helpers/footer-w.php:21
+msgid "First Footer Widget Area"
+msgstr ""
+
+#: standard/helpers/footer-w.php:23
+msgid "The first footer widget area"
+msgstr ""
+
+#: standard/helpers/footer-w.php:32
+msgid "Second Footer Widget Area"
+msgstr ""
+
+#: standard/helpers/footer-w.php:34
+msgid "The second footer widget area"
+msgstr ""
+
+#: standard/helpers/footer-w.php:43
+msgid "Third Footer Widget Area"
+msgstr ""
+
+#: standard/helpers/footer-w.php:45
+msgid "The third footer widget area"
+msgstr ""
+
+#: standard/helpers/footer-w.php:54
+msgid "Fourth Footer Widget Area"
+msgstr ""
+
+#: standard/helpers/footer-w.php:56
+msgid "The fourth footer widget area"
+msgstr ""
+
+#: standard/helpers/menu-walker.php:181 standard/helpers/menu-walker.php:371
+#: standard/helpers/menu-walker.php:541
+msgid "Add a menu"
+msgstr ""
+
+#: standard/helpers/menu-walker.php:582
+msgid "Menu"
+msgstr ""
+
+#: standard/helpers/nav-menu.php:30
+msgid "Top menu"
+msgstr ""
+
+#: standard/helpers/nav-menu.php:31
+msgid "mobile Menu offcanvas"
+msgstr ""
+
+#: standard/helpers/nav-menu.php:44
+msgid "mobile Modal menu"
+msgstr ""
+
+#: standard/helpers/nav-menu.php:45
+msgid "Footer Menu"
+msgstr ""
+
+#: standard/helpers/sidebar.php:26
+msgid "The Awesome Sidebar is shown on the side of blog pages in this theme"
+msgstr ""
+
+#: standard/helpers/sidebar.php:63
+msgid "Widget Area Off Canvas"
+msgstr ""
+#. Theme Name of the plugin/theme
+msgid "idealx"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://idealx.mtaman.me/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "An Ultra Responsive Multi-Purpose Wordpress Theme."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Mohamed Taman"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://github.com/mtaman"
+msgstr ""

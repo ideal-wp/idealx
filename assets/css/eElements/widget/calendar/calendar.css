@@ -1,0 +1,129 @@
+/*
+*	                   calendar v1
+============================================================
+
+*/
+
+#wp-calendar {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 300;
+  border-collapse: separate;
+  border-spacing: 8px;
+  margin-left: -2px;
+}
+
+#wp-calendar caption {
+  display: none;
+}
+
+#wp-calendar tbody td {
+  margin-bottom: 10px;
+  text-align: center;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #f4f4f4;
+  padding: 6px;
+}
+
+#wp-calendar tbody td:hover {
+  border-color: #e2e2e2;
+}
+
+#wp-calendar tbody td.pad {
+  border: 0;
+}
+
+#wp-calendar tbody td#today {
+  color: #444444;
+  border-color: #444444;
+}
+
+#wp-calendar tfoot td#prev a,
+#wp-calendar tfoot td#next a {
+  color: #888;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  text-transform: uppercase;
+  bottom: -9px;
+  margin-bottom: 1px;
+}
+
+#wp-calendar tfoot td#prev {
+  text-align: left;
+}
+
+#wp-calendar tfoot td#next {
+  text-align: right;
+}
+
+#wp-calendar thead th {
+  font-size: 13px;
+  font-weight: 700;
+  color: #eee;
+  text-align: center;
+  padding-bottom: 2px;
+}
+
+#wp-calendar tbody td a,
+#wp-calendar tfoot td#prev a:hover,
+#wp-calendar tfoot td#next a:hover {
+  color: #000000;
+}
+.widget_calendar {
+  float: left;
+}
+#wp-calendar {
+  width: 100%;
+}
+#wp-calendar caption {
+  text-align: right;
+  color: #eeeeee;
+  font-size: 12px;
+  margin-top: 2px;
+  margin-bottom: 15px;
+}
+#wp-calendar thead {
+  font-size: 10px;
+}
+#wp-calendar tbody {
+  color: #aaa;
+}
+#wp-calendar tbody td {
+  background: #f5f5f5;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 8px;
+}
+#wp-calendar tbody td:hover {
+  background: #fff;
+}
+#wp-calendar tbody .pad {
+  background: none;
+}
+#wp-calendar tfoot #next {
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: right;
+}
+#wp-calendar tfoot #prev {
+  font-size: 10px;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+#wp-calendar{
+  border: none;
+}
+#wp-calendar thead tr:first-child{
+  background: transparent;
+}
+#wp-calendar thead th{
+  border-bottom: none;
+  border-left: none;
+  padding: 2px 1px;
+  background: #333;
+}

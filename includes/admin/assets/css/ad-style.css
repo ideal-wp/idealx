@@ -1,0 +1,173 @@
+/**
+*
+*
+*@package idealx Admin Aarea
+*
+*/
+.idealx-kirki-notic-admin{
+  background: #4764f1;
+  color: #f1f1f1;
+}
+.idealx-admin-instal a{
+  background: #fff;
+  color:#4764f1 ;
+  font-size: 1.3em;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+}
+.idealx-admin-instal a:hover{
+  color: #ffffff;
+  background-color: #0a30ea; 
+}
+.idealx-admin-instal a:focus{
+  color: #ffffff;
+  background-color: #0a30ea;
+  border: none;
+}
+.idealx-notic-admin-text{
+  max-width: 90%;
+  margin-bottom: 10px;
+  font-size: 17px;
+  line-height: 25px;
+}
+.idealx-kirki-notic-admin h3{
+  font-size: 1.6em;
+}
+
+.idealx-welcome-header-wrap {
+  text-align: center;
+  margin: 0.67em 0;
+}
+.idealx-welcome-header-wrap h1 {
+  line-height: 1.4em;
+  margin-bottom: 0;
+  font-size: 3em;
+  color: #23282d;
+}
+.idealx-welcome-header-wrap h1 span {
+  font-size: 14px;
+}
+
+.idealx-welcome-header-wrap .sub-text {
+  font-size: 1.8em;
+  line-height: 1.4em;
+}
+.idealx-welcome-tab {
+  text-align: left;
+  margin: 75px 0;
+}
+.idealx-welcome-tab .idealx-tab li a {
+  font-size: 1.3em;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.uk-tab > * > a {
+  padding: 10px 10px;
+  border-bottom: 2px solid transparent;
+}
+
+.uk-tab::before {
+  bottom: 5px;
+  border-bottom: 1px solid #e6e4e4;
+}
+.idealx-welcome-tab .idealx-tab li a:focus {
+  box-shadow: unset;
+  outline: none;
+}
+
+.icon-admin-kirki-ero-no.uk-icon-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 500px;
+  background: #ef1909;
+  color: #ffffff;
+}
+.idealx-admin-wrap.wrap {
+  margin: 0 !important;
+}
+
+#wpcontent .idealx-admin-wrap {
+  margin-left: -20px !important;
+}
+.idealx-admin-wrap .uk-navbar-container:not(.uk-navbar-transparent) {
+  background: #ffffff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  height: 80px;
+}
+.idealx-logo-admin span {
+  font-size: 1em;
+  color: #23282d;
+  font-weight: 900;
+  margin-left: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.idealx-admi-header-right .uk-navbar-nav > li > a {
+  font-size: 35px;
+  color: #24292e;
+}
+
+.admin-options-container .uk-card-primary {
+  background-color: #4764f1;
+  border-radius: 10px;
+  color: #fff;
+}
+.admin-options-container
+  .uk-card-primary
+  > :not([class*="uk-card-media"])
+  .uk-nav-default
+  > li
+  > a {
+  color: #fff;
+}
+.admin-options-container .uk-card-body .uk-nav-default > li > a:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+.idealx-admi-header-right span.idea {
+  font-style: italic;
+}
+.idealx-admi-header-right span span.seedling {
+  color: #58d008;
+  font-size: 1.3em;
+  margin-right: 5px;
+}
+.idealx-admin-page-footer-start {
+  margin-top: 50px;
+  border-top: 2px solid #eee;
+  padding-top: 20px;
+}
+.idealx-admin-page-footer-start .id-ad-icon {
+  font-size: 4em;
+  float: left;
+  margin-right: 10px;
+  color: #4764f1;
+}
+.idealx-admin-page-footer-start h3 {
+  font-weight: 700;
+}
+
+.idealx-admin-page-footer-start a.uk-button {
+  background-color: #4764f1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+.idealx-admin-page-footer-start .id-ad-icon-smile {
+  font-size: 4em;
+  float: left;
+  margin-right: 10px;
+  color: #f7e400;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 50%;
+}
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}

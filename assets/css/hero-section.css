@@ -1,0 +1,29 @@
+/*------------------------hero-section-content-------------------------------*/
+#hero-section-content{
+  max-width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+}
+#hero-section-content h1{
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 160%;
+}
+#hero-section-content p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 160%;
+  text-align: center;
+}
+#hero-section-content button{
+  font-size: 18px;
+  font-weight: 500;
+  color: #1e87f0;
+}
+button#hero-secondary{
+  margin-right: 35px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid
+}

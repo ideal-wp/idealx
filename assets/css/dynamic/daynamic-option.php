@@ -13,9 +13,8 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-if (!class_exists('Kirki')) {
-    return;
-}
+
+
 if(empty($idealx_options['nav-idealx-height'])){
     $idealx_header_height = '80px';
 }else{
@@ -35,35 +34,35 @@ $idealx_dark_logo        = $idealx_options['header-t-logo-dark-kmod'];}
 echo '
 '.(!empty($idealx_options['header-s-logo'])? '
 .idealx-Logoo{
-    content:url("'.$idealx_options['header-s-logo'].'");
+    content:url("'.esc_url($idealx_options['header-s-logo']).'");
 }':"") .'
 '.(!empty($idealx_light_logo)? '
 .uk-light .idealx-Logoo{
-    content:url("'. $idealx_light_logo .'");
+    content:url("'. esc_url($idealx_light_logo) .'");
 }':"") .'
 '.(!empty($idealx_dark_logo)? '
 .uk-dark .idealx-Logoo{
-    content:url("'. $idealx_dark_logo .'");
+    content:url("'. esc_url($idealx_dark_logo) .'");
 }':"") .'
 '.(!empty($idealx_options['navbar-light-color-moode'])? '
 #idealx-nav.uk-light .idealx-Logo h2{
-    color: '. $idealx_options['navbar-light-color-moode'] .';
+    color: '. esc_html($idealx_options['navbar-light-color-moode']) .';
 }':"") .'
 '.(!empty($idealx_options['navbar-dark-color-moode'])? '
 #idealx-nav.uk-dark .idealx-Logo h2{
-    color: '. $idealx_options['navbar-dark-color-moode'] .' ;
+    color: '. esc_html($idealx_options['navbar-dark-color-moode']) .' ;
 }':"") .'
 '.(!empty($idealx_options['nav-idealx-height'])? '
 #idealx-nav-c{
-    height: '.  $idealx_options['nav-idealx-height'] .';
+    height: '.  esc_html($idealx_options['nav-idealx-height']) .';
 }':"") .'
 '.(!empty( $idealx_options['header-m-b-color'])? '
 #idealx-nav.uk-navbar-container:not(.uk-navbar-transparent){
-    background: '.  $idealx_options['header-m-b-color'] .';
+    background: '.  esc_html($idealx_options['header-m-b-color']) .';
 }':"") .'
 '.(! empty( $idealx_options['transparent-header'] ) && $idealx_options['transparent-header'] == true ? '
 .header-hero{
-	margin-top:-'.  $idealx_header_height .';
+	margin-top:-'.  esc_html($idealx_header_height) .';
 }':"") .'
 ';
 /*---------menu shadow------------ */
@@ -97,7 +96,7 @@ if(! empty($idealx_options['transparent-header']) && $idealx_options['transparen
     echo'
     .blog-wrap-header,.archives-wrap-header,#hero-section,idealx-pages-header{
         padding-top: '.(!empty( $idealx_options['nav-idealx-height']) ? '
-         '.  $idealx_options['nav-idealx-height'] .';
+         '.  esc_html($idealx_options['nav-idealx-height']) .';
     }' : '80px }') . '
     
     ';
@@ -105,15 +104,15 @@ if(! empty($idealx_options['transparent-header']) && $idealx_options['transparen
 echo'
 '.(!empty($idealx_options['post-header-hight']['padding-top']) ? '
 .id-bh-inner-wrap{
-    padding-top:'.  $idealx_options['post-header-hight']['padding-top'].';
-    padding-bottom:'.  $idealx_options['post-header-hight']['padding-bottom'] .';
+    padding-top:'.  esc_html($idealx_options['post-header-hight']['padding-top']).';
+    padding-bottom:'.  esc_html($idealx_options['post-header-hight']['padding-bottom'] ).';
 }':"") .'
 
 '.(!empty($idealx_options['archives-header-hight']['padding-top']) ? '
 
 .id-archives-inner-wrap{
-    padding-top:'.  $idealx_options['archives-header-hight']['padding-top'].';
-    padding-bottom:'.  $idealx_options['archives-header-hight']['padding-bottom'] .';
+    padding-top:'.  esc_html($idealx_options['archives-header-hight']['padding-top']).';
+    padding-bottom:'.  esc_html($idealx_options['archives-header-hight']['padding-bottom']) .';
 }':"") .'
 ';
 
@@ -121,15 +120,15 @@ echo'
 if(! empty($idealx_options['page-container-width'])){
     echo'
     #idealx-page-content-inner.uk-container{
-        max-width:' . $idealx_options['page-container-width'] . 'px;
+        max-width:' . esc_html($idealx_options['page-container-width']) . 'px;
     }
     ';
 }
 if(! empty($idealx_options['page-padding-top-bottom']['padding-top'])){
 echo'
 #idealx-pagecontent.uk-section{
-    padding-top:'.  $idealx_options['page-padding-top-bottom']['padding-top'].';
-    padding-bottom:'.  $idealx_options['page-padding-top-bottom']['padding-bottom'] .';
+    padding-top:'.  esc_html($idealx_options['page-padding-top-bottom']['padding-top']).';
+    padding-bottom:'.  esc_html($idealx_options['page-padding-top-bottom']['padding-bottom']) .';
 }
 ';
 }
@@ -139,15 +138,3 @@ if(!empty($idealx_options['hero_overlay_color'])){
     
    echo' #hero-section{box-shadow: inset 0 0 0 100vw '.esc_html($idealx_options['hero_overlay_color']).';}';
 }
-echo'
-#hero-section{ 
-    ' . (!empty($idealx_options['hero_section_background_setting']['background-color']) ? '
-    background:' . $idealx_options['hero_section_background_setting']['background-color'] . ';' : "") . '
-    ' . (!empty($idealx_options['hero_section_background_setting']['background-image']) ? '
-    background-image:url("' . $idealx_options['hero_section_background_setting']['background-image'] . '");
-    background-repeat:' . $idealx_options['hero_section_background_setting']['background-repeat'] . ';
-    background-position:' . $idealx_options['hero_section_background_setting']['background-position'] . ';
-    background-size:' . $idealx_options['hero_section_background_setting']['background-size'] . ';
-    background-attachment:' . $idealx_options['hero_section_background_setting']['background-attachment'] . ';
-    }' : "}") . '
-    ';

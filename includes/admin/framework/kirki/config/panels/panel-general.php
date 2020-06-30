@@ -91,9 +91,9 @@ Kirki::add_field( $idealx_config_id , [
   'transport'   => 'auto',
 ] );
 
-Kirki::add_field( $idealx_config_id, [
+Kirki::add_field( $idealx_config_id, [ 
   'type'        => 'multicolor',
-  'settings'    => 'id-color-gradient',
+  'settings'    => 'id_color_gradient',
   'label'       => esc_html__('Color Gradient', 'idealx'),
 'description'   => esc_html__('Applicable theme elements will have the option to choose this as a color (i.e. buttons, icons etc..)', 'idealx'),
   'section'     => 'general_settings_color',
@@ -114,7 +114,7 @@ Kirki::add_field( $idealx_config_id, [
 
 Kirki::add_field( $idealx_config_id, [
   'type'        => 'multicolor',
-  'settings'    => 'id-sub-color-gradient',
+  'settings'    => 'id_sub_color_gradient',
   'label'       => esc_html__('Sub Color Gradient', 'idealx'),
   'description' => esc_html__('Applicable theme elements will have the option to choose this as a color (i.e. buttons, icons etc..)', 'idealx'),
   'section'     => 'general_settings_color',

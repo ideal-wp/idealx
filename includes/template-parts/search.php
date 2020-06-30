@@ -10,7 +10,7 @@ global $idealx_card;?>
 <article  id='article' <?php post_class('idealx-article uk-article'); ?>>
   <div class="article-inner-wrap">
     <div class="article-post-content">
-      <div class="uk-card <?php echo $idealx_card ;?>">
+      <div class="uk-card <?php echo  esc_html($idealx_card) ;?>">
         <div class="uk-card-body">
 
           <h3 class="uk-article-title">

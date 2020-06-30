@@ -9,7 +9,7 @@ $idealx_options = idealx_get_theme_options();
 
 if ($idealx_options['minify-dynamic-allow'] == false ){
 
-    function dynamic_idealx_minify_css( $css ) {
+    function idealx_dynamic_minify_css( $css ) {
 
         $css = preg_replace( '/\s+/', ' ', $css );
         
@@ -41,6 +41,6 @@ idealx_dynamic_style_output();
 $idealx_dynamic_ajax_css = ob_get_contents();
 ob_end_clean();
 if ($idealx_options['minify-dynamic-allow'] == false ){
-    $idealx_dynamic_ajax_css = dynamic_idealx_minify_css($idealx_dynamic_ajax_css);     
+    $idealx_dynamic_ajax_css = idealx_dynamic_minify_css($idealx_dynamic_ajax_css);     
 }
 echo esc_attr($idealx_dynamic_ajax_css);

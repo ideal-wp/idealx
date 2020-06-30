@@ -3,12 +3,22 @@
  * idealx Dynamic Js Generator.
  *
  * @package idealx
- * @since 1.0
+ * @since 1.0.0
+ * @version 1.0.1
  */
 // Exit if accessed this directly
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
+/**
+ * return; if class Kirki not exists
+ *@since v 1.0.1
+*/
+if(!class_exists('Kirki')){
+return;
+} 
+
 $idealx_options = idealx_get_theme_options();
 /**
  * 
@@ -16,23 +26,23 @@ $idealx_options = idealx_get_theme_options();
  *  
  * */
 
-  $random_number = rand( 0, 99999 );
+  $idealx_random_number = rand( 0, 99999 );
   $idealx_theme = wp_get_theme();
 
   if (!empty ( $idealx_options['force-dynamic-cache'] ) && $idealx_options['force-dynamic-cache'] == '1' ){
-    $cc_v = $random_number + $idealx_theme->get( 'Version' );
+    $idealx_cc_v = $idealx_random_number + $idealx_theme->get( 'Version' );
   }else{
-    $cc_v = $idealx_theme->get( 'Version' );
+    $idealx_cc_v = $idealx_theme->get( 'Version' );
   }
-  define( 'idealx_ATHEME_VERSION', $cc_v );
+  define( 'idealx_ATHEME_VERSION', $idealx_cc_v );
 
   function idealx_dynamic_js_enqueue() {
       wp_enqueue_script( 'idealx-dynamic-js', admin_url( 'admin-ajax.php' ).'?action=dynamic_js&_wpnonce=' . wp_create_nonce( 'dynamic-js-nonce' ), array('jquery'),  idealx_ATHEME_VERSION,true );
   }
   function idealx_dynamic_js() { 
 
-      $nonce = $_REQUEST['_wpnonce'];
-      if ( ! wp_verify_nonce( $nonce, 'dynamic-js-nonce' ) ) {
+    if (! isset( $_REQUEST['_wpnonce'] ) || 
+    !wp_verify_nonce(  wp_unslash($_REQUEST)['_wpnonce'], 'dynamic-js-nonce' ) ) {
         die( 'invalid nonce' );
       } else { 
       

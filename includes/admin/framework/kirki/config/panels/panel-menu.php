@@ -163,7 +163,6 @@ Kirki::add_field( $idealx_config_id, [
 		'text-align'     => '',
 	],
 	'priority'    => 2,
-	'transport'   => 'auto',
   'active_callback' => function() {
     $current_options        = get_option('idealx_options_control');
     $checkbox_value = $current_options['logo-img-menu']  ;
@@ -173,6 +172,14 @@ Kirki::add_field( $idealx_config_id, [
     }
     return false;
   },
+
+	'output'      => [
+		[
+			'element' => '.idealx-Logo a,.idealx-Logo h2',
+		
+		],
+	],
+
 
 ] );
 
@@ -289,7 +296,12 @@ Kirki::add_field( $idealx_config_id, [
 		'text-align'     => '',
 	],
 	'priority'    => 4,
-
+	'output'      => [
+		[
+			'element' => '#idealx-nav-c ,#idealx-nav-c a',
+		
+		],
+	],
 
 ] );
 
@@ -440,7 +452,12 @@ Kirki::add_field( $idealx_config_id, [
 		'text-align'     => '',
 	],
 	'priority'    => 10,
-	'transport'   => 'auto',
+	'output'      => [
+		[
+			'element' => '#m-t-offcanvas .uk-nav-default>li>a,.uk-nav-default>li.uk-active>a,.uk-offcanvas-bar .uk-nav-default .uk-nav-sub li.uk-active>a,.uk-offcanvas-bar .uk-nav-default .uk-nav-sub a',
+		
+		],
+	],
   
 
 ] );
@@ -467,7 +484,15 @@ Kirki::add_field( $idealx_config_id, [
 		'on'  => esc_html__( 'Enable', 'idealx' ),
 		'off' => esc_html__( 'Disable', 'idealx' ),
   ],
-  
+  'active_callback' => function() {
+    $current_options        = get_option('idealx_options_control');
+    $checkbox_value = $current_options['sticky-header']  ;
+
+    if ( $checkbox_value == false) {
+      return true;
+    }
+    return false;
+  },
 ] );
 
 Kirki::add_field( $idealx_config_id, [
@@ -486,7 +511,7 @@ Kirki::add_field( $idealx_config_id, [
     $current_options        = get_option('idealx_options_control');
     $checkbox_value = $current_options['reveal-header']  ;
 
-    if ( $checkbox_value == '0') {
+    if ( $checkbox_value == false) {
       return true;
     }
     return false;

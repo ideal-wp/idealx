@@ -1,9 +1,10 @@
 <?php
 /**
- * idealx Dynamic Js Generator for admin .
+ * idealx Admin Dynamic Js Generator.
  *
- * @package idealx-admin/inc/helpers
- * @since 1.0.0
+ *@package idealx-admin/inc/helpers
+ *@since 1.0.0
+ *@version 1.0.1
  */
 // Exit if accessed this directly
 if (!defined('ABSPATH')) {
@@ -11,16 +12,22 @@ if (!defined('ABSPATH')) {
 }
 
 
+/**
+ *if class Kirki not exists
+ *@since v 1.0.1
+*/
+if(class_exists('Kirki')){
 $idealx_core_theme_options = get_option('idealx_options_control');
+}
 /**
  *
  * loading Dynamic js via WP ajax
  *
  * */
 
-$random_number = rand(0, 99999);
+$idealx_random_number = rand(0, 99999);
 $idealx_theme = wp_get_theme();
-$cc_v = wp_get_theme()->get('Version');
+$idealx_cc_v = wp_get_theme()->get('Version');
 
 function idealx_core_ad_dynamic_js_enqueue()
 {
@@ -30,8 +37,8 @@ function idealx_core_ad_dynamic_js_enqueue()
 function idealx_core_ad_dynamic_js()
 {
 
-    $nonce = $_REQUEST['_wpnonce'];
-    if (!wp_verify_nonce($nonce, 'dynamic-ad-js-nonce')) {
+    if (! isset( $_REQUEST['_wpnonce'] ) || 
+    !wp_verify_nonce(  wp_unslash($_REQUEST)['_wpnonce'],'dynamic-ad-js-nonce')) {
         die('invalid nonce');
     } else {
 

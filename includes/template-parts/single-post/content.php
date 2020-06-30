@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
 }
 global $idealx_is_featured_image, $idealx_card_imge, $idealx_featured_image, $idealx_is_single_cards;
 global $post;
-$posttype = get_post_type( $post );
+$idealx_posttype = get_post_type( $post );
 if ($idealx_is_featured_image == false) {
     if (has_post_thumbnail()) {
         $idealx_featured_image = get_the_post_thumbnail_url();
@@ -21,10 +21,10 @@ if ($idealx_is_featured_image == false) {
 <?php if (!empty($idealx_is_single_cards) && $idealx_is_single_cards == true) {
     echo '<div class="uk-card uk-card-default ">';}
 
-if ( ( is_single() ) && ( $posttype === 'post' ) && has_post_thumbnail() && $idealx_is_featured_image == false): ?>
+if ( ( is_single() ) && ( $idealx_posttype === 'post' ) && has_post_thumbnail() && $idealx_is_featured_image == false): ?>
 <div
-  class="uk-background-cover uk-background-center-center uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle uk-background-norepeat uk-card-media-top <?php echo $idealx_card_imge; ?> "
-  style="background-image:url(<?php echo $idealx_featured_image; ?>);">
+  class="uk-background-cover uk-background-center-center uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle uk-background-norepeat uk-card-media-top <?php echo  esc_html($idealx_card_imge); ?> "
+  style="background-image:url(<?php echo  esc_html($idealx_featured_image); ?>);">
 </div>
 <?php
 endif;
@@ -41,7 +41,7 @@ if (!empty($idealx_is_single_cards) && $idealx_is_single_cards == true) {
      </div>';
 }
 
-$defaults = array(
+$idealx_defaults = array(
     'before' => '<ul class="uk-pagination">' . __('Pages:', 'idealx'),
     'after' => '</ul>',
     'link_before' => '<li>',
@@ -54,7 +54,7 @@ $defaults = array(
     'echo' => 1,
 );
 
-wp_link_pages($defaults);
+wp_link_pages($idealx_defaults);
 
 ?>
 </div>

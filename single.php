@@ -3,7 +3,7 @@
  * The template for displaying single posts.
  *
  * @package idealx WordPress Theme
- * @version 1.0.0
+ * @version 1.0.1
  */
 // Exit if accessed directly
 if (!defined('ABSPATH')) {
@@ -19,7 +19,7 @@ while (have_posts()): the_post();
     }
     ?>
   <div id="idealx-site-content" class="idealx-site-content uk-section">
-    <div class="uk-container <?php echo $idealx_id_container; ?>">
+    <div class="uk-container <?php echo  esc_html($idealx_id_container); ?>">
       <?php if (empty($idealx_is_sidebar) || $idealx_is_sidebar == false ) {?>
       <div class=" uk-grid-column-small" uk-grid>
         <div class="id-con-warp uk-width-expand@m">
@@ -33,7 +33,7 @@ while (have_posts()): the_post();
                   idealx_single_post_pagination(); 
                   ?>
                 <div class="idealx-single-tags">
-                  <?php if (has_tag()) {echo get_the_tag_list('<p>', ', ', '</p>');}?>
+                  <?php if (has_tag()) {echo esc_html(get_the_tag_list('<p>', ', ', '</p>'));}?>
                 </div>
                 <?php  idealx_box_athour_single_post();
                   idealx_comment_open();
@@ -46,9 +46,9 @@ endwhile; // End the loop. ?>
           </div>
         </div>
         <!--/id-con-warp-->
-        <div class="uk-width-1-4@m uk-width-1-4@l <?php echo $idealx_flex ;?>">
+        <div class="uk-width-1-4@m uk-width-1-4@l <?php echo  esc_html($idealx_flex );?>">
           <div class=" uk-container uk-container-expand " id="blog-sidebar">
-            <div class="side-bar uk-flex uk-flex-column "<?php echo $idealx_is_sticky; ?>>
+            <div class="side-bar uk-flex uk-flex-column "<?php echo  esc_html($idealx_is_sticky); ?>>
               <?php get_sidebar();?>
             </div>
           </div>

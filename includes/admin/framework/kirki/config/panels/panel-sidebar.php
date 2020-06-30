@@ -35,7 +35,6 @@ Kirki::add_field( $idealx_config_id, [
 		'on'  => esc_html__( 'Disable', 'idealx' ),
 		'off' => esc_html__( 'Enable', 'idealx' ),
 	],
-	'transport'   => 'auto',
 ] );
 
 
@@ -51,7 +50,6 @@ Kirki::add_field( $idealx_config_id, [
 		'on'  => esc_html__( 'Disable', 'idealx' ),
 		'off' => esc_html__( 'Enable', 'idealx' ),
 	],
-	'transport'   => 'auto',
 ] );
 
 
@@ -67,7 +65,6 @@ Kirki::add_field( $idealx_config_id, [
 		'on'  => esc_html__( 'Enable', 'idealx' ),
 		'off' => esc_html__( 'Disable', 'idealx' ),
 	],
-	'transport'   => 'auto',
 ] );
 
 Kirki::add_field( $idealx_config_id, [
@@ -83,7 +80,6 @@ Kirki::add_field( $idealx_config_id, [
 		'right' => esc_html__('Right', 'idealx'),
     'left'  => esc_html__('Left', 'idealx'),
 	],
-	'transport'   => 'auto',
 ] );
 
 Kirki::add_field( $idealx_config_id, [
@@ -97,5 +93,4 @@ Kirki::add_field( $idealx_config_id, [
 		'on'  => esc_html__( 'Enable', 'idealx' ),
 		'off' => esc_html__( 'Disable', 'idealx' ),
 	],
-	'transport'   => 'auto',
 ] );

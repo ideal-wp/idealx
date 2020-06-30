@@ -1,5 +1,13 @@
 <?php
-
+/**
+ * idealx theme menu logo center
+ *
+ * @since v1.0.0
+ */
+// Exit if accessed directly
+if (!defined('ABSPATH')) {
+    exit;
+} 
 ?>
 <div class="uk-navbar-left uk-hidden@l">
   <div class="idealx-Logo">

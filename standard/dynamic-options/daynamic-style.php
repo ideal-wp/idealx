@@ -17,15 +17,15 @@ $idealx_options = idealx_get_theme_options();
  * */
 if (!empty($idealx_options['style-dynamic-load']) && $idealx_options['style-dynamic-load'] == '2' ){
 
-  $random_number = rand( 0, 99999 );
+  $idealx_random_number = rand( 0, 99999 );
   $idealx_theme = wp_get_theme();
 
   if (  !empty($idealx_options['force-dynamic-cache']) && $idealx_options['force-dynamic-cache'] == true ){
-    $cc_v = $random_number + $idealx_theme->get( 'Version' );
+    $idealx_cc_v = $idealx_random_number + $idealx_theme->get( 'Version' );
   }else{
-    $cc_v = $idealx_theme->get( 'Version' );
+    $idealx_cc_v = $idealx_theme->get( 'Version' );
   }
-  define( 'idealx_THEME_VERSION', $cc_v );
+  define( 'idealx_THEME_VERSION', $idealx_cc_v );
 
   function idealx_dynamic_css_enqueue() {
       wp_enqueue_style( 'idealx-dynamic-style', admin_url( 'admin-ajax.php' ).'?action=dynamic_css&_wpnonce=' . wp_create_nonce( 'dynamic-css-nonce' ), false,  idealx_THEME_VERSION );
@@ -33,8 +33,8 @@ if (!empty($idealx_options['style-dynamic-load']) && $idealx_options['style-dyna
 
   function idealx_dynamic_css() { 
 
-      $nonce = $_REQUEST['_wpnonce'];
-      if ( ! wp_verify_nonce( $nonce, 'dynamic-css-nonce' ) ) {
+    if (! isset( $_REQUEST['_wpnonce'] ) || 
+    !wp_verify_nonce(  wp_unslash($_REQUEST)['_wpnonce'], 'dynamic-css-nonce' ) ) {
         die( 'invalid nonce' );
       } else { 
       
@@ -59,7 +59,7 @@ function idealx_dynamic_css_output(){
 
 if (  empty($idealx_options['minify-dynamic-allow']) || $idealx_options['minify-dynamic-allow'] == false){
 
-  function dynamic_idealx_minify( $css ) {
+  function idealx_dynamic_idealx_minify( $css ) {
 
     $css = preg_replace( '/\s+/', ' ', $css );
     
@@ -91,7 +91,7 @@ if(empty($idealx_options['style-dynamic-load'])){
 
 if ($idealx_lod_min_css_dynnamic == '1' ){
 
-  function dynamic_css_styles_method() {
+  function idealx_dynamic_css_styles_method() {
 
     global $idealx_options ;
   
@@ -105,13 +105,13 @@ if ($idealx_lod_min_css_dynnamic == '1' ){
 
       if ( empty($idealx_options['minify-dynamic-allow']) || $idealx_options['minify-dynamic-allow'] == false ){
       
-        $idealx_dynamic_css = dynamic_idealx_minify($idealx_dynamic_css);     
+        $idealx_dynamic_css = idealx_dynamic_idealx_minify($idealx_dynamic_css);     
       }
       wp_register_style( 'dynamic_css', false );
       wp_enqueue_style( 'dynamic_css' );
       wp_add_inline_style( 'dynamic_css', $idealx_dynamic_css );
   }
-  add_action( 'wp_enqueue_scripts', 'dynamic_css_styles_method' );
+  add_action( 'wp_enqueue_scripts', 'idealx_dynamic_css_styles_method' );
 }
 /**
  * Writes the dynamic Style into a file 
@@ -202,8 +202,8 @@ if (! empty($idealx_options['style-dynamic-load']) && $idealx_options['style-dyn
         }
       }
       // Update version number for cache busting.
-      $random_number = rand( 0, 99999 );
-      update_option('idealx_dynamic_css_version', $random_number);
+      $idealx_random_number = rand( 0, 99999 );
+      update_option('idealx_dynamic_css_version', $idealx_random_number);
     } // endif CSS dir is writable.
     else {
       // Filesystem can not write.
@@ -236,7 +236,7 @@ $idealx_options['style-dynamic-load'] == '3')
 
 }
 
-function shutdown_dynamic_file(){
+function idealx_shutdown_dynamic_file(){
 
   global $idealx_options;
 
@@ -259,14 +259,14 @@ if (! empty($idealx_options['style-dynamic-load']) && $idealx_options['style-dyn
     global $idealx_options;
       
     $idealx_theme = wp_get_theme();
-    $cc_v = $idealx_theme->get( 'Version' );
+    $idealx_cc_v = $idealx_theme->get( 'Version' );
     //register dynamic style for multisite
     if( is_multisite() && file_exists( IDEALX_THEME_DIRECTORY . '/assets/css/dynamic/idealx-dynamic-styles-multi-id-'. get_current_blog_id() .'.css' ) ) {
     //register dynamic style
-      wp_register_style('dynamic-css', get_template_directory_uri() . '/assets/css/dynamic/idealx-dynamic-styles-multi-id-'. get_current_blog_id() .'.css', '', $cc_v);
+      wp_register_style('dynamic-css', get_template_directory_uri() . '/assets/css/dynamic/idealx-dynamic-styles-multi-id-'. get_current_blog_id() .'.css', '', $idealx_cc_v);
 
     } else {
-      wp_register_style('dynamic-css', get_template_directory_uri() . '/assets/css/dynamic/idealx-dynamic-styles.css', '', $cc_v);
+      wp_register_style('dynamic-css', get_template_directory_uri() . '/assets/css/dynamic/idealx-dynamic-styles.css', '', $idealx_cc_v);
     }
     wp_enqueue_style('dynamic-css');
 

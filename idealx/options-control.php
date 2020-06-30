@@ -1,4 +1,9 @@
 <?php
+/**
+ * idealx options control
+ * @since v1.0.0
+ * @version 1.0.1
+ */
 // Exit if accessed directly
 if (!defined('ABSPATH')) {
     exit;
@@ -40,7 +45,14 @@ if (!function_exists('idealx_theme_version')) {
 
 function idealx_get_theme_options()
 {
-
+    /**
+     * return; if class Kirki not exists
+     *@since v 1.0.1
+     */
+    if(! class_exists('Kirki')){
+        return;
+    }
+    
     $idealx_daynamic_options = get_option('idealx');
     $current_options        = get_option('idealx_options_control');
 

@@ -10,8 +10,9 @@ if (!defined('ABSPATH')) {
     exit;
 }
 get_header();
-if( ! empty( $idealx_options['id-archives-switch-header'] ) && $idealx_options['id-archives-switch-header'] == true || ! class_exists( 'Kriki' ) ){
+if( ! empty( $idealx_options['id-archives-switch-header'] ) && $idealx_options['id-archives-switch-header'] == true || ! class_exists( 'Kirki' ) ){
     get_template_part('includes/partials/page-header/header','serch');
 }
 get_template_part('includes/templates/serch' );
 get_footer();
+ 

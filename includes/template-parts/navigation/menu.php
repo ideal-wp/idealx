@@ -12,7 +12,7 @@
 $idealx_options           = idealx_get_theme_options();
 $idealx_is_transparent_header   = get_post_meta( get_the_ID(), 'is_header_trans', true );
 $idealx_transparent_header      = null;
-$mode                    = null;
+$idealx_mode                    = null;
 
 
 if( !empty( $idealx_options['transparent-header'] ) ){
@@ -23,7 +23,7 @@ if( !empty( $idealx_options['transparent-header'] ) ){
 
 if( !empty( $idealx_options['select-header-mod'] ) ){
 
-  $mode   = $idealx_options['select-header-mod'];
+  $idealx_mode   = $idealx_options['select-header-mod'];
 
 }
 
@@ -39,24 +39,27 @@ if ( ! empty( $idealx_is_transparent_header ) && $idealx_is_transparent_header =
 // mobile & offcanvas options
 if( !empty( $idealx_options['mobile-o-c-flip'] ) &&  $idealx_options['mobile-o-c-flip'] =='right' ){
 
-  $flip = 'true';
+  $idealx_flip = 'true';
 
 }elseif( !empty( $idealx_options['mobile-o-c-flip'] ) &&  $idealx_options['mobile-o-c-flip'] =='left' ){
 
-  $flip = 'false';
+  $idealx_flip = 'false';
 }
 
   // mobile & offcanvas options
 require_once IDEALX_THEME_DIRECTORY .'/standard/dynamic-options/header-options.php';
 
-if ( !empty($idealx_options['user-nav'])&& $idealx_options['user-nav'] == true){require_once IDEALX_THEME_DIRECTORY .'/includes/partials/header/user-navbar.php';}
+if ( !empty($idealx_options['user-nav'])&& $idealx_options['user-nav'] == true){
+  get_template_part( 'includes/partials/header/user', 'navbar' );
+
+}
 
     idealx_hook_page_header_open();
     idealx_hook_before_header(); 
     
     ?>
       <div id="idealx-nav"
-        class="idealx-nav uk-navbar-container <?php if( $idealx_transparent_header== true ) {echo 'uk-navbar-transparent ' . $mode ;}?>">
+        class="idealx-nav uk-navbar-container <?php if( $idealx_transparent_header== true ) {echo 'uk-navbar-transparent ' . esc_html($idealx_mode) ;}?>">
         <div class="uk-container uk-container-expand">
           <nav class="uk-navbar" id="idealx-nav-c" uk-navbar>
           <?php

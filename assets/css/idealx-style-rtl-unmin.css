@@ -203,6 +203,10 @@ button:focus,
   outline: dotted 2px;
   transition: outline 0.6s linear;
 }
+#m-t-offcanvas a:focus {
+  outline: dotted 2px;
+  transition: outline 0.6s linear;
+}
 /*--------------------------------------------------------------
 * Typography
 --------------------------------------------------------------*/

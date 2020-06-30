@@ -217,7 +217,7 @@ function idealx_before_content_loop()
 {
 ?>
 <div id="idealx-site-content" class="idealx-site-content uk-section">
-  <div class="uk-container <?php echo $idealx_id_container; ?>">
+  <div class="uk-container <?php echo esc_html($idealx_id_container); ?>">
     <?php if (empty($idealx_woo_is_sidebar) || $idealx_woo_is_sidebar == false) {?>
     <div class=" uk-grid-column-small" uk-grid>
       <div class="id-con-warp uk-width-expand@m">
@@ -232,9 +232,9 @@ function idealx_woocommerce_sidebar()
         </div>
       </div>
       <!--/id-con-warp-->
-      <div class="uk-width-1-4@m uk-width-1-4@l <?php echo $idealx_flex; ?>">
+      <div class="uk-width-1-4@m uk-width-1-4@l <?php echo esc_html($idealx_flex); ?>">
         <div class=" uk-container uk-container-expand " id="blog-sidebar">
-          <div class="side-bar uk-flex uk-flex-column " <?php echo $idealx_is_sticky; ?>>
+          <div class="side-bar uk-flex uk-flex-column " <?php echo esc_html($idealx_is_sticky); ?>>
             <?php get_sidebar();?>
           </div>
         </div>

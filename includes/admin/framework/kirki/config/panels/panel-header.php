@@ -69,7 +69,6 @@ Kirki::add_field( $idealx_config_id, [
 		'background-size'       => '',
 		'background-attachment' => '',
 	],
-	'transport'   => 'auto',
   'active_callback' => function() {
     $current_options        = get_option('idealx_options_control');
     $checkbox_value = $current_options['switch-to-background']  ;
@@ -79,7 +78,13 @@ Kirki::add_field( $idealx_config_id, [
     }
     return false;
   },
-  'priority'    => 3,
+	'priority'    => 3,
+	'output'      => [
+		[
+			'element' => '#blog-page-header',
+		
+		],
+	],
 ] );
 
 Kirki::add_field( $idealx_config_id, [
@@ -151,8 +156,6 @@ Kirki::add_field( $idealx_config_id, [
 	],
 
 
-
-
 ] );
 //===========[ section Archives Page Header Settings ]=============
 Kirki::add_section( 'archives_header_settings', array(
@@ -185,8 +188,14 @@ Kirki::add_field( $idealx_config_id, [
 		'background-size'       => '',
 		'background-attachment' => '',
 	],
-	'transport'   => 'auto',
-  'priority'    => 2,
+	'priority'    => 2,
+	'output'      => [
+		[
+			'element' => '#archives-page-header',
+		
+		],
+	],
+
 ] );
 
 Kirki::add_field( $idealx_config_id , [
@@ -230,7 +239,12 @@ Kirki::add_field( $idealx_config_id, [
 		'text-align'     => '',
 	],
 	'priority'    => 5,
-	'transport'   => 'auto',
+	'output'      => [
+		[
+			'element' => '.ar-entry-title h1',
+		
+		],
+	],
 ] );
 
 Kirki::add_field( $idealx_config_id , [
@@ -274,7 +288,6 @@ Kirki::add_field( $idealx_config_id, [
 		'background-size'       => '',
 		'background-attachment' => '',
 	],
-	'transport'   => 'auto',
 	'priority'    => 2,
 	'output'      => [
 		[
@@ -286,7 +299,7 @@ Kirki::add_field( $idealx_config_id, [
 
 Kirki::add_field( $idealx_config_id , [
 	'type'        => 'color',
-	'settings'    => 'archives-color-rgba-header-overlay',
+	'settings'    => 'pages-color-rgba-header-overlay',
 	'label'       => esc_html__( 'Pages Header overlay Color' , 'idealx' ),
   'section'     => 'pages_header_settings',
   'default'     => '',

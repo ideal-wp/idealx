@@ -67,27 +67,27 @@ if (!empty($idealx_options['idealx_h6_family']['line-height'])) {
 
 ?>
 .elementor-widget-heading h1.elementor-heading-title {
-line-height: <?php echo $idealx_h1_lineheight; ?>;
+line-height: <?php echo esc_html( $idealx_h1_lineheight); ?>;
 }
 
 .elementor-widget-heading h2.elementor-heading-title {
-line-height: <?php echo $idealx_h2_lineheight; ?>;
+line-height: <?php echo esc_html($idealx_h2_lineheight); ?>;
 }
 
 .elementor-widget-heading h3.elementor-heading-title {
-line-height: <?php echo $idealx_h3_lineheight; ?>;
+line-height: <?php echo esc_html($idealx_h3_lineheight); ?>;
 }
 
 .elementor-widget-heading h4.elementor-heading-title {
-line-height: <?php echo $idealx_h4_lineheight; ?>;
+line-height: <?php echo esc_html($idealx_h4_lineheight); ?>;
 }
 
 .elementor-widget-heading h5.elementor-heading-title {
-line-height: <?php echo $idealx_h5_lineheight; ?>;
+line-height: <?php echo esc_html($idealx_h5_lineheight); ?>;
 }
 
 .elementor-widget-heading h6.elementor-heading-title {
-line-height: <?php echo $idealx_h6_lineheight; ?>;
+line-height: <?php echo esc_html($idealx_h6_lineheight); ?>;
 }
 <?php
 
@@ -211,7 +211,7 @@ if (!empty($idealx_options['h6-phone-font-size'])) {
 
 $idealx_h1_desktop_size = intval($idealx_h1_font_size) * intval($idealx_h1_small_desktop_font_size_system) / 100;
 $idealx_h1_tablet_size = intval($idealx_h1_font_size) * intval($idealx_h1_tablet_font_size_system) / 100;
-$h1_phone_size = intval($idealx_h1_font_size) * intval($idealx_h1_phone_font_size_system) / 100;
+$idealx_h1_phone_size = intval($idealx_h1_font_size) * intval($idealx_h1_phone_font_size_system) / 100;
 
 if (!empty($idealx_options['idealx_h2_family']['font-size'])) {
     $idealx_h2_font_size = intval($idealx_options['idealx_h2_family']['font-size']);
@@ -220,8 +220,8 @@ if (!empty($idealx_options['idealx_h2_family']['font-size'])) {
 }
 
 $idealx_h2_desktop_size = intval($idealx_h2_font_size) * intval($idealx_h2_small_desktop_font_size_system) / 100;
-$h2_tablet_size = intval($idealx_h2_font_size) * intval($idealx_h2_tablet_font_size_system) / 100;
-$h2_phone_size = intval($idealx_h2_font_size) * intval($idealx_h2_phone_font_size_system) / 100;
+$idealx_h2_tablet_size = intval($idealx_h2_font_size) * intval($idealx_h2_tablet_font_size_system) / 100;
+$idealx_h2_phone_size = intval($idealx_h2_font_size) * intval($idealx_h2_phone_font_size_system) / 100;
 
 if (!empty($idealx_options['idealx_h3_family']['font-size'])) {
     $idealx_h3_font_size = intval($idealx_options['idealx_h3_family']['font-size']);
@@ -269,37 +269,37 @@ $idealx_h6_phone_size = intval($idealx_h6_font_size) * intval($idealx_h6_phone_f
 echo '
 @media only screen and (max-width: 1300px) and (min-width: 1000px) {
   h1,.elementor-widget-heading h1.elementor-heading-title{
-      font-size:' . $idealx_h1_desktop_size . 'px;
+      font-size:' . esc_html($idealx_h1_desktop_size ). 'px;
 
       line-height:170%;
     }
 
     h2,.elementor-widget-heading h2.elementor-heading-title{
-      font-size:' . $idealx_h2_desktop_size . 'px;
+      font-size:' . esc_html($idealx_h2_desktop_size) . 'px;
       line-height:150%;
 
     }
 
     h3,.elementor-widget-heading h3.elementor-heading-title{
-      font-size:' . $idealx_h3_desktop_size . 'px;
+      font-size:' . esc_html($idealx_h3_desktop_size) . 'px;
       line-height:140%;
 
     }
 
     h4,.elementor-widget-heading h4.elementor-heading-title{
-      font-size:' . $idealx_h4_desktop_size . 'px;
+      font-size:' . esc_html($idealx_h4_desktop_size) . 'px;
       line-height:140%;
 
     }
 
     h5,.elementor-widget-heading h5.elementor-heading-title{
-      font-size:' . $idealx_h5_desktop_size . 'px;
+      font-size:' . esc_html($idealx_h5_desktop_size) . 'px;
       line-height:140%;
 
     }
 
     h6,.elementor-widget-heading h6.elementor-heading-title{
-      font-size:' . $idealx_h6_desktop_size . 'px;
+      font-size:' . esc_html($idealx_h6_desktop_size) . 'px;
       line-height:140%;
 
     }
@@ -310,36 +310,36 @@ echo '
 @media only screen and (max-width: 999px) and (min-width: 690px) {
 
     h1,.elementor-widget-heading h1.elementor-heading-title{
-      font-size:' . $idealx_h1_tablet_size . 'px;
+      font-size:' . esc_html($idealx_h1_tablet_size) . 'px;
       line-height:160%;
     }
 
     h2,.elementor-widget-heading h2.elementor-heading-title{
-      font-size:' . $h2_tablet_size . 'px;
+      font-size:' . esc_html($idealx_h2_tablet_size ). 'px;
       line-height:160%;
 
     }
 
     h3,.elementor-widget-heading h3.elementor-heading-title{
-      font-size:' . $idealx_h3_tablet_size . 'px;
+      font-size:' . esc_html($idealx_h3_tablet_size) . 'px;
       line-height:140%;
 
     }
 
     h4,.elementor-widget-heading h4.elementor-heading-title{
-      font-size:' . $idealx_h4_tablet_size . 'px;
+      font-size:' . esc_html($idealx_h4_tablet_size) . 'px;
       line-height:140%;
 
     }
 
     h5,.elementor-widget-heading h5.elementor-heading-title{
-      font-size:' . $idealx_h5_tablet_size . 'px;
+      font-size:' . esc_html($idealx_h5_tablet_size) . 'px;
       line-height:140%;
 
     }
 
     h6,.elementor-widget-heading h6.elementor-heading-title{
-      font-size:' . $idealx_h6_tablet_size . 'px;
+      font-size:' . esc_html($idealx_h6_tablet_size) . 'px;
       line-height:140%;
 
     }
@@ -349,37 +349,37 @@ echo '
 @media only screen and (max-width: 690px) {
 
     h1,.elementor-widget-heading h1.elementor-heading-title{
-      font-size:' . $h1_phone_size . 'px;
+      font-size:' . esc_html($idealx_h1_phone_size) . 'px;
       line-height:150%;
 
     }
 
     h2,.elementor-widget-heading h2.elementor-heading-title{
-      font-size:' . $h2_phone_size . 'px;
+      font-size:' . esc_html($idealx_h2_phone_size) . 'px;
       line-height:140%;
 
     }
 
     h3,.elementor-widget-heading h3.elementor-heading-title{
-      font-size:' . $idealx_h3_phone_size . 'px;
+      font-size:' . esc_html($idealx_h3_phone_size) . 'px;
       line-height:120%;
 
     }
 
     h4,.elementor-widget-heading h4.elementor-heading-title{
-      font-size:' . $idealx_h4_phone_size . 'px;
+      font-size:' . esc_html($idealx_h4_phone_size) . 'px;
       line-height:120%;
 
     }
 
     h5,.elementor-widget-heading h5.elementor-heading-title{
-      font-size:' . $idealx_h5_phone_size . 'px;
+      font-size:' . esc_html($idealx_h5_phone_size) . 'px;
       line-height:120%;
 
     }
 
     h6,.elementor-widget-heading h6.elementor-heading-title{
-      font-size:' . $idealx_h6_phone_size . 'px;
+      font-size:' . esc_html($idealx_h6_phone_size) . 'px;
       line-height:120%;
 
     }
@@ -390,88 +390,31 @@ echo '
 /*-=========================[ menu ]=====================- */
 
 echo '
-#idealx-nav-c ,#idealx-nav-c a {
-   '
-    . (!empty($idealx_options['header-font-f']['color']) ?
-    'color: ' . $idealx_options['header-font-f']['color'] . ';' : null) . '
-  ' . (!empty($idealx_options['header-font-f']['font-family']) ? '
-  font-family: ' . $idealx_options['header-font-f']['font-family'] . ';' : null) . '
-  ' . (!empty($idealx_options['header-font-f']['font-size']) ? '
-  font-size:' . $idealx_options['header-font-f']['font-size'] . ';' : null) . '
-  ' . (!empty($idealx_options['header-font-f']['line-height']) ? '
-  line-height: ' . $idealx_options['header-font-f']['line-height'] . ';' : null) . '
-  ' . (!empty($idealx_options['header-font-f']['letter-spacing']) ? '
-  letter-spacing: ' . $idealx_options['header-font-f']['letter-spacing'] . ';' : null) . '
-  ' . (!empty($idealx_options['header-font-f']['text-align']) ? '
-  text-align: ' . $idealx_options['header-font-f']['text-align'] . ';' : null) . '
-  ' . (!empty($idealx_options['header-font-f']['text-transform']) ? '
-  text-transform:' . $idealx_options['header-font-f']['text-transform'] . ';' : null) . '
-  ' . (!empty($idealx_options['header-font-f']['font-weight']) ? '
-  font-weight:' . $idealx_options['header-font-f']['font-weight'] . ';' : null) . '
 
-}
 ' . (!empty($idealx_options['navbar-light-color-moode']) ? '
 .uk-light #idealx-nav-c .uk-navbar-nav>li>a{
-  color:' . $idealx_options['navbar-light-color-moode'] . ';
+  color:' .esc_html( $idealx_options['navbar-light-color-moode'] ). ';
 }' : null) . '
 
 ' . (!empty($idealx_options['navbar-dark-color-moode']) ? '
 
 .uk-dark  #idealx-nav-c .uk-navbar-nav>li>a{
-  color:' . $idealx_options['navbar-dark-color-moode'] . ';
+  color:' . esc_html($idealx_options['navbar-dark-color-moode']) . ';
 }' : null) . '
 
 ' . (!empty($idealx_options['header-font-f']) ? '
 .uk-active #idealx-nav-c .uk-navbar-nav>li>a{
-  color:' . $idealx_options['header-font-f']['color'] . ';
+  color:' . esc_html($idealx_options['header-font-f']['color']) . ';
 }' : null) . '
 ' . (!empty($idealx_options['menu-header-link-hover']['hover']) ? '
 #idealx-nav-c .uk-navbar-nav>li>a:hover{
-  color:' . $idealx_options['menu-header-link-hover']['hover'] . ';
+  color:' . esc_html($idealx_options['menu-header-link-hover']['hover']) . ';
 }' : null) . '
 ' . (!empty($idealx_options['menu-header-link-hover']['active']) ? '
 #idealx-nav-c .uk-navbar-nav>li.uk-active>a{
-  color:' . $idealx_options['menu-header-link-hover']['active'] . ';
+  color:' . esc_html($idealx_options['menu-header-link-hover']['active']) . ';
 }' : null) . '
-.idealx-Logo a,.idealx-Logo h2{' . (!empty($idealx_options['logo-font-no-img']['color']) ? '
-  color:' . $idealx_options['logo-font-no-img']['color'] . ';' : null) . '
-  ' . (!empty($idealx_options['logo-font-no-img']['font-family']) ? '
-  font-family:' . $idealx_options['logo-font-no-img']['font-family'] . ';' : null) . '
-  ' . (!empty($idealx_options['logo-font-no-img']['font-size']) ? '
-  font-size:' . $idealx_options['logo-font-no-img']['font-size'] . ';' : null) . '
-  ' . (!empty($idealx_options['logo-font-no-img']['line-height']) ? '
-  line-height:' . $idealx_options['logo-font-no-img']['line-height'] . ';' : null) . '
-  ' . (!empty($idealx_options['logo-font-no-img']['letter-spacing']) ? '
-  letter-spacing:' . $idealx_options['logo-font-no-img']['letter-spacing'] . ';' : null) . '
-  ' . (!empty($idealx_options['logo-font-no-img']['text-align']) ? '
-  text-align:' . $idealx_options['logo-font-no-img']['text-align'] . ';' : null) . '
-  ' . (!empty($idealx_options['logo-font-no-img']['text-transform']) ? '
-  text-transform:' . $idealx_options['logo-font-no-img']['text-transform'] . ';' : null) . '  ' . (!empty($idealx_options['logo-font-no-img']['font-weight']) ? '
-  font-weight:' . $idealx_options['logo-font-no-img']['font-weight'] . ';' : null) . '
-}
 
-#m-t-offcanvas .uk-nav-default>li>a,.uk-nav-default>li.uk-active>a,.uk-offcanvas-bar .uk-nav-default .uk-nav-sub li.uk-active>a,.uk-offcanvas-bar .uk-nav-default .uk-nav-sub a{
-  ' . (!empty($idealx_options['font-offcanvas']['color']) ? '
-  color: ' . $idealx_options['font-offcanvas']['color'] . ';' : null) . '
-  ' . (!empty($idealx_options['font-offcanvas']['font-family']) ? '
-  font-family:' . $idealx_options['font-offcanvas']['font-family'] . ';' : null) . '
-  ' . (!empty($idealx_options['font-offcanvas']['font-size']) ? '
-  font-size: ' . $idealx_options['font-offcanvas']['font-size'] . ';' : null) . '
-  ' . (!empty($idealx_options['font-offcanvas']['line-height']) ? '
-  line-height:' . $idealx_options['font-offcanvas']['line-height'] . ';' : null) . '
-  ' . (!empty($idealx_options['font-offcanvas']['letter-spacing']) ? '
-  letter-spacing:' . $idealx_options['font-offcanvas']['letter-spacing'] . ';' : null) . '
-  ' . (!empty($idealx_options['font-offcanvas']['text-align']) ? '
-  text-align:' . $idealx_options['font-offcanvas']['text-align'] . ';' : null) . '
-  ' . (!empty($idealx_options['font-offcanvas']['text-transform']) ? '
-  text-transform:' . $idealx_options['font-offcanvas']['text-transform'] . ';' : null) . '
-  ' . (!empty($idealx_options['font-offcanvas']['font-weight']) ? '
-  font-weight:' . $idealx_options['font-offcanvas']['font-weight'] . ';' : null) . '
-}
-' . (!empty($idealx_options['font-offcanvas']['color']) ? '
-.uk-offcanvas-bar .uk-nav-parent-icon>.uk-parent>a::after{
-  color:' . $idealx_options['font-offcanvas']['color'] . '!important;
-}' : null) . '
 ';
 /*-=========================[ Page Header ]=====================-*/
 echo '
@@ -479,44 +422,23 @@ echo '
 ' . (!empty($idealx_options['header-text-color']) ? '
 .id-bh-inner-wrap{
   
-  color:' . $idealx_options['header-text-color'] . ';
+  color:' . esc_html($idealx_options['header-text-color']) . ';
 }' : null) . '
 
 ' . (!empty($idealx_options['header-text-color']) ? '
 .id-bh-inner-wrap a{
-  color:' . $idealx_options['header-text-color'] . ';
+  color:' . esc_html($idealx_options['header-text-color']) . ';
 }' : null) . '
-
-.ar-entry-title h1{
-  ' . (!empty($idealx_options['archives-header-font']['color']) ? '
-  color:' . $idealx_options['archives-header-font']['color'] . ';' : null) . '
-  ' . (!empty($idealx_options['archives-header-font']['font-family']) ? '
-  font-family:' . $idealx_options['archives-header-font']['font-family'] . ';' : null) . '
-  ' . (!empty($idealx_options['archives-header-font']['font-size']) ? '
-  font-size: ' . $idealx_options['archives-header-font']['font-size'] . ';' : null) . '
-  ' . (!empty($idealx_options['archives-header-font']['lline-height']) ? '
-  line-height:' . $idealx_options['archives-header-font']['line-height'] . ';' : null) . '
-  ' . (!empty($idealx_options['archives-header-font']['letter-spacing']) ? '
-  letter-spacing:' . $idealx_options['archives-header-font']['letter-spacing'] . ';' : null) . '
-  ' . (!empty($idealx_options['archives-header-font']['text-align']) ? '
-  text-align:' . $idealx_options['archives-header-font']['text-align'] . ';' : null) . '
-  ' . (!empty($idealx_options['archives-header-font']['text-transform']) ? '
-  text-transform:' . $idealx_options['archives-header-font']['text-transform'] . ';' : null) . '
-  ' . (!empty($idealx_options['archives-header-font']['font-weight']) ? '
-  font-weight:' . $idealx_options['archives-header-font']['font-weight'] . ';' : null) . '
-  ' . (!empty($idealx_options['archives-header-font']['word-spacing']) ? '
-  word-spacing:' . $idealx_options['archives-header-font']['word-spacing'] . ';' : null) . '
-}
 
 ' . (!empty($idealx_options['ar-header-text-color']) ? '
 .id-archives-inner-wrap,.id-archives-inner-wrap em{
-  color: ' . $idealx_options['ar-header-text-color'] . ';
+  color: ' . esc_html($idealx_options['ar-header-text-color']) . ';
 }' : null) . '
 
 
 ' . (!empty($idealx_options['ar-header-text-color'])? '
 .id-archives-inner-wrap a{ 
-  color:' . $idealx_options['ar-header-text-color'] . ';
+  color:' . esc_html($idealx_options['ar-header-text-color']) . ';
 }' : null) . '
 ';
 

@@ -7,11 +7,11 @@ if(idealx_is_woocommerce_activated() == false){
 }
 
   global $woocommerce;
-  $count = $woocommerce->cart->cart_contents_count; 
+  $idealx_count = $woocommerce->cart->cart_contents_count; 
   if( $woocommerce ) {
 ?>
 <li>
-  <a class="cart-countss-nav" href="<?php echo wc_get_cart_url(); ?>"> <span class="" uk-icon="cart"></span>
+  <a class="cart-countss-nav" href="<?php echo esc_url(wc_get_cart_url()); ?>"> <span class="" uk-icon="cart"></span>
     <span class="cart-count-nav"> <?php echo esc_html( $woocommerce->cart->cart_contents_count ); ?></span>
   </a>
   <div class="idealx-woo-cart-nav" uk-dropdown="animation: uk-animation-slide-top-small; duration: 500">

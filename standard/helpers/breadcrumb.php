@@ -22,12 +22,12 @@ function idealx_get_breadcrumb()
         the_category(', ');
         if (is_single()) {
             echo esc_html(' &#8811; ');
-            the_title();
+            esc_html(the_title());
         }
     } elseif (is_page()) {
 
         echo esc_html(' &#8811; ');
-				echo the_title();
+				echo esc_html(the_title());
 				
     } elseif (is_search()) {
 			

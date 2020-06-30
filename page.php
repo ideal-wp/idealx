@@ -16,7 +16,7 @@ global $idealx_is_page_sidebar,$idealx_is_page_cards,$idealx_flex,$idealx_is_sti
 get_template_part( 'includes/partials/page-header/pages-header' );
 ?>
 <div id="idealx-pagecontent" class="idealx-site-content uk-section">
-  <div id="idealx-page-content-inner" class="uk-container <?php echo $idealx_id_container; ?>">
+  <div id="idealx-page-content-inner" class="uk-container <?php echo  esc_html($idealx_id_container); ?>">
     <?php if ($idealx_is_page_sidebar == false) {?>
     <div class=" uk-grid-column-small" uk-grid>
       <div class="id-con-warp uk-width-expand@m">
@@ -40,9 +40,9 @@ get_template_part( 'includes/partials/page-header/pages-header' );
         </div>
       </div>
       <!--/id-con-warp-->
-      <div id="sidebar" class="uk-width-1-4@m uk-width-1-4@l <?php echo $idealx_flex ; ?>">
+      <div id="sidebar" class="uk-width-1-4@m uk-width-1-4@l <?php echo  esc_html($idealx_flex) ; ?>">
         <div class=" uk-container uk-container-expand " id="blog-sidebar">
-          <div class="side-bar uk-flex uk-flex-column" <?php echo $idealx_is_sticky; ?>>
+          <div class="side-bar uk-flex uk-flex-column" <?php echo  esc_html($idealx_is_sticky); ?>>
             <?php get_sidebar();?>
           </div>
         </div>

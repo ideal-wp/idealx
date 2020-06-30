@@ -105,7 +105,6 @@
 			
 			$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 		}
-		
 		/**
 			* Traverse elements to create list from elements.
 			*
@@ -171,8 +170,8 @@
 				
 				$fb_output .= '<ul';
 				
-				if ( $menu_id )
-				$fb_output .= ' id="' . $menu_id . '"';
+				if ($menu_id )
+				$fb_output .= ' id="' .$menu_id . '"';
 				
 				if ( $menu_class )
 				$fb_output .= ' class="' . $menu_class . '"';
@@ -361,8 +360,8 @@
 				
 				$fb_output .= '<ul';
 				
-				if ( $menu_id )
-				$fb_output .= ' id="' . $menu_id . '"';
+				if ($menu_id )
+				$fb_output .= ' id="' .$menu_id . '"';
 				
 				if ( $menu_class )
 				$fb_output .= ' class="' . $menu_class . '"';
@@ -531,8 +530,8 @@
 				
 				$fb_output .= '<ul';
 				
-				if ( $menu_id )
-				$fb_output .= ' id="' . $menu_id . '"';
+				if ($menu_id )
+				$fb_output .= ' id="' .$menu_id . '"';
 				
 				if ( $menu_class )
 				$fb_output .= ' class="' . $menu_class . '"';

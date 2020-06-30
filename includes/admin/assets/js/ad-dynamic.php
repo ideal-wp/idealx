@@ -28,10 +28,10 @@ $idealx_sub_plus     =  $idealx_core_theme_options['id_sub_plus_color'];
         width: 250,
         border: true,
         palettes: [
-        "'.$idealx_primary .'",
-        "'.$idealx_secondary.'",
-        "'. $idealx_sub_color.'",
-        "'. $idealx_sub_plus .'",
+        "'.esc_html($idealx_primary) .'",
+        "'.esc_html($idealx_secondary).'",
+        "'. esc_html($idealx_sub_color).'",
+        "'. esc_html($idealx_sub_plus) .'",
         "#ffffff",
         "#000000",
         ]
@@ -52,10 +52,10 @@ if(class_exists('idealx_Core')){
           clear: function() {},
           hide: true,
           palettes: [
-          "'.  $idealx_primary .'",
-          "'. $idealx_secondary.'",
-          "'. $idealx_sub_color.'",
-          "'.  $idealx_sub_plus.'",
+            "'.esc_html($idealx_primary) .'",
+            "'.esc_html($idealx_secondary).'",
+            "'. esc_html($idealx_sub_color).'",
+            "'. esc_html($idealx_sub_plus) .'",
           " #ffffff",
           "#000000",
             ]
@@ -70,10 +70,10 @@ if(class_exists('idealx_Core')){
     clear: function() {},
     hide: true,
     palettes: [
-    "'.  $idealx_primary .'",
-    "'. $idealx_secondary.'",
-    "'. $idealx_sub_color.'",
-    "'.  $idealx_sub_plus.'",
+      "'.esc_html($idealx_primary) .'",
+      "'.esc_html($idealx_secondary).'",
+      "'. esc_html($idealx_sub_color).'",
+      "'. esc_html($idealx_sub_plus) .'",
     " #ffffff",
     "#000000",
     

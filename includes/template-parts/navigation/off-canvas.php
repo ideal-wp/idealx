@@ -8,40 +8,40 @@
  * @version 1.0.0
  */
 $idealx_options = idealx_get_theme_options();
-$flip = null;
+$idealx_flip = null;
 
 if (!empty($idealx_options['mobile-o-c-modes'])) {
 
-    $modes = $idealx_options['mobile-o-c-modes'];
+    $idealx_modes = $idealx_options['mobile-o-c-modes'];
 
-    switch ($modes) {
+    switch ($idealx_modes) {
         case 'slide':
-            $modes = 'mode:slide';
+            $idealx_modes = 'mode:slide';
             break;
         case 'push':
-            $modes = 'mode: push';
+            $idealx_modes = 'mode: push';
             break;
         case 'reveal':
-            $modes = 'mode: reveal';
+            $idealx_modes = 'mode: reveal';
             break;
         case 'none':
-            $modes = null;
+            $idealx_modes = null;
             break;
 
     }
 } else {
-    $modes = null;
+    $idealx_modes = null;
 }
 
 if (! empty($idealx_options['mobile-o-c-flip']) && $idealx_options['mobile-o-c-flip'] == 'right') {
 
-    $flip = '; flip: true';
+    $idealx_flip = '; flip: true';
 }
 // menu off-canvas layout
 if (!empty($idealx_options['header-layout']) && $idealx_options['header-layout'] == '5' && !empty($idealx_options['mobile-select-menu']) &&  $idealx_options['mobile-select-menu'] == 'off-canvas') {
 ?>
 <div class="m-at-offcanvas " id="offcanvas-overlay"
-  uk-offcanvas=" mode: <?php echo $modes; ?>   <?php echo $flip; ?>; overlay: true; esc-close:true; bg-close:true;">
+  uk-offcanvas=" mode: <?php echo esc_html($idealx_modes); ?>   <?php echo  esc_html($idealx_flip); ?>; overlay: true; esc-close:true; bg-close:true;">
   <div id="m-t-offcanvas" class="uk-offcanvas-bar">
     <button class="uk-offcanvas-close" type="button" uk-close></button>
     <div class="idealx-mobile-menu" id="idealx-mobile-nav">
@@ -56,7 +56,7 @@ if (!empty($idealx_options['header-layout']) && $idealx_options['header-layout']
 // mobile menu offcanvas
 ?>
 <div class="m-at-offcanvas uk-hidden@m" id="offcanvas-overlay"
-  uk-offcanvas="  <?php echo $modes; ?>  <?php echo $flip; ?>; overlay: true; esc-close:true; bg-close:true;">
+  uk-offcanvas="  <?php echo  esc_html($idealx_modes); ?>  <?php echo  esc_html($idealx_flip); ?>; overlay: true; esc-close:true; bg-close:true;">
   <div id="m-t-offcanvas" class="uk-offcanvas-bar">
     <button class="uk-offcanvas-close" type="button" uk-close></button>
     <div class="idealx-mobile-menu" id="idealx-mobile-nav">

@@ -9,14 +9,14 @@
 if (!defined('ABSPATH')) {
     exit;
 }
-$site_name = get_bloginfo( 'name' );
+$idealx_site_name = get_bloginfo( 'name' );
 
 ?>
 
   <div id="copyright" class="copyright">
     <div class="uk-container uk-container-expand">
       <div class="">
-        <p>&#169; <?php  echo  date('Y').' ' . $site_name ;?>.
+        <p>&#169; <?php  echo  esc_html(date('Y')).' ' .esc_html($idealx_site_name)  ;?>.
         </p>
       </div>
     </div>

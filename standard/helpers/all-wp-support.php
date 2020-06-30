@@ -119,12 +119,12 @@ if (!function_exists('idealx_pagination_bar')) {
         if ($total_pages > 1) {
             $current_page = max(1, get_query_var('paged'));
 
-            echo paginate_links(array(
+            echo esc_html(paginate_links(array(
                 'base' => get_pagenum_link(1) . '%_%',
                 'format' => 'page/%#%',
                 'current' => $current_page,
                 'total' => $total_pages,
-            ));
+            )));
         }
     }
 }
@@ -232,12 +232,12 @@ function idealx_output_options_hook_code() {
 
     if(! empty($idealx_options['code_html_editor']) ){ 
 
-        echo $idealx_options['code_html_editor']; 
+        echo esc_html($idealx_options['code_html_editor']); 
     }
 
     if(! empty($idealx_options['code_css_editor']) ){ 
 
-        echo '<style type="text/css">'.$idealx_options['code_css_editor'].'</style>'; 
+        echo '<style type="text/css">'.esc_html($idealx_options['code_css_editor']).'</style>'; 
     }
 
 }
@@ -248,7 +248,19 @@ function idealx_output_options_hook_code_in_footer() {
 
     if(! empty($idealx_options['code_js_editor']) ){
 
-        echo'<script type= "text/javascript">'. $idealx_options['code_js_editor'].'</script>';
+        echo'<script type= "text/javascript">'. esc_html($idealx_options['code_js_editor']).'</script>';
      }
 }
 
+//Set a custom header args
+$idealx_header_args = array(
+	'width'         => 1200,
+);
+add_theme_support( 'custom-header', $idealx_header_args );
+// add_theme_support( "custom-background", $args )
+$idealx_bacground_args = array(
+	'default-color' => 'ffffff',
+);
+add_theme_support( 'custom-background', $idealx_bacground_args );
+
+add_editor_style('assets/css/editor-style.css');

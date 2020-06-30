@@ -21,15 +21,15 @@ $idealx_is_Disabled = 'isDisabled';
               <li><a href="<?php echo esc_url(admin_url( 'customize.php?autofocus[section]=home_hero_callout_section' )) ?>"><span
                       class="uk-margin-small-right" uk-icon="icon: table"></span>
                     <?php esc_html_e( 'Home Hero Section', 'idealx' ) ?></a></li>
-                <li><a class="<?php echo $idealx_is_Disabled ;?>"
+                <li><a class="<?php echo esc_html($idealx_is_Disabled) ;?>"
                     href="<?php echo esc_url(admin_url( 'customize.php?autofocus[panel]=general_settings_panel' )) ?>"><span
                       class="uk-margin-small-right" uk-icon="icon: table" ></span>
                     <?php esc_html_e( 'General Settings ', 'idealx' ) ?></a></li>
-                <li><a class="<?php echo $idealx_is_Disabled ;?>"
+                <li><a class="<?php echo esc_html($idealx_is_Disabled) ;?>"
                     href="<?php echo esc_url(admin_url( 'customize.php?autofocus[panel]=-menu_settings_panel' )) ?>"><span
                       class="uk-margin-small-right" uk-icon="icon: table"></span>
                     <?php esc_html_e( 'Menu & Navigation', 'idealx' ) ?></a></li>
-                <li><a class="<?php echo $idealx_is_Disabled ;?>"
+                <li><a class="<?php echo esc_html($idealx_is_Disabled) ;?>"
                     href="<?php echo esc_url(admin_url( 'customize.php?autofocus[panel]=typography_settings' )) ?>"><span
                       class="uk-margin-small-right" uk-icon="icon: table"></span>
                     <?php esc_html_e( 'Typography', 'idealx' ) ?></a></li>
@@ -41,18 +41,18 @@ $idealx_is_Disabled = 'isDisabled';
           <div class=" uk-card uk-card-primary uk-text-left">
             <div class=" uk-card-body">
               <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-                <li><a class="<?php echo $idealx_is_Disabled ;?>" href="<?php echo esc_url(admin_url( 'customize.php?autofocus[panel]=page_header' )) ?>"><span
+                <li><a class="<?php echo esc_html($idealx_is_Disabled) ;?>" href="<?php echo esc_url(admin_url( 'customize.php?autofocus[panel]=page_header' )) ?>"><span
                       class="uk-margin-small-right" uk-icon="icon: table"></span>
                     <?php esc_html_e( 'Pages Header', 'idealx' ) ?></a></li>
-                <li><a class="<?php echo $idealx_is_Disabled ;?>"
+                <li><a class="<?php echo esc_html($idealx_is_Disabled) ;?>"
                     href="<?php echo esc_url(admin_url( 'customize.php?autofocus[panel]=sidebar_settings_panel' )) ?>"><span
                       class="uk-margin-small-right" uk-icon="icon: table"></span>
                     <?php esc_html_e( 'Sidebar', 'idealx' ) ?></a></li>
-                <li><a class="<?php echo $idealx_is_Disabled ;?>"
+                <li><a class="<?php echo esc_html($idealx_is_Disabled) ;?>"
                     href="<?php echo esc_url(admin_url( 'customize.php?autofocus[panel]=blog_settings_panel' )) ?>"><span
                       class="uk-margin-small-right" uk-icon="icon: table"></span>
                     <?php esc_html_e( 'Blog', 'idealx' ) ?></a></li>
-                <li><a class="<?php echo $idealx_is_Disabled ;?>"
+                <li><a class="<?php echo esc_html($idealx_is_Disabled) ;?>"
                     href="<?php echo esc_url(admin_url( 'customize.php?autofocus[panel]=page_settings_panel' )) ?>"><span
                       class="uk-margin-small-right" uk-icon="icon: table"></span>
                     <?php esc_html_e( 'Page Styling', 'idealx' ) ?></a></li>
@@ -67,7 +67,7 @@ $idealx_is_Disabled = 'isDisabled';
       <div class="uk-card uk-card-default uk-card-body">
         <span class="icon-admin-kirki-ero-no uk-icon-button" uk-icon="icon: warning; ratio: 5.5"></span>
         <a href="<?php echo esc_url(admin_url( 'themes.php?page=tgmpa-install-plugins&plugin_status=activate' )) ?>">
-                    <?php esc_html_e( 'Please active or instal Kriki Plugin to use The full Options', 'idealx' ) ?></a>
+                    <?php esc_html_e( 'Please active or instal Kirki Plugin to use The full Options', 'idealx' ) ?></a>
       </div>
       <?php } ?>
     </div>

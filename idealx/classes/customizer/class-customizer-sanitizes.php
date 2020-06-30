@@ -13,7 +13,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-if (class_exists('idealx_Customizer')) {
+if (class_exists('Idealx_Customizer')) {
     /**
      * class idealx Customizer Sanitizes
      * Sanitize Inputs
@@ -21,7 +21,7 @@ if (class_exists('idealx_Customizer')) {
      * @since 1.0.0
      */
 
-    class idealx_Customizer_Sanitizes
+    class Idealx_Customizer_Sanitizes
     {
 
         

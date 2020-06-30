@@ -1,2 +1,9 @@
+v1.0.1
+- new: add editor style
+- Improvement: 404 Page
+- Improvement: Update Ttemplate files name
+- Improvement: output Security escaping function 
+- Fix: javascript file not load
+
 v1.0.0
 - Initial release

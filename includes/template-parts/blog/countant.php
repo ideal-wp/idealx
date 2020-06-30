@@ -11,12 +11,12 @@ global $idealx_category,$idealx_card;?>
   <div class="article-inner-wrap">
     <div class="article-post-content">
       <div>
-        <div class="uk-card <?php echo $idealx_card ;?>">
+        <div class="uk-card <?php echo esc_html($idealx_card) ;?>">
         <?php if ( has_post_thumbnail()) { ?>
           <div class="uk-card-media-top">
             <img src="<?php
-                $featured_img_url = get_the_post_thumbnail_url();
-                echo esc_url($featured_img_url) ; ?>" alt="">
+                $idealx_featured_img_url = get_the_post_thumbnail_url();
+                echo esc_url($idealx_featured_img_url) ; ?>" alt="">
           </div>
         <?php } ?>
           <div class="uk-card-body">
@@ -24,13 +24,13 @@ global $idealx_category,$idealx_card;?>
             <div class="uk-grid-collapse uk-child-width-expand@s" uk-grid>
               <div>
                 <p class="uk-article-meta id-post-meta">
-                  <span uk-icon="icon: bookmark "></span> <?php echo get_primary_category($idealx_category); ?>
+                  <span uk-icon="icon: bookmark "></span> <?php   idealx_idealx_get_primary_category($idealx_category); ?>
                 </p>
               </div>
               <div>
                 <p class="uk-article-meta id-post-meta">
                   <span uk-icon="icon: calendar "></span>
-                  <?php echo  the_time('F d,y') ;?>
+                  <?php echo  esc_html(the_time('F d,y')) ;?>
                 </p>
               </div>
               <div>
@@ -44,6 +44,7 @@ global $idealx_category,$idealx_card;?>
             </div>
             <div class="id-excerpt uk-margin-smal-top">
               <?php  the_excerpt( sprintf(
+/* translators: draft saved date format, see http://php.net/date */
               __( 'Continue reading %s', 'idealx' ),
               the_title( '<span class="screen-reader-text">', '</span>', false )
             ) ); ?>

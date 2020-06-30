@@ -5,9 +5,9 @@ Requires at least : 4.0
 Requires PHP: 7.0
 Stable tag: 5.4.2
 License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-idealx is a fast, fully customization & beautiful WordPress theme suitable for blog, business website.
+idealx is a fast, fully customization & beautiful WordPress theme suitable for blog, business website. 
 
 == Features ==
 * Woocommerce
@@ -46,11 +46,15 @@ Yes, go here: https://wordpress.org/support/theme/idealx
 
 == Changelog ==
 = Theme Name: idealx =
+v1.0.1
+- new: add editor style
+- Improvement: 404 Page
+- Improvement: Update Ttemplate files name
+- Improvement: output Security escaping function 
+- Fix: javascript file not load
 
-= Version: 1.0.0 =
-
-* Initial Version
-
+v1.0.0
+- Initial releas
 
 == License ==
 
@@ -120,7 +124,7 @@ Licensed under GPL-2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
 
 ###
 = 404 - img =
-Free photo of Horizon Sun
-stocksnap https://stocksnap.io/photo/horizon-sun-KOR3PHALPR
-Licensed under CC0 License (https://stocksnap.io/license)
+Lovely bulldog pup
+src: (https://skitterphoto.com/photos/4169/lovely-bulldog-pup)
+Licensed under Creative Commons CC0 (https://skitterphoto.com/license)
 ###

@@ -14,9 +14,9 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-if (class_exists('idealx_Customizer')) {
+if (class_exists('Idealx_Customizer')) {
 
-    class idealx_Home_Hero_Section extends idealx_Customizer
+    class Idealx_Home_Hero_Section extends Idealx_Customizer
     {  
 
          
@@ -24,7 +24,7 @@ if (class_exists('idealx_Customizer')) {
         public function idealx_register_customize_sections($wp_customize)
         {
             /**
-             * parent class idealx_Customizer
+             * parent class Idealx_Customizer
              * Register sections control
              * @since 1.0.0 
              */
@@ -55,7 +55,7 @@ if (class_exists('idealx_Customizer')) {
                 'default'           => '',
                 'type'              => $opt_mode,
                 'capability'        => 'edit_theme_options',
-                'sanitize_callback' => array(new idealx_Customizer_Sanitizes(), 'sanitize_select'),
+                'sanitize_callback' => array(new Idealx_Customizer_Sanitizes(), 'sanitize_select'),
             ));
 
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'home-hero-callout-display-control', array(
@@ -76,7 +76,7 @@ if (class_exists('idealx_Customizer')) {
                 'default'           => '',
                 'type'              => $opt_mode,
                 'capability'        => 'edit_theme_options',
-                'sanitize_callback' => array(new idealx_Customizer_Sanitizes(), 'sanitize_text'),
+                'sanitize_callback' => array(new Idealx_Customizer_Sanitizes(), 'sanitize_text'),
             ));
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'home-hero-textheader', array(
                 'label'     => esc_html__('Hero section heading Text', 'idealx'),
@@ -90,7 +90,7 @@ if (class_exists('idealx_Customizer')) {
                 'default'           => '',
                 'type'              => $opt_mode,
                 'capability'        => 'edit_theme_options',
-                'sanitize_callback' => array(new idealx_Customizer_Sanitizes(), 'sanitize_text'),
+                'sanitize_callback' => array(new Idealx_Customizer_Sanitizes(), 'sanitize_text'),
             ));
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'home-hero-textarea', array(
                 'label'     => esc_html__( 'Add subheading text', 'idealx'),
@@ -104,7 +104,7 @@ if (class_exists('idealx_Customizer')) {
                 'default'           => '',
                 'type'              => $opt_mode,
                 'capability'        => 'edit_theme_options',
-                'sanitize_callback' => array(new idealx_Customizer_Sanitizes(), 'sanitize_hex_color'),
+                'sanitize_callback' => array(new Idealx_Customizer_Sanitizes(), 'sanitize_hex_color'),
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'home-hero-textcolor', array(
                 'label'     => esc_html__( 'Chose your Hero section font color', 'idealx'),
@@ -117,7 +117,7 @@ if (class_exists('idealx_Customizer')) {
                 'default'           => '',
                 'type'              => $opt_mode,
                 'capability'        => 'edit_theme_options',
-                'sanitize_callback' => array(new idealx_Customizer_Sanitizes(), 'sanitize_hex_color'),
+                'sanitize_callback' => array(new Idealx_Customizer_Sanitizes(), 'sanitize_hex_color'),
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'home-hero-bacgroundcolor', array(
                 'label'     => esc_html__( 'Chose your Hero section background color', 'idealx'),
@@ -130,7 +130,7 @@ if (class_exists('idealx_Customizer')) {
                 'default'           => '',
                 'type'              => $opt_mode,
                 'capability'        => 'edit_theme_options',
-                'sanitize_callback' => array(new idealx_Customizer_Sanitizes(), 'sanitize_url'),
+                'sanitize_callback' => array(new Idealx_Customizer_Sanitizes(), 'sanitize_url'),
             ));
             $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'home-hero-background', array(
                 'label'     => esc_html__( 'Add Image Background to Hero section', 'idealx'),
@@ -143,7 +143,7 @@ if (class_exists('idealx_Customizer')) {
                 'default'           => '',
                 'type'              => $opt_mode,
                 'capability'        => 'edit_theme_options',
-                'sanitize_callback' => array(new idealx_Customizer_Sanitizes(), 'sanitize_select'),
+                'sanitize_callback' => array(new Idealx_Customizer_Sanitizes(), 'sanitize_select'),
             ));
 
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'hero_select_button_s', array(
@@ -160,7 +160,7 @@ if (class_exists('idealx_Customizer')) {
                 'default'           => '',
                 'type'              => $opt_mode,
                 'capability'        => 'edit_theme_options',
-                'sanitize_callback' => array(new idealx_Customizer_Sanitizes(), 'sanitize_text'),
+                'sanitize_callback' => array(new Idealx_Customizer_Sanitizes(), 'sanitize_text'),
             ));
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'secondary_button_text', array(
                 'label'     => esc_html__('Secondary Button Text', 'idealx'),
@@ -172,7 +172,7 @@ if (class_exists('idealx_Customizer')) {
                 'default'           => '',
                 'type'              => $opt_mode,
                 'capability'        => 'edit_theme_options',
-                'sanitize_callback' => array(new idealx_Customizer_Sanitizes(), 'sanitize_url'),
+                'sanitize_callback' => array(new Idealx_Customizer_Sanitizes(), 'sanitize_url'),
             ));
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'secondary_button_link', array(
                 'label'     => esc_html__('Secondary Button Link', 'idealx'),
@@ -184,7 +184,7 @@ if (class_exists('idealx_Customizer')) {
                 'default'           => '',
                 'type'              => $opt_mode,
                 'capability'        => 'edit_theme_options',
-                'sanitize_callback' => array(new idealx_Customizer_Sanitizes(), 'sanitize_select'),
+                'sanitize_callback' => array(new Idealx_Customizer_Sanitizes(), 'sanitize_select'),
             ));
 
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'hero_select_primary_button_s', array(
@@ -201,7 +201,7 @@ if (class_exists('idealx_Customizer')) {
                 'default'           => '',
                 'type'              => $opt_mode,
                 'capability'        => 'edit_theme_options',
-                'sanitize_callback' => array(new idealx_Customizer_Sanitizes(), 'sanitize_text'),
+                'sanitize_callback' => array(new Idealx_Customizer_Sanitizes(), 'sanitize_text'),
             ));
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'primary_button_text', array(
                 'label'     => esc_html__('primary Button Text', 'idealx'),
@@ -213,7 +213,7 @@ if (class_exists('idealx_Customizer')) {
                 'default'           => '',
                 'type'              => $opt_mode,
                 'capability'        => 'edit_theme_options',
-                'sanitize_callback' => array(new idealx_Customizer_Sanitizes(), 'sanitize_url'),
+                'sanitize_callback' => array(new Idealx_Customizer_Sanitizes(), 'sanitize_url'),
             ));
             $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'primary_button_link', array(
                 'label'     => esc_html__('primary Button Link', 'idealx'),
@@ -226,7 +226,7 @@ if (class_exists('idealx_Customizer')) {
                 'default'           => '',
                 'type'              => $opt_mode,
                 'capability'        => 'edit_theme_options',
-                'sanitize_callback' => array(new idealx_Customizer_Sanitizes(), 'sanitize_hex_color'),
+                'sanitize_callback' => array(new Idealx_Customizer_Sanitizes(), 'sanitize_hex_color'),
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'hero_primary_button_bg_color', array(
                 'label'     => esc_html__( 'Chose your Brimary Button Background color', 'idealx'),
@@ -238,7 +238,7 @@ if (class_exists('idealx_Customizer')) {
                 'default'           => '#fff',
                 'type'              => $opt_mode,
                 'capability'        => 'edit_theme_options',
-                'sanitize_callback' => array(new idealx_Customizer_Sanitizes(), 'sanitize_hex_color'),
+                'sanitize_callback' => array(new Idealx_Customizer_Sanitizes(), 'sanitize_hex_color'),
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'hero_primary_button_hover_color', array(
                 'label'     => esc_html__( 'Chose your Brimary Button Background Hover color', 'idealx'),
@@ -251,7 +251,7 @@ if (class_exists('idealx_Customizer')) {
                 'default'           => '',
                 'type'              => $opt_mode,
                 'capability'        => 'edit_theme_options',
-                'sanitize_callback' => array(new idealx_Customizer_Sanitizes(), 'sanitize_hex_color'),
+                'sanitize_callback' => array(new Idealx_Customizer_Sanitizes(), 'sanitize_hex_color'),
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'hero_primary_button_text_color', array(
                 'label'     => esc_html__( 'Chose your Brimary Button Text color', 'idealx'),
@@ -263,7 +263,7 @@ if (class_exists('idealx_Customizer')) {
                 'default'           => '',
                 'type'              => $opt_mode,
                 'capability'        => 'edit_theme_options',
-                'sanitize_callback' => array(new idealx_Customizer_Sanitizes(), 'sanitize_hex_color'),
+                'sanitize_callback' => array(new Idealx_Customizer_Sanitizes(), 'sanitize_hex_color'),
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'hero_primary_button_text_h_color', array(
                 'label'     => esc_html__( 'Chose your Brimary Button Text Hover color', 'idealx'),
@@ -282,4 +282,4 @@ if (class_exists('idealx_Customizer')) {
 
     }
 }
-new idealx_Home_Hero_Section();
+new Idealx_Home_Hero_Section();

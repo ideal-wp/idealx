@@ -7,13 +7,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 $idealx_options = idealx_get_theme_options();
 
 
-$menu = 0;
+$idealx_menu = 0;
  
 if( ! empty( $idealx_options['header-layout'] )){
-  $menu = $idealx_options['header-layout'];
+  $idealx_menu = $idealx_options['header-layout'];
 }
 
-switch ($menu){
+switch ($idealx_menu){
     case '1':
       get_template_part( '/includes/partials/header/menu/menu', 'left' );
 
@@ -40,6 +40,4 @@ switch ($menu){
     
     break;
 
-}
-?>
-  
+}  

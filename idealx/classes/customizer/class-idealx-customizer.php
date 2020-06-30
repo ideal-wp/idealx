@@ -15,13 +15,13 @@ if (!defined('ABSPATH')) {
 /**
  * idealx Customizer Loader
  */
-if (!class_exists('idealx_Customizer')) {
+if (!class_exists('Idealx_Customizer')) {
     /**
      * idealx Customizer Loader
      *
      * @since 1.0.0
      */
-    class idealx_Customizer
+    class Idealx_Customizer
     {
 
         static $instance = null;
@@ -98,4 +98,4 @@ if (!class_exists('idealx_Customizer')) {
 
     }
 }
-new idealx_Customizer();
+new Idealx_Customizer();

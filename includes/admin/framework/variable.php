@@ -83,7 +83,7 @@ if (!empty($idealx_is_cards) && $idealx_is_cards == true ) {
 }
 
 if (!empty($idealx_options['repeat-scrollspy']) && $idealx_options['repeat-scrollspy'] == true) {
-    $idealx_animation_repeat = '  repeat: "true"';
+    $idealx_animation_repeat = 'repeat:"true"';
 
 } else{
     $idealx_animation_repeat = null;
@@ -91,7 +91,7 @@ if (!empty($idealx_options['repeat-scrollspy']) && $idealx_options['repeat-scrol
 
 if (!empty($idealx_options['add-scrollspy']) && $idealx_options['add-scrollspy'] == true) {
 
-    $idealx_animation = 'uk-scrollspy="cls: ' . $idealx_animation_class . '; target: .uk-card; delay: 500;' . $idealx_animation_repeat . '';
+    $idealx_animation = 'uk-scrollspy=cls:' . $idealx_animation_class . ';target:.uk-card;delay:500;' . $idealx_animation_repeat . '';
 }
 
 

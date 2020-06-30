@@ -23,7 +23,7 @@ if (is_front_page() || is_home()) {
       <div class="id-header-pages-inner-wrap">
         <div>
           <div id="pages-entry-title" class="ar-entry-title pages-entry-title">
-            <h1 class=""> <?php echo $idealx_pages_header_titel ?></h1>
+            <h1 class=""> <?php echo esc_html($idealx_pages_header_titel) ?></h1>
           </div>
 
             <?php

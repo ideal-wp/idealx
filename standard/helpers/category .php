@@ -3,7 +3,7 @@
 if (!defined('ABSPATH')) {
     exit;
 }
-function get_primary_category($idealx_category)
+function idealx_idealx_get_primary_category($idealx_category)
 {
     $useCatLink = true;
     // If post has a category assigned.
@@ -32,9 +32,12 @@ function get_primary_category($idealx_category)
         // Display category
         if (!empty($idealx_category_display)) {
             if ($useCatLink == true && !empty($idealx_category_link)) {
-                return '<a href="' . esc_url($idealx_category_link) . '">' . esc_html($idealx_category_display) . '</a>';
+               
+               echo '<a href="' . esc_url($idealx_category_link) . '">' . esc_html($idealx_category_display) . '</a>';
+               
+                 
             } else {
-                return '' . esc_html($idealx_category_display) . '';
+                echo '' . esc_html($idealx_category_display) . '';
             }
         }
     }
@@ -51,12 +54,16 @@ function idealx_get_cattegory()
 
         foreach ($categories as $idealx_category) {
 
-            $output .= '<div id="cat-post-header"> <a  class="cat-post-header uk-link-reset uk-button' . esc_attr($idealx_category->slug) . '" href="' . esc_url(get_category_link($idealx_category->term_id)) . '" alt="' . esc_attr(sprintf(__('View all posts in %s', 'idealx'), $idealx_category->name)) . '" uk-tooltip="' . esc_attr(sprintf(__('View all posts in %s', 'idealx'), $idealx_category->name)) . '" >' . esc_html($idealx_category->name) . '</a> </div>';
+            $output .= '<div id="cat-post-header"> <a  class="cat-post-header uk-link-reset uk-button' . esc_attr($idealx_category->slug) . '" href="' . esc_url(get_category_link($idealx_category->term_id)) . '" alt="' .
+ /* translators: draft saved date format, see http://php.net/date */
+            esc_attr(sprintf(__('View all posts in %s', 'idealx'), $idealx_category->name)) . '" uk-tooltip="' . 
+  /* translators: draft saved date format, see http://php.net/date */
+            esc_attr(sprintf(__('View all posts in %s', 'idealx'), $idealx_category->name)) . '" >' . esc_html($idealx_category->name) . '</a> </div>';
         }
 
     }
 
-    echo trim($output);
+    
 
-    return;
+    echo trim($output) ;
 }

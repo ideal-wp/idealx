@@ -1,10 +1,10 @@
 # Copyright (C) 2020 Mohamed Taman
-# This file is distributed under the GNU General Public License v2 or later.
+# This file is distributed under the GNU General Public License v2.0.
 msgid ""
 msgstr ""
-"Project-Id-Version: idealx 1.0.0\n"
+"Project-Id-Version: IdealX 1.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/idealx\n"
-"POT-Creation-Date: 2020-06-29 01:01:37+00:00\n"
+"POT-Creation-Date: 2020-06-30 16:20:36+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,11 +12,15 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: 404.php:22
-msgid "Page Not Found"
+#: 404.php:23
+msgid "Sorry, this page isnt available."
 msgstr ""
 
 #: 404.php:24
+msgid "The link you followed may be broken, or the page may have been removed."
+msgstr ""
+
+#: 404.php:27
 msgid "Back Home"
 msgstr ""
 
@@ -50,39 +54,45 @@ msgstr ""
 msgid "Leave a Reply"
 msgstr ""
 
-#: comments.php:65
+#. translators: draft saved date format, see http://php.net/date
+
+#: comments.php:66
 msgid "Leave a Reply to %s"
 msgstr ""
 
-#: comments.php:66
+#: comments.php:67
 msgid "Cancel Reply"
 msgstr ""
 
-#: comments.php:67
+#: comments.php:68
 msgid "Submit Comment"
 msgstr ""
 
-#: comments.php:73
+#. translators: draft saved date format, see http://php.net/date
+
+#: comments.php:75
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr ""
 
-#: comments.php:79
+#. translators: draft saved date format, see http://php.net/date
+
+#: comments.php:81
 msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
 msgstr ""
 
-#: comments.php:95
+#: comments.php:97
 msgid "Name"
 msgstr ""
 
-#: comments.php:101
+#: comments.php:103
 msgid "Email"
 msgstr ""
 
-#: comments.php:108 standard/helpers/all-wp-support.php:204
+#: comments.php:110 standard/helpers/all-wp-support.php:204
 msgid "Website"
 msgstr ""
 
-#: comments.php:113
+#: comments.php:115
 msgid "Save my name, email, and website in this browser for the next time I comment."
 msgstr ""
 
@@ -203,10 +213,10 @@ msgid "Select Animation To Use Within Lood Posts"
 msgstr ""
 
 #: includes/admin/framework/kirki/config/panels/panel-blog.php:52
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:265
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:520
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:710
-#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:79
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:272
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:545
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:735
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:76
 msgid "Select an option..."
 msgstr ""
 
@@ -408,15 +418,15 @@ msgstr ""
 #: includes/admin/framework/kirki/config/panels/panel-general.php:329
 #: includes/admin/framework/kirki/config/panels/panel-general.php:350
 #: includes/admin/framework/kirki/config/panels/panel-menu.php:144
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:467
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:482
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:506
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:596
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:697
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:484
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:507
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:531
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:621
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:722
 #: includes/admin/framework/kirki/config/panels/panel-sidebar.php:36
-#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:52
-#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:67
-#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:97
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:51
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:65
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:93
 msgid "Enable"
 msgstr ""
 
@@ -425,15 +435,15 @@ msgstr ""
 #: includes/admin/framework/kirki/config/panels/panel-general.php:330
 #: includes/admin/framework/kirki/config/panels/panel-general.php:351
 #: includes/admin/framework/kirki/config/panels/panel-menu.php:145
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:468
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:483
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:507
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:597
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:698
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:485
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:508
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:532
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:622
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:723
 #: includes/admin/framework/kirki/config/panels/panel-sidebar.php:35
-#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:51
-#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:68
-#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:98
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:50
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:66
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:94
 msgid "Disable"
 msgstr ""
 
@@ -561,7 +571,7 @@ msgid "Security is the main reason behind the limitation on file types that user
 msgstr ""
 
 #: includes/admin/framework/kirki/config/panels/panel-header.php:17
-#: includes/admin/framework/kirki/config/panels/panel-header.php:248
+#: includes/admin/framework/kirki/config/panels/panel-header.php:262
 #: includes/admin/inc/theme-page/panels/panel-options.php:46
 msgid "Pages Header"
 msgstr ""
@@ -599,102 +609,102 @@ msgid "if you enable it will write overall blog post header background"
 msgstr ""
 
 #: includes/admin/framework/kirki/config/panels/panel-header.php:61
-#: includes/admin/framework/kirki/config/panels/panel-header.php:177
-#: includes/admin/framework/kirki/config/panels/panel-header.php:266
+#: includes/admin/framework/kirki/config/panels/panel-header.php:180
+#: includes/admin/framework/kirki/config/panels/panel-header.php:280
 msgid "Chose Background"
 msgstr ""
 
 #: includes/admin/framework/kirki/config/panels/panel-header.php:62
-#: includes/admin/framework/kirki/config/panels/panel-header.php:178
-#: includes/admin/framework/kirki/config/panels/panel-header.php:267
+#: includes/admin/framework/kirki/config/panels/panel-header.php:181
+#: includes/admin/framework/kirki/config/panels/panel-header.php:281
 msgid "Choose and adjust the settings as appropriate for you"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:88
+#: includes/admin/framework/kirki/config/panels/panel-header.php:93
 msgid "Blog Header Padding"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:89
+#: includes/admin/framework/kirki/config/panels/panel-header.php:94
 msgid "Add and adjust the default Blog header padding Top & Bottom"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:102
+#: includes/admin/framework/kirki/config/panels/panel-header.php:107
 msgid " Featured images Header Background "
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:103
+#: includes/admin/framework/kirki/config/panels/panel-header.php:108
 msgid "if you enable it will add post featured image as background"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:112
+#: includes/admin/framework/kirki/config/panels/panel-header.php:117
 msgid "Blog Header overlay Color"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:124
+#: includes/admin/framework/kirki/config/panels/panel-header.php:129
 msgid "Blog Header general Text Color"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:133
+#: includes/admin/framework/kirki/config/panels/panel-header.php:138
 msgid "Post title Font option"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:159
+#: includes/admin/framework/kirki/config/panels/panel-header.php:162
 msgid "Archives Header"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:160
+#: includes/admin/framework/kirki/config/panels/panel-header.php:163
 msgid "Global Archives Header Options"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:168
+#: includes/admin/framework/kirki/config/panels/panel-header.php:171
 msgid "Disable Archives Page Header "
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:195
+#: includes/admin/framework/kirki/config/panels/panel-header.php:204
 msgid "Archives Header overlay Color"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:207
+#: includes/admin/framework/kirki/config/panels/panel-header.php:216
 msgid "Archives Header Padding"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:208
+#: includes/admin/framework/kirki/config/panels/panel-header.php:217
 msgid "Choose and adjust the default Archives header padding Top & Bottom"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:220
+#: includes/admin/framework/kirki/config/panels/panel-header.php:229
 msgid "Archives title Font option"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:239
+#: includes/admin/framework/kirki/config/panels/panel-header.php:253
 msgid "Archives Header general Text Color"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:249
+#: includes/admin/framework/kirki/config/panels/panel-header.php:263
 msgid "Global Pages Header Options"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:257
+#: includes/admin/framework/kirki/config/panels/panel-header.php:271
 msgid "Disable pages Page Header "
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:290
+#: includes/admin/framework/kirki/config/panels/panel-header.php:303
 msgid "Pages Header overlay Color"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:308
+#: includes/admin/framework/kirki/config/panels/panel-header.php:321
 msgid "Pages Header Padding"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:309
+#: includes/admin/framework/kirki/config/panels/panel-header.php:322
 msgid "Choose and adjust the default Pages header padding Top & Bottom"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:326
+#: includes/admin/framework/kirki/config/panels/panel-header.php:339
 msgid "Pages title Font option"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-header.php:350
+#: includes/admin/framework/kirki/config/panels/panel-header.php:363
 msgid "Pages Header general Text"
 msgstr ""
 
@@ -783,301 +793,301 @@ msgstr ""
 msgid "Select the Logo Text Font"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:182
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:189
 msgid "Upload a site logo"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:183
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:190
 msgid "You can upload a logo image to appear in place of your site title"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:200
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:207
 msgid "Logo Height ,"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:217
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:224
 msgid "Mobile Logo Upload"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:218
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:225
 msgid "chose mobile devices logo"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:235
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:242
 msgid "Menu Styling"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:242
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:249
 msgid "Header Height"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:251
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:258
 msgid "Choose a background color for menu"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:252
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:259
 msgid "Pick a background color for the header menu ."
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:261
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:268
 msgid "Select Header Box Shadow"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:262
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:269
 msgid "Please select your header box shadow here."
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:278
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:285
 msgid "Navigation & Header Font"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:279
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:286
 msgid "Select the properties of the navigation & Header Font"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:299
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:311
 msgid "Header Link Hover color"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:303
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:315
 msgid "hover"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:304
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:316
 msgid "active"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:313
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:325
 msgid "Mobile Menu"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:314
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:326
 msgid "Controls the Off Canvas Menu & Mobile Menu."
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:322
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:334
 msgid "Mobile Menu Style"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:325
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:337
 msgid "Select Menu Style..."
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:329
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:341
 msgid "Off-canvas"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:330
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:342
 msgid "Modal"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:338
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:350
 msgid "Open side"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:339
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:351
 msgid "Flip off-canvas to the ...? side."
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:342
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:368
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:354
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:380
 msgid "Select Open side..."
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:346
-#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:83
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:358
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:80
 msgid "Right"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:347
-#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:84
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:359
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:81
 msgid "Left"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:364
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:376
 msgid "Off-canvas Animation modes"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:365
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:377
 msgid "Select Off-canvas Animation Style"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:372
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:384
 msgid "Slide"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:373
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:385
 msgid "Push"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:374
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:386
 msgid "reveal"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:375
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:387
 msgid "none"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:392
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:404
 msgid "Off-canvas Background Color"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:410
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:422
 msgid "Off-canvas Overlay Background Color"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:430
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:442
 msgid "Off-canvas font"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:451
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:468
 msgid "Effects & Animation"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:452
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:469
 msgid "Header Effects & Animation Menu Styling - Controls the position of the Header Content."
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:461
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:478
 msgid "Reveal Header on Scroll"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:462
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:479
 msgid "hide header & show header when start to scroll back up"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:476
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:501
 msgid "Sticky Navbar"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:477
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:502
 msgid " always remain Navbar to be at the top of the screen even when scrolling down the page."
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:500
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:525
 msgid " Transparent Header"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:501
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:526
 msgid " When using an image or colored background for the hero section of your website, you might want to turn the navbar transparent. Just swich it to Transparent Navbar and also you can control it from page or force it."
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:516
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:541
 msgid "Color mode options for Transparent Header "
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:517
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:542
 msgid "Select Option the light option to improve the visibility of objects on dark backgrounds in a light style. When using a dark style, Select the . option dark to elements on a light background."
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:524
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:549
 msgid "Light"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:525
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:550
 msgid "Dark"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:532
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:557
 msgid "Choose a Font color for light mood"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:540
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:565
 msgid "Choose a Font color for dark mood"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:548
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:573
 msgid "Upload a site logo for Transparent Header in light mode"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:565
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:590
 msgid "Upload a site logo for Transparent Header in dark mode"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:582
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:607
 msgid "Top Navbar / user navbar"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:590
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:615
 msgid "Enable user top Navbar"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:591
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:616
 msgid "show / hide user navbar. "
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:605
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:630
 msgid "Choose a background color for top nav"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:606
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:631
 msgid "Pick a background color for the user navbar (default: #333)."
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:622
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:647
 msgid "Choose a Font color for top nav"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:623
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:648
 msgid "Pick a Font color for the user navbar (default: #fff)."
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:637
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:662
 msgid "Link Color"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:638
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:663
 msgid "Controls the color of text links in top navbar."
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:642
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:667
 msgid "Color"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:643
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:668
 msgid "Hover"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:644
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:669
 #: includes/admin/tgm-plugin/class-tgm-plugin-activation.php:2321
 msgid "Active"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:663
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:688
 msgid "Add The Text In The Left Area"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:665
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:690
 #: includes/partials/header/user-navbar.php:14
 msgid "yourname@yoursite.com"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:672
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:697
 msgid "Add The Text In The Right Area"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:674
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:699
 #: includes/partials/header/user-navbar.php:20
 msgid "Your Phone Here"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:683
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:708
 msgid "Search & Icon"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:684
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:709
 msgid "Controls the Header Search and Icon."
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:692
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:717
 msgid "Enable Search icon in Navbar"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:706
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:731
 msgid "Select Search Header Stayle"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-menu.php:707
+#: includes/admin/framework/kirki/config/panels/panel-menu.php:732
 msgid "Please select Search Header Stayle here."
 msgstr ""
 
@@ -1123,27 +1133,27 @@ msgstr ""
 msgid "Switch To Disable Blog Sidebar, this option will Remove the blog sidebar if is on"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:45
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:44
 msgid "Disable Page Sidebar"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:46
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:45
 msgid "this option will Remove Page sidebar if is on"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:61
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:59
 msgid "Woocommerce Sidebar"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:62
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:60
 msgid "this option will enable Woocommerce sidebar if is on"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:76
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:73
 msgid "Sidebar position"
 msgstr ""
 
-#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:92
+#: includes/admin/framework/kirki/config/panels/panel-sidebar.php:88
 msgid "Enable Sticky Sidebar"
 msgstr ""
 
@@ -1335,7 +1345,7 @@ msgid "General Settings "
 msgstr ""
 
 #: includes/admin/inc/theme-page/panels/panel-options.php:70
-msgid "Please active or instal Kriki Plugin to use The full Options"
+msgid "Please active or instal Kirki Plugin to use The full Options"
 msgstr ""
 
 #: includes/admin/inc/theme-page/panels/panel-start.php:10
@@ -1822,16 +1832,18 @@ msgstr ""
 msgid "Please try again with some different keywords,Type keyword & press enter."
 msgstr ""
 
-#: includes/template-parts/blog/countant.php:47
+#. translators: draft saved date format, see http://php.net/date
+
+#: includes/template-parts/blog/countant.php:48
 msgid "Continue reading %s"
 msgstr ""
 
-#: includes/template-parts/blog/countant.php:53
+#: includes/template-parts/blog/countant.php:54
 #: includes/template-parts/search.php:31
 msgid "Read More"
 msgstr ""
 
-#: includes/template-parts/blog/countant.php:60
+#: includes/template-parts/blog/countant.php:61
 msgid "By"
 msgstr ""
 
@@ -1849,6 +1861,10 @@ msgstr ""
 
 #: includes/template-parts/single-post/content.php:52
 msgid "Previous page"
+msgstr ""
+
+#: includes/templates/posts.php:28
+msgid "There are No Posts Yet"
 msgstr ""
 
 #. translators: %s: Name of current post
@@ -1873,27 +1889,31 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: standard/helpers/category .php:54
+#. translators: draft saved date format, see http://php.net/date
+
+#: standard/helpers/category .php:59 standard/helpers/category .php:61
 msgid "View all posts in %s"
 msgstr ""
 
-#: standard/helpers/comment-walker.php:33
+#. translators: draft saved date format, see http://php.net/date
+
+#: standard/helpers/comment-walker.php:35
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: standard/helpers/comment-walker.php:35
+#: standard/helpers/comment-walker.php:37
 msgid "Comment awaiting approval"
 msgstr ""
 
-#: standard/helpers/comment-walker.php:40
+#: standard/helpers/comment-walker.php:42
 msgid "Reply"
 msgstr ""
 
-#: standard/helpers/comment-walker.php:41
+#: standard/helpers/comment-walker.php:43
 msgid "Edit"
 msgstr ""
 
-#: standard/helpers/comment-walker.php:60
+#: standard/helpers/comment-walker.php:62
 msgid "Comments are closed."
 msgstr ""
 
@@ -1969,12 +1989,12 @@ msgstr ""
 msgid "The fourth footer widget area"
 msgstr ""
 
-#: standard/helpers/menu-walker.php:181 standard/helpers/menu-walker.php:371
-#: standard/helpers/menu-walker.php:541
+#: standard/helpers/menu-walker.php:180 standard/helpers/menu-walker.php:370
+#: standard/helpers/menu-walker.php:540
 msgid "Add a menu"
 msgstr ""
 
-#: standard/helpers/menu-walker.php:582
+#: standard/helpers/menu-walker.php:581
 msgid "Menu"
 msgstr ""
 
@@ -2002,7 +2022,7 @@ msgstr ""
 msgid "Widget Area Off Canvas"
 msgstr ""
 #. Theme Name of the plugin/theme
-msgid "idealx"
+msgid "IdealX"
 msgstr ""
 
 #. Theme URI of the plugin/theme

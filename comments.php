@@ -62,6 +62,7 @@ $args = array(
   'id_form'           => 'commentform',
   'id_submit'         => 'submit',
   'title_reply'       => esc_html__( 'Leave a Reply', 'idealx' ),
+/* translators: draft saved date format, see http://php.net/date */
   'title_reply_to'    => esc_html__( 'Leave a Reply to %s', 'idealx' ),
   'cancel_reply_link' => esc_html__( 'Cancel Reply', 'idealx' ),
   'label_submit'      => esc_html__( 'Submit Comment', 'idealx' ),
@@ -69,13 +70,14 @@ $args = array(
   'comment_field' =>  '<div class="id-comment-text">'.$comment_label.'<textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" class="uk-textarea"></textarea></div>',
 
   'must_log_in' => '<p class="must-log-in">' .
-    sprintf(
+  sprintf(
+    /* translators: draft saved date format, see http://php.net/date */
       __( 'You must be <a href="%s">logged in</a> to post a comment.', 'idealx' ),
       wp_login_url( apply_filters( 'idealx_the_permalink', esc_url(get_permalink()) ) )
     ) . '</p>',
-
   'logged_in_as' => '<p class="logged-in-as">' .
     sprintf(
+      /* translators: draft saved date format, see http://php.net/date */
     __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>', 'idealx' ),
       esc_url(admin_url( 'profile.php' )),
       $user_identity,

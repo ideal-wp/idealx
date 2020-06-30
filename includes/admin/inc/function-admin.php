@@ -2,8 +2,9 @@
 /**
  * idealx admin page functions and definitions.
  *
- * @package idealx
- * @since 1.0
+ *@package idealx
+ *@since 1.0.0
+ *@version 1.0.1
  */
 // Exit if accessed this directly
 if (!defined('ABSPATH')) {
@@ -67,7 +68,7 @@ function idealx_theme_welcome_redirect() {
 //Create Admin theme Page
 function idealx_theme_page()
 {
-    add_theme_page('idealx WP Theme Options', 'Ideal  Options', 'edit_theme_options', 'idealx-theme-options', 'idealx_option_page', 10);
+    add_theme_page('idealx WP Theme Options', 'Ideal X Options', 'edit_theme_options', 'idealx-theme-options', 'idealx_option_page', 10);
 }
 add_action('admin_menu', 'idealx_theme_page');
 

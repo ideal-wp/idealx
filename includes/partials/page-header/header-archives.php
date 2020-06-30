@@ -12,7 +12,7 @@ if (!('ABSPATH')) {
     exit;
 }
 $idealx_options    = idealx_get_theme_options();
-$id_taitel= null;
+$idealx_id_taitel= null;
 
 if ( ! function_exists( 'idealx_archives_taitle' ) ) {
 

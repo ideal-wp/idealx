@@ -51,9 +51,9 @@ function idealx_register_nav_menus()
 
 
 
-function idealx_menu_notitle($menu)
+function idealx_menu_notitle($idealx_menu)
 {
-    return $menu = preg_replace('/ title=\"(.*?)\"/', '', $menu);
+    return $idealx_menu = preg_replace('/ title=\"(.*?)\"/', '', $idealx_menu);
 
 }
 add_filter('wp_nav_menu', 'idealx_menu_notitle');

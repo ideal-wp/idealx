@@ -50,11 +50,11 @@ if (!empty($idealx_options['reveal-header']) && $idealx_options['reveal-header']
         global $idealx_options;
         global $idealx_transparent_header,$idealx_select_header_mod;
         
-        $mode = $idealx_select_header_mod;
+        $idealx_mode = $idealx_select_header_mod;
 
         if ($idealx_transparent_header == true) {
 
-            echo '<div uk-sticky="media: 960; show-on-up: true; animation: uk-animation-slide-top; cls-active uk-navbar-sticky; sel-target: .uk-navbar-container; cls-inactive: cls-inactive: uk-navbar-transparent ' . $mode . '; "class="uk-sticky" style="">';
+            echo '<div uk-sticky="media: 960; show-on-up: true; animation: uk-animation-slide-top; cls-active uk-navbar-sticky; sel-target: .uk-navbar-container; cls-inactive: cls-inactive: uk-navbar-transparent ' .  esc_html($idealx_mode) . '; "class="uk-sticky" style="">';
         } else {
             echo '<div uk-sticky="media: 960; show-on-up: true; animation: uk-animation-slide-top; cls-active uk-navbar-sticky; sel-target: .uk-navbar-container;"
     class="uk-sticky" style="">';
@@ -68,27 +68,34 @@ if (!empty($idealx_options['reveal-header']) && $idealx_options['reveal-header']
     }
 }
 
+//chek if reveal header true or false
+if(!empty($idealx_options['reveal-header'])){
+    $idealx_reveal_header_test = $idealx_options['reveal-header'];
+}else{
+    $idealx_reveal_header_test =false; 
+}
+
 //Sticky Navbar fixed
-if (!empty($idealx_options['sticky-header']) && $idealx_options['sticky-header'] == true && empty($idealx_options['reveal-header']) && $idealx_options['reveal-header'] == false) {
+if (!empty($idealx_options['sticky-header']) && $idealx_options['sticky-header'] == true && empty($idealx_options['reveal-header']) || $idealx_reveal_header_test == false) {
     add_action('idealx_hook_before_header', 'idealx_reveal_header_top', 1, 10);
     add_action('idealx_hook_after_header', 'idealx_reveal_header_after', 1, 10);
 
     function idealx_reveal_header_top()
     {
-
+       
         global $idealx_transparent_header,$idealx_select_header_mod;
         global $idealx_options;
 
-        if (!empty($idealx_options['sticky-header']) && $idealx_options['sticky-header'] == true && $idealx_transparent_header == true) {
+        if ( ! empty($idealx_options['sticky-header'] ) && $idealx_options['sticky-header'] == true && $idealx_transparent_header == true) {
 
-            echo '<div class="idealx-top-sticky" uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent ' . $idealx_select_header_mod . ' ; top: 200" class= "kimo">
+            echo '<div class="idealx-top-sticky" uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent ' .  esc_html($idealx_select_header_mod) . ' ; top: 200">
         ';
-        } elseif (!empty($idealx_options['sticky-header']) && $idealx_options['sticky-header'] == true && !$idealx_transparent_header == true) {
+        } elseif (!empty($idealx_options['sticky-header']) && $idealx_options['sticky-header'] == true && ! $idealx_transparent_header == true) {
 
             echo '<div class="idealx-top-sticky" uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;  top: 200">';
 
         } else {
-            echo '<div class="idealx-top-sticky" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">';
+            echo '<div>';
         }
     }
     function idealx_reveal_header_after()
@@ -97,6 +104,7 @@ if (!empty($idealx_options['sticky-header']) && $idealx_options['sticky-header']
     }
 } elseif (!empty($idealx_options['sticky-header']) && $idealx_options['sticky-header'] == true && !empty($idealx_options['reveal-header']) && $idealx_options['reveal-header'] == true) {
     /* do nothing */
+    $idealx_no_thing_null = null;
 }
 
 // bg Header with Transparent Header

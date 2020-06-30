@@ -15,7 +15,7 @@ if ( function_exists( 'dynamic_sidebar' ) ) {
 	global $post;
 	global $woocommerce;
 
-	$posttype = get_post_type( $post );
+	$idealx_posttype = get_post_type( $post );
 
 	if ( ( 
 					 ( is_archive() ) 
@@ -25,7 +25,7 @@ if ( function_exists( 'dynamic_sidebar' ) ) {
 				|| ( is_single() ) 
 				|| ( is_tag() ) 
 		   ) 
-		&& ( $posttype === 'post' ) ) {
+		&& ( $idealx_posttype === 'post' ) ) {
 
 		dynamic_sidebar( 'Blog Sidebar' );
 

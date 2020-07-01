@@ -29,7 +29,13 @@ while (have_posts()): the_post();
             <article id="post-<?php the_ID();?>" <?php post_class('uk-article');?>>
               <div class="article-inner-wrap">
                 <?php
-                  get_template_part('/includes/template-parts/single-post/content', get_post_format());
+                /**
+               * Disabled Post Formats
+               * well be added in the new release
+               * get_template_part('/includes/template-parts/single-post/content', get_post_format());
+               * @since v 1.0.2
+               */
+                  get_template_part('/includes/template-parts/single-post/content');
                   idealx_single_post_pagination(); 
                   ?>
                 <div class="idealx-single-tags">

@@ -5,7 +5,7 @@
  * @package idealx
  * @subpackage helpers / WP support
  * @since 1.0.0
- * @version 1.0.0
+ * @version 1.0.2
  *
  */
 // Exit if accessed this directly
@@ -20,22 +20,28 @@ if (!isset($content_width)) {
     $content_width = 900;
 }
 
+
 function idealx_wp_theme_setup()
 {
-
+   
+/**
+ * Disabled Post Formats
+ * well be added in the new release
+ * @since v 1.0.2
+ */
     add_theme_support('title-tag');
     // Add default posts and comments RSS feed links to head.
     add_theme_support('automatic-feed-links');
     //Post Thumbnails
     add_theme_support('post-thumbnails');
     //Post Formats
-    add_theme_support('post-formats', array(
+   /* add_theme_support('post-formats', array(
         'link',
         'gallery',
         'quote',
         'image',
         'video',
-    ));
+    )); */
 
     //widgets support
     add_theme_support('widgets');
@@ -252,11 +258,7 @@ function idealx_output_options_hook_code_in_footer() {
      }
 }
 
-//Set a custom header args
-$idealx_header_args = array(
-	'width'         => 1200,
-);
-add_theme_support( 'custom-header', $idealx_header_args );
+
 // add_theme_support( "custom-background", $args )
 $idealx_bacground_args = array(
 	'default-color' => 'ffffff',

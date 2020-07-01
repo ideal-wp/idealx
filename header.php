@@ -5,7 +5,7 @@
  * @package idealx
  * @subpackage Header Frontend
  * @since 1.0.0
- * @version 1.0.0
+ * @version 1.0.2
  */
 get_template_part('includes/admin/framework/variable');
 ?>

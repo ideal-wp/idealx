@@ -1,3 +1,7 @@
+v1.0.2
+- Disabled: Post Formats
+- Disabled: Redirect to welcome page
+
 v1.0.1
 - new: add editor style
 - Improvement: 404 Page

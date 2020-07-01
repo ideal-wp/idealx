@@ -46,6 +46,10 @@ Yes, go here: https://wordpress.org/support/theme/idealx
 
 == Changelog ==
 = Theme Name: idealx =
+v1.0.2
+- Disabled: Post Formats
+- Disabled: Redirect to welcome page
+
 v1.0.1
 - new: add editor style
 - Improvement: 404 Page
@@ -83,22 +87,26 @@ Integral bundles the following third-party resources:
 ###
 = uikit =
 uikit have been helped along thanks to the fine work of.
+Source: (https://getuikit.com/),
 https://github.com/uikit/uikit.git
-Licensed under MIT Source ( https://github.com/uikit/uikit/blob/develop/LICENSE.md )
+Licensed under MIT ( https://github.com/uikit/uikit/blob/develop/LICENSE.md )
 ###
 
 ###
 = select2 = 
+Source: (https://github.com/select2/select2)
 Licensed under MIT Source( https://github.com/select2/select2/blob/develop/LICENSE.md )
 ###
 
 ###
 = select2-bootstrap-theme =
+Source: (https://github.com/select2/select2-bootstrap-theme)
 Licensed under MIT Source( https://github.com/select2/select2-bootstrap-theme/blob/master/LICENSE )
 ###
 
 ###
 = fontawesome-free-5 =
+Source: (https://fontawesome.com/)
  is free, open source, and GPL friendly
 License ( https://fontawesome.com/license/free)
 ###
@@ -111,20 +119,20 @@ Licensed under SIL Open Font License (OFL) Source (https://scripts.sil.org/cms/s
 ###
 = WPTT - Admin Notices =
 Package for standardizing how themes output admin notices.
-https://github.com/WPTT/admin-notices
+Source: https://github.com/WPTT/admin-notices
 Licensed under GPL-2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
 ###
 
 ###
 = WPTT - autoload =
 Basic PSR-4 autoloader for themes.
-https://github.com/WPTT/autoload
+Source: (https://github.com/WPTT/autoload)
 Licensed under GPL-2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
 ###
 
 ###
 = 404 - img =
 Lovely bulldog pup
-src: (https://skitterphoto.com/photos/4169/lovely-bulldog-pup)
+Source: (https://skitterphoto.com/photos/4169/lovely-bulldog-pup)
 Licensed under Creative Commons CC0 (https://skitterphoto.com/license)
 ###

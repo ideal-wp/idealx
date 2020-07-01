@@ -12,7 +12,7 @@ $idealx_admin_logo = IDEALX_THEME_DIR_URI . '/includes/admin/assets/img/ideallog
       <div class="uk-navbar-left idealx-logo-admin">
         <a class="uk-navbar-item uk-logo" href="#">
           <img class="idealx-admin-Logoo" src="<?php echo esc_url($idealx_admin_logo); ?>" style=" height:22px;"
-            ?><span>IdealX</span> </a>
+            ?><span> <?php echo esc_html__('IdealX','idealx') ?></span> </a>
       </div>
       <div class="uk-navbar-right idealx-admi-header-right">
         <ul class="uk-navbar-nav">

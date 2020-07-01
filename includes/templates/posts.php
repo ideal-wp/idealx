@@ -3,7 +3,7 @@
  *  loop content.
  *
  * @package idealx WordPress Theme
- * @version 1.0.1
+ * @version 1.0.2
  * @since 1.0.0
  */
 // Exit if accessed directly
@@ -20,10 +20,17 @@ global $idealx_is_sidebar,$idealx_animation,$idealx_id_child,$idealx_flex,$ideal
         <div class="uk-container uk-container-expand">
           <?php }?>
           <!--Plog posts-->
-          <div class="<?php echo  esc_html($idealx_id_child); ?>" uk-grid <?php echo  esc_attr($idealx_animation); ?>>
+          <div class="<?php echo  esc_html($idealx_id_child); ?>" uk-grid <?php echo  esc_attr($idealx_animation); ?>> 
 
             <?php if (have_posts()): while (have_posts()): the_post();
-              get_template_part('includes/template-parts/blog/countant', get_post_format());
+            /**
+             * Disabled Post Formats
+             * well be added in the new release
+             * get_template_part('includes/template-parts/blog/countant', get_post_format());
+             * @since v 1.0.2
+             */
+              get_template_part('includes/template-parts/blog/countant');
+
               //v 1.0.1 add There are No Posts Yet - if there are no post
                   endwhile;else: esc_html_e('There are No Posts Yet', 'idealx');  endif;
             ?>

@@ -4,7 +4,7 @@
  *
  *@package idealx
  *@since 1.0.0
- *@version 1.0.1
+ *@version 1.0.2
  */
 // Exit if accessed this directly
 if (!defined('ABSPATH')) {
@@ -40,13 +40,21 @@ require_once IDEALX_THEME_DIRECTORY . '/includes/admin/inc/notices/notices.php';
 require_once IDEALX_THEME_DIRECTORY . '/includes/admin/inc/helpers/js-dynamic.php';
 
 //=========================================================
-add_action('after_switch_theme','idealx_theme_welcome_redirect');
 
 /**
-* Redirect to welcome page when idealx is activated.
+ * Disable  Redirect 
+ * you can enable when remove comments
+ *@since v1.0.2
+ */
+/**
 *
+* Redirect to welcome page when idealx is activated.
+* 
 * @since 1.0.0
 */
+/*
+add_action('after_switch_theme','idealx_theme_welcome_redirect');
+
 function idealx_theme_welcome_redirect() {
   
   global $pagenow;
@@ -65,6 +73,7 @@ function idealx_theme_welcome_redirect() {
   }
   
 }
+*/
 //Create Admin theme Page
 function idealx_theme_page()
 {

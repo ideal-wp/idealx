@@ -1,25 +1,42 @@
 <?php
 /**
- * The template for displaying Archives.
+ * The template for displaying archive pages.
  *
- * @package idealx WordPress Theme
- * @version 1.0.0
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package Idealx
+ * @since 1.0.0
  */
-// Exit if accessed directly
-if (!defined('ABSPATH')) {
-    exit;
+
+// Exit if accessed directly.
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
 }
-get_header();
-$idealx_options      = idealx_get_theme_options();
-if(!empty($idealx_options['id-archives-switch-header'])){
-    $idealx_arch_header = $idealx_options['id-archives-switch-header'];
-}else{
-    $idealx_arch_header  = false;
-}
-if ( $idealx_arch_header  == false || !class_exists('Kirki')) {
-    get_template_part('includes/partials/page-header/header', 'archives');
-} elseif (!empty($idealx_options['transparent-header']) && $idealx_options['transparent-header'] == true) {
- ?><div class="plog-page-header-margin"></div><?php
-}
-get_template_part('includes/templates/posts');
+
+get_header(); ?>
+
+<div id="primary-content" class="uk-section">
+	<div id="primary-container" class="tam-container uk-container 
+	<?php
+
+	esc_attr( idealx_sidebar_disable() );
+
+	?>
+	" >
+		<div  id="content-wrap" class="uk-grid-column-small" uk-grid>
+
+			<div id="primary-column" class="uk-width-expand@m uk-first-column">
+
+			<?php get_template_part( 'template-parts/blog/layout' ); ?>
+
+			</div><!-- #primary-column -->
+
+			<?php idealx_sidebar_hook_options(); ?>
+
+		</div><!-- #content-wrap -->
+	</div><!-- #primary-container -->
+</div><!-- #primary-content -->
+
+<?php
 get_footer();

@@ -1,3 +1,7 @@
+v1.0.3
+- new: add new blog layout ( standard)
+- Fix: Repair and fix all WordPress theme requirements. before theme Becoming review and become live.
+
 v1.0.2
 - Disabled: Post Formats
 - Disabled: Redirect to welcome page

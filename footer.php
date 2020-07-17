@@ -1,12 +1,31 @@
-      </div><!--/main-->
-    </div><!--/id-wrapper-->
-    <?php 
-      
-      
-      get_template_part( 'includes/partials/footer/footer', 'widget' );
-      get_template_part( 'includes/partials/footer/footer', 'copy' );
+<?php
+/**
+ * The template for displaying the footer.
+ *
+ * Contains the closing of the #content div and all content after.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package Idealx
+ * @since 1.0.0
+ */
 
-      wp_footer(); 
-    ?>
-  </body>
+// Exit if accessed directly.
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+?>
+				<footer>
+				<?php get_template_part( 'template-parts/footer/footer' ); ?>
+				</footer>
+
+			</div> <!-- #tam-main -->
+
+		</div><!-- #wrapper -->
+
+	<?php wp_footer(); ?>
+
+	</body>
 </html>

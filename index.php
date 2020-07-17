@@ -1,7 +1,11 @@
 <?php
 /**
- * The template for displaying the site index.
+ * The main template file.
  *
- * @package idealx WordPress Theme
- * @version 1.0.2
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package Idealx
+ * @since 1.0.0
  */
+
+get_template_part( 'archive' );

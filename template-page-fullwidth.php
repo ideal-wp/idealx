@@ -1,30 +1,38 @@
 <?php
 /**
- * Ttemplate name: Page Full width
+ * Ttemplate name: Full Width
  *
- * @package idealx WordPress Theme
- * @version 1.0.1
+ * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/#uses-for-page-templates
+ *
+ * @package Idealx
+ * @since 1.0.0
  */
-// Exit if accessed directly
-if (!defined('ABSPATH')) {
-    exit;
+
+// Exit if accessed directly.
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
 }
 
-get_header(); ?>
-<div id="idealx-pagecontent" class="idealx-page-content uk-section uk-padding-remove">
-  <div class="uk-container-expand">
-    <?php  
-      if ( have_posts() ) :
+get_header();
+?>
+<div id="primary-content" class="mt-fullwidth">
+							<?php
 
-          while ( have_posts() ) :
-            
-              the_post();
+							if ( have_posts() ) :
 
-              the_content();
+								while ( have_posts() ) :
 
-          endwhile;
-      endif; ?>
-  </div>
-</div>
+										the_post();
+
+										the_content();
+
+
+								endwhile;
+
+							endif;
+
+							?>
+</div><!-- #primary-content -->
 <?php
-get_footer();
+	get_footer();

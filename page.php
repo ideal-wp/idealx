@@ -1,54 +1,59 @@
 <?php
 /**
- * The template for displaying pages.
+ * The template for displaying all pages.
  *
- * @package idealx WordPress Theme
- * @version 1.0.0
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package Idealx
+ * @since 1.0.0
  */
 
-// Exit if accessed directly
-if (!defined('ABSPATH')) {
-    exit;
+// Exit if accessed directly.
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
 }
+
 get_header();
-global $idealx_is_page_sidebar,$idealx_is_page_cards,$idealx_flex,$idealx_is_sticky,$idealx_id_container;
-
-get_template_part( 'includes/partials/page-header/pages-header' );
 ?>
-<div id="idealx-pagecontent" class="idealx-site-content uk-section">
-  <div id="idealx-page-content-inner" class="uk-container <?php echo  esc_html($idealx_id_container); ?>">
-    <?php if ($idealx_is_page_sidebar == false) {?>
-    <div class=" uk-grid-column-small" uk-grid>
-      <div class="id-con-warp uk-width-expand@m">
-        <div class="uk-container">
-          <?php }
-          if (!empty($idealx_is_page_cards) && $idealx_is_page_cards == true) {  echo '<div class="uk-card uk-card-default uk-card-body">';
-          } 
-          if (have_posts()):
-              while (have_posts()):
+<div id="primary-content" class="uk-section">
+	<div id="primary-container" class="tam-container uk-container <?php esc_attr( idealx_sidebar_disable() ); ?>" >
+		<div  id="content-wrap" class="uk-grid-column-small" uk-grid>
+			<div id="primary-column" class="uk-width-expand@m uk-first-column">
+					<span class="breadcrumb"><?php idealx_get_breadcrumb(); ?></span>
+					<div class="uk-container uk-card uk-card-default">
+						<div class="uk-card-body">
 
-                  the_post();
-                  the_content();
+							<?php
 
-                  if (!empty($idealx_is_page_cards) && $idealx_is_page_cards == true) {echo '</div>';}
+							if ( have_posts() ) :
 
-                  idealx_comment_open();
+								while ( have_posts() ) :
 
-              endwhile;
-          endif;
-          if ($idealx_is_page_sidebar == false) {?>
-        </div>
-      </div>
-      <!--/id-con-warp-->
-      <div id="sidebar" class="uk-width-1-4@m uk-width-1-4@l <?php echo  esc_html($idealx_flex) ; ?>">
-        <div class=" uk-container uk-container-expand " id="blog-sidebar">
-          <div class="side-bar uk-flex uk-flex-column" <?php echo  esc_html($idealx_is_sticky); ?>>
-            <?php get_sidebar();?>
-          </div>
-        </div>
-      </div><!--/sidebar-->
-      <?php } // if is_sidebar end?>
-    </div>
-  </div>
-  <?php
-get_footer();
+										the_post();
+
+										the_content();
+
+
+								endwhile;
+
+							endif;
+
+							?>
+						</div>
+					</div>
+
+			<?php idealx_comment_open(); ?>
+
+			<?php idealx_comment_close(); ?>
+
+			</div><!-- #primary-column -->
+
+			<?php idealx_sidebar_hook_options(); ?>
+
+		</div><!-- #content-wrap -->
+	</div><!-- #primary-container -->
+</div><!-- #primary-content -->
+<?php
+	get_footer();
+

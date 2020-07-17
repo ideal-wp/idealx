@@ -46,6 +46,11 @@ Yes, go here: https://wordpress.org/support/theme/idealx
 
 == Changelog ==
 = Theme Name: idealx =
+
+v1.0.3
+- new: add new blog layout ( standard)
+- Fix: Repair and fix all WordPress theme requirements. before theme Becoming review and become live.
+
 v1.0.2
 - Disabled: Post Formats
 - Disabled: Redirect to welcome page
@@ -105,6 +110,12 @@ Licensed under MIT Source( https://github.com/select2/select2-bootstrap-theme/bl
 ###
 
 ###
+= TGM Plugin Activation =
+Source: (http://tgmpluginactivation.com/)
+Licensed under GNU General Public License version 2 Source( https://opensource.org/licenses/GPL-2.0 )
+###
+
+###
 = fontawesome-free-5 =
 Source: (https://fontawesome.com/)
  is free, open source, and GPL friendly
@@ -114,20 +125,6 @@ License ( https://fontawesome.com/license/free)
 ###
 = Raleway Font =
 Licensed under SIL Open Font License (OFL) Source (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL) , (https://fonts.google.com/specimen/Raleway#license)
-###
-
-###
-= WPTT - Admin Notices =
-Package for standardizing how themes output admin notices.
-Source: https://github.com/WPTT/admin-notices
-Licensed under GPL-2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
-###
-
-###
-= WPTT - autoload =
-Basic PSR-4 autoloader for themes.
-Source: (https://github.com/WPTT/autoload)
-Licensed under GPL-2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
 ###
 
 ###

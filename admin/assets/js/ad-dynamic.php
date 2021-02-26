@@ -42,23 +42,24 @@ if ( ! empty( $idealx_core_theme_options['id_sub_plus_color'] ) ) {
 
 
 
-echo ' jQuery(document).ready(function($){
-  
-        $.wp.wpColorPicker.prototype.options = {
-          defaultColor: false,
-          hide: true,
-          width: 250,
-          border: true,
-          palettes: [
-          "' . esc_html( $idealx_primary ) . '",
-          "' . esc_html( $idealx_secondary ) . '",
-          "' . esc_html( $idealx_sub_color ) . '",
-          "' . esc_html( $idealx_sub_plus ) . '",
-          "#ffffff",
-          "#000000",
-          ]
-          }
-       });
+echo ' jQuery(function($) {
+  if (typeof $.wp !== "undefined" && typeof $.wp.wpColorPicker !== "undefined" ) {
+      $.wp.wpColorPicker.prototype.options  = {
+    defaultColor: false,
+    hide: true,
+    width: 250,
+    border: true,
+    palettes: [
+    "' . esc_html( $idealx_primary ) . '",
+    "' . esc_html( $idealx_secondary ) . '",
+    "' . esc_html( $idealx_sub_color ) . '",
+    "' . esc_html( $idealx_sub_plus ) . '",
+    "#ffffff",
+    "#000000",
+    ]
+    }
+  }
+ });
 
 ';
 

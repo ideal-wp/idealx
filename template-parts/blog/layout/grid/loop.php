@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-<div class="grid-layout uk-child-width-1-2@m" uk-grid>
+<div class="grid-layout uk-child-width-1-2@m uk-grid" uk-grid>
 <?php
 if ( have_posts() ) :
 

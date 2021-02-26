@@ -37,7 +37,17 @@ function idealx_load_scripts() {
 
 	wp_register_script( 'taman_js', IDEALX_THEME_URI . '/assets/js/taman.js', array(), idealx_theme_version(), true );
 
+	wp_register_script( 'taman_superfish', IDEALX_THEME_URI . '/assets/js/superfish/hoverIntent.js', array(), idealx_theme_version(), true );
+
+	wp_register_script( 'taman_superfish1', IDEALX_THEME_URI . '/assets/js/superfish/superfish.js', array(), idealx_theme_version(), true );
+
+	wp_register_script( 'taman_superfish2', IDEALX_THEME_URI . '/assets/js/superfish/supersubs.js', array(), idealx_theme_version(), true );
+
 	wp_enqueue_script( 'jquery' );
+
+	wp_enqueue_script( 'taman_superfish' );
+	wp_enqueue_script( 'taman_superfish1' );
+	wp_enqueue_script( 'taman_superfish2' );
 
 	wp_enqueue_script( 'taman_uikit_js' );
 	wp_enqueue_script( 'taman_uikit_icon_js' );

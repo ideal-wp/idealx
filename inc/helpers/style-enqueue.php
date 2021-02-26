@@ -43,14 +43,30 @@ function idealx_wp_register_enqueue_style() {
 
 	wp_register_style( 'idealx_select2_bootstrap', IDEALX_THEME_URI . '/assets/css/select2/select2-bootstrap.min.css', array(), idealx_theme_version(), 'all' );
 
+	wp_register_style( 'idealx_superfish', IDEALX_THEME_URI . '/assets/css/superfish/css/megafish.css', array(), idealx_theme_version(), 'all' );
+	wp_register_style( 'idealx_superfish2', IDEALX_THEME_URI . '/assets/css/superfish/css/superfish-navbar.css', array(), idealx_theme_version(), 'all' );
+	wp_register_style( 'idealx_superfish3', IDEALX_THEME_URI . '/assets/css/superfish/css/superfish-vertical.css', array(), idealx_theme_version(), 'all' );
+	wp_register_style( 'idealx_superfish4', IDEALX_THEME_URI . '/assets/css/superfish/css/superfish.css', array(), idealx_theme_version(), 'all' );
+
 	wp_register_style( 'idealx_style', IDEALX_THEME_URI . '/assets/css/theme-style.css', array(), idealx_theme_version(), 'all' );
 
-	wp_enqueue_style( 'idealx_uikit' );
-	wp_style_add_data( 'idealx_uikit', 'rtl', 'replace' );
+	
+
+	
+	
 
 	wp_enqueue_style( 'idealx_select2' );
 	wp_enqueue_style( 'idealx_select2_bootstrap' );
 
+	wp_enqueue_style( 'idealx_superfish' );
+	wp_enqueue_style( 'idealx_superfish2' );
+	wp_enqueue_style( 'idealx_superfish3' );
+	wp_enqueue_style( 'idealx_superfish4' );
+
+	wp_enqueue_style( 'idealx_uikit' );
+	wp_style_add_data( 'idealx_uikit', 'rtl', 'replace' );
+
+	
 	wp_enqueue_style( 'idealx_style' );
 	wp_style_add_data( 'idealx_style', 'rtl', 'replace' );
 

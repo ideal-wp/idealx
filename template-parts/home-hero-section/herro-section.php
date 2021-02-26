@@ -20,6 +20,7 @@ $idealx_primary_text     = get_theme_mod( 'primary_button_text' );
 $idealx_primary_link     = get_theme_mod( 'primary_button_link' );
 $idealx_hero_img_bac     = esc_url( get_theme_mod( 'hero_background_image' ) );
 ?>
+
 <div id="hero-section" class=" hero-section uk-section uk-section-primary
 <?php
 
@@ -29,13 +30,13 @@ if ( ! class_exists( 'Kirki' ) ) {
 	uk-background-cover uk-background-norepeat uk-background-center-center"
 
 	<?php if ( ! empty( $idealx_hero_img_bac ) ) { ?> 
-	style="background-image: url(<?php echo esc_html( $idealx_hero_img_bac ); ?>);" 
+	style="background-image: url(<?php echo esc_url( $idealx_hero_img_bac ); ?>);" 
 
 		<?php
 	}
 }
 ?>
-													>
+>
 		<div class="hero-container uk-container">
 
 				<div id="hero-section-content" class="hero-content">

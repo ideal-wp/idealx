@@ -37,6 +37,7 @@ get_template_part( 'admin/framework/panels/panel', 'header' );
 get_template_part( 'admin/framework/panels/panel', 'sidebar' );
 get_template_part( 'admin/framework/panels/panel', 'blog' );
 get_template_part( 'admin/framework/panels/panel', 'hero' );
+get_template_part( 'admin/framework/panels/panel', 'menu' );
 
 
 if ( idealx_is_woocommerce_activated() === true ) {

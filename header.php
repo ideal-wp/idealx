@@ -31,7 +31,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<?php if ( is_singular() && pings_open() ) : ?>
+	<link rel="pingback" href="<?php echo esc_url( get_bloginfo( 'pingback_url' ) ); ?>">
+	<?php endif ?>
 	<?php wp_head(); ?>
 </head>
 

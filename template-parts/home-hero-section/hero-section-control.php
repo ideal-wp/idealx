@@ -125,3 +125,10 @@ function idealx_hero_section_styles_method() {
               ";
 	wp_add_inline_style( 'idealx-custom-style', $custom_css );
 }
+
+add_action( 'idealx_hook_after_header_tag', 'idealx_my_con_skip', 1, 10 );
+/** Skip links are little internal navigation links. */
+function idealx_my_con_skip() {
+	echo '<div id="idealx-content"></div>';
+
+}

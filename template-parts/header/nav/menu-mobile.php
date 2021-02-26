@@ -30,7 +30,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<?php dynamic_sidebar( 'Off Canvas' ); ?>
 
 					</div>
-
+					<!-------<div class="taman-clos-offcanves">
+						<a class="uk-navbar-toggle uk-hidden@m" uk-toggle="target: #offcanvas-overlay" href="#" ><span><?php echo esc_html__( 'close menu', 'idealx' ); ?></span></a>
+					</div>---->
 			</div>
 
 		</div>

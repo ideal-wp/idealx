@@ -22,7 +22,7 @@ $idealx_category = get_the_category();
 
 ?>
 
-			<article <?php post_class( $idealx_classes ); ?> id='article'>
+			<article <?php post_class(); ?> id='article'>
 				<div class="article-inner-wrap">
 					<div class="article-post-content">
 						<div>
@@ -39,9 +39,9 @@ $idealx_category = get_the_category();
 								<div class="uk-card-body">
 
 									<h3 class="uk-article-title grid-poet-title"><a class="uk-link-reset"
-											href="<?php esc_url( the_permalink() ); ?>"><?php esc_html( the_title() ); ?></a></h3>
+											href="<?php echo esc_url( get_the_permalink() ); ?>"><?php echo esc_html( get_the_title() ); ?></a></h3>
 
-									<div class="uk-grid-collapse uk-child-width-expand@s" uk-grid>
+									<div class="uk-grid-collapse uk-grid uk-grid-collapse" uk-grid>
 
 										<div>
 											<p class="uk-article-meta id-post-meta">
@@ -53,14 +53,14 @@ $idealx_category = get_the_category();
 										<div>
 											<p class="uk-article-meta id-post-meta">
 												<span uk-icon="icon: calendar "></span>
-												<?php echo esc_html( the_time( 'M d,y' ) ); ?>
+												<?php echo esc_html( get_the_time( 'M d,y' ) ); ?>
 											</p>
 										</div>
 
 										<div>
 											<p class="uk-article-meta id-post-meta">
 												<span uk-icon="icon: comment"></span>
-												<a class="" href="<?php esc_url( the_permalink() ); ?> #comments">
+												<a class="" href="<?php echo esc_url( get_the_permalink() ); ?> #comments">
 													<?php comments_number( esc_html__( 'No Comments', 'idealx' ), esc_html__( 'One Comment', 'idealx' ), esc_html__( '% Comments', 'idealx' ) ); ?>
 												</a>
 											</p>
@@ -74,7 +74,7 @@ $idealx_category = get_the_category();
 											sprintf(
 											/* translators: draft saved date format, see http://php.net/date */
 												__( 'Continue reading %s', 'idealx' ),
-												the_title( '<span class="screen-reader-text">', '</span>', false )
+												get_the_title( '<span class="screen-reader-text">', '</span>', false )
 											)
 										);
 										?>

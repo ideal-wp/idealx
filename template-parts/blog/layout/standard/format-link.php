@@ -32,9 +32,9 @@ $idealx_post_link = idealx_grab_the_url_link();
 <div class="" uk-grid>
 	<div class="uk-width-1-6 uk-visible@l">
 			<div class="post-datd-stand">
-				<span class="month-data"> <?php echo esc_html( the_time( 'M' ) ); ?></span>
-				<span class="day-data" ><?php echo esc_html( the_time( 'd' ) ); ?></span>
-				<span class="year-data" ><?php echo esc_html( the_time( 'Y' ) ); ?></span>
+				<span class="month-data"> <?php echo esc_html( get_the_time( 'M' ) ); ?></span>
+				<span class="day-data" ><?php echo esc_html( get_the_time( 'd' ) ); ?></span>
+				<span class="year-data" ><?php echo esc_html( get_the_time( 'Y' ) ); ?></span>
 			</div>
 	</div>
 
@@ -57,13 +57,13 @@ $idealx_post_link = idealx_grab_the_url_link();
 					</a>
 						<div class="uk-card-body">
 
-						<h3 class="uk-article-title"><a class="uk-link-reset" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+						<h3 class="uk-article-title"><a class="uk-link-reset" href="<?php get_the_permalink(); ?>"><?php get_the_title(); ?></a></h3>
 
 					<p class="uk-article-meta">
 						<?php esc_html_e( 'Written by', 'idealx' ); ?>
 						<?php the_author_posts_link(); ?>
 						<span class="uk-hidden@l"><?php esc_html_e( 'on', 'idealx' ); ?>
-						<?php echo esc_html( the_time( 'F d,y' ) ); ?></span>
+						<?php echo esc_html( get_the_time( 'F d,y' ) ); ?></span>
 						<?php esc_html_e( ' Posted in', 'idealx' ); ?>
 						<?php idealx_get_primary_category( $idealx_category ); ?>
 					</p>
@@ -73,7 +73,7 @@ $idealx_post_link = idealx_grab_the_url_link();
 							sprintf(
 							/* translators: draft saved date format, see http://php.net/date */
 								__( 'Continue reading %s', 'idealx' ),
-								the_title( '<span class="screen-reader-text">', '</span>', false )
+								get_the_title( '<span class="screen-reader-text">', '</span>', false )
 							)
 						);
 						?>
@@ -90,7 +90,7 @@ $idealx_post_link = idealx_grab_the_url_link();
 						</div>
 						<div id="tam-comment-meta">
 
-							<a class="uk-button uk-button-text" href="<?php the_permalink(); ?>#comments">
+							<a class="uk-button uk-button-text" href="<?php echo esc_url( get_permalink() ); ?>#comments">
 							<?php comments_number( esc_html__( 'No Comments', 'idealx' ), esc_html__( 'One Comment', 'idealx' ), esc_html__( '% Comments', 'idealx' ) ); ?> </a>
 
 						</div>

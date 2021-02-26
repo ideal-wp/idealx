@@ -19,7 +19,7 @@ if ( ! function_exists( 'idealx_theme_comment_replay_scripts' ) ) {
 
 		if ( ! is_admin() ) {
 
-			if ( is_singular() && get_option( 'thread_comments' ) ) {
+			if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 
 						wp_enqueue_script( 'comment-reply' );
 

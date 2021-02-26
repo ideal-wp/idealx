@@ -70,7 +70,7 @@ style="background-image:url(<?php echo esc_url( $idealx_featured_img_url ); ?>);
 				if ( $idealx_u_modified_time >= $idealx_u_time + 86400 ) {
 
 					?>
-					<span class="meta-date date published"> | <i><?php echo esc_html( the_time( 'F d-Y' ) ); ?></i></span>
+					<span class="meta-date date published"> | <i><?php echo esc_html( get_the_time( 'F d-Y' ) ); ?></i></span>
 
 					<span class="meta-date date updated rich-snippet-hidden">
 							<?php echo esc_html( get_the_modified_time( __( 'F jS-Y', 'idealx' ) ) ); ?>
@@ -78,7 +78,7 @@ style="background-image:url(<?php echo esc_url( $idealx_featured_img_url ); ?>);
 						<?php
 				} else {
 					?>
-						<span class="meta-date date updated"> | <i><?php echo esc_html( the_time( 'F jS-Y' ) ); ?></i></span>
+						<span class="meta-date date updated"> | <i><?php echo esc_html( get_the_time( 'F jS-Y' ) ); ?></i></span>
 
 					<?php
 				}

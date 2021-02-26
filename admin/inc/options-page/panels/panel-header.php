@@ -10,7 +10,7 @@ $idealx_admin_logo = IDEALX_THEME_URI . '/admin/assets/img/ideallogo.png';
 
 			<div class="idealx-admin-header">
 
-			  <nav class="uk-navbar-container uk-margin" uk-navbar>
+			  <nav class="uk-navbar-container uk-margin uk-navbar" uk-navbar>
 
 			  <div class="uk-navbar-left idealx-logo-admin">
 
@@ -33,7 +33,7 @@ $idealx_admin_logo = IDEALX_THEME_URI . '/admin/assets/img/ideallogo.png';
 
 				<li>
 				  <a uk-tooltip="title: <?php esc_html_e( 'Visit the theme page on Github', 'idealx' ); ?>; pos: bottom"
-				  href="https://github.com/ideal-theme" class="uk-navbar-item">
+				  href="https://github.com/ideal-wp" class="uk-navbar-item">
 				  <i class="fab fa-github"></i></a>
 				</li>
 				</ul>
@@ -44,4 +44,3 @@ $idealx_admin_logo = IDEALX_THEME_URI . '/admin/assets/img/ideallogo.png';
 
 			</div>
 
- </div>

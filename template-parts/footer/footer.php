@@ -35,7 +35,7 @@ if ( empty( $idealx_options['to_top_remove_setting'] ) || false === $idealx_opti
 
 			<div class="">
 
-				<p>&#169; <?php echo esc_html( gmdate( 'Y' ) ) . ' ' . esc_html( $taman_site_name ); ?>.</p>
+				<p>&#169; <?php echo esc_html( date_i18n( _x( 'Y', 'copyright date format; check date() on php.net', 'idealx' ) ) ) . ' ' . esc_html( $taman_site_name ); ?>.</p>
 
 			</div>
 

@@ -15,16 +15,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <header>
-	<?php
 
-	get_template_part( 'template-parts/header/nav/menu' );
+	<?php get_template_part( 'template-parts/header/nav/menu' ); ?>
 
-	get_template_part( 'template-parts/header/page-header/header', 'page' );
-
-	?>
+	<?php	get_template_part( 'template-parts/header/page-header/header', 'page' ); ?>
 
 </header>
 
-<?php do_action( 'idealx_hook_after_header_tag' ); ?>
-
 <?php get_template_part( 'template-parts/header/nav/menu-mobile' ); ?>
+
+<?php do_action( 'idealx_hook_after_header_tag' ); ?>

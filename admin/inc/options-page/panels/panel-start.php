@@ -47,11 +47,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 
-<button class="uk-button uk-button-default uk-margin-bottom" type="button"
-  uk-toggle="target: +"><?php esc_html_e( 'Toggle The Video', 'idealx' ); ?></button>
-
-<iframe src="https://www.youtube-nocookie.com/embed/slbjwhhUC9Q?&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1"
-  width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true;autoplay: false"></iframe>
 
 <div class="idealx-admin-page-footer-start">
 
@@ -65,7 +60,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php esc_html_e( 'The idealx Theme is in the first release So Now The documentation is under construction and you can visit our documentation site .', 'idealx' ); ?>
 	  </p>
 
-	  <a href="https://ideal.mtaman.me/docs/"
+	  <a href="https://idealx.mtaman.me/docs/"
 		class="uk-button uk-button-default uk-margin-bottom"><?php esc_html_e( 'DOCUMENTATION', 'idealx' ); ?></a>
 
 	</div>

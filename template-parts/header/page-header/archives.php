@@ -58,12 +58,14 @@ $idealx_options = idealx_get_theme_options();
 
 if ( empty( $idealx_options['id-archives-switch-header'] ) || false === $idealx_options['id-archives-switch-header'] ) {
 	?>
-	<div id="tam-page-header" class="archives-header uk-section uk-background-cover uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(
-	<?php
+	<div id="tam-page-header" class="archives-header uk-section uk-background-cover uk-panel uk-flex uk-flex-center uk-flex-middle" <?php
+	
 	if ( ! empty( header_image() ) ) {
-		esc_url( header_image() ); }
+       ?>style="background-image: url(<?php
+		esc_url( header_image() );?>); "<?php
+	}
 	?>
-	);">
+	>
 
 		<div id="color-overlay"></div>
 

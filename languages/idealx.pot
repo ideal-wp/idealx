@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2.0.
 msgid ""
 msgstr ""
-"Project-Id-Version: IdealX 1.0.3\n"
+"Project-Id-Version: IdealX 1.0.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/idealx\n"
-"POT-Creation-Date: 2020-07-17 08:32:28+00:00\n"
+"POT-Creation-Date: 2020-07-29 09:06:59+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -38,6 +38,7 @@ msgid "Chose your home Blog Layout"
 msgstr ""
 
 #: admin/framework/panels/panel-blog.php:43
+#: admin/framework/panels/panel-menu.php:47
 #: admin/framework/panels/panel-sidebar.php:96
 msgid "Select an option..."
 msgstr ""
@@ -356,6 +357,30 @@ msgstr ""
 
 #: admin/framework/panels/panel-hero.php:102
 msgid "Adjust Height with Padding Top & Bottom For Hero Section"
+msgstr ""
+
+#: admin/framework/panels/panel-menu.php:21
+msgid "Menu & Navigation"
+msgstr ""
+
+#: admin/framework/panels/panel-menu.php:22
+msgid "Header Content & Layout - Controls the position of the Header Content."
+msgstr ""
+
+#: admin/framework/panels/panel-menu.php:31
+msgid "Search In Nav"
+msgstr ""
+
+#: admin/framework/panels/panel-menu.php:32
+msgid "Controls the Header Search and Icon."
+msgstr ""
+
+#: admin/framework/panels/panel-menu.php:43
+msgid "Select Search Header Stayle"
+msgstr ""
+
+#: admin/framework/panels/panel-menu.php:44
+msgid "Please select Search Header Stayle here."
 msgstr ""
 
 #: admin/framework/panels/panel-sidebar.php:22
@@ -936,31 +961,27 @@ msgstr ""
 msgid "Begin Installing Plugins"
 msgstr ""
 
-#: admin/inc/options-page/panels/panel-start.php:51
-msgid "Toggle The Video"
-msgstr ""
-
-#: admin/inc/options-page/panels/panel-start.php:65
+#: admin/inc/options-page/panels/panel-start.php:61
 msgid "The idealx Theme is in the first release So Now The documentation is under construction and you can visit our documentation site ."
 msgstr ""
 
-#: admin/inc/options-page/panels/panel-start.php:69
+#: admin/inc/options-page/panels/panel-start.php:65
 msgid "DOCUMENTATION"
 msgstr ""
 
-#: admin/inc/options-page/panels/panel-start.php:76
+#: admin/inc/options-page/panels/panel-start.php:72
 msgid "Support"
 msgstr ""
 
-#: admin/inc/options-page/panels/panel-start.php:79
+#: admin/inc/options-page/panels/panel-start.php:75
 msgid "Got any questions? Please Go idealx WordPress Theme Support Page Ask away and we will get back to you shortly.."
 msgstr ""
 
-#: admin/inc/options-page/panels/panel-start.php:87
+#: admin/inc/options-page/panels/panel-start.php:83
 msgid "Please Rate us"
 msgstr ""
 
-#: admin/inc/options-page/panels/panel-start.php:89
+#: admin/inc/options-page/panels/panel-start.php:85
 msgid " We understand that there can be no success, without excellent support. Could you please do us a BIG favor and give it a 5-star rating on WordPress? This would boost our motivation and help other users make a comfortable decision while choosing the idealx theme."
 msgstr ""
 
@@ -969,49 +990,49 @@ msgid "Join the discussion"
 msgstr ""
 
 #: comments.php:34 template-parts/blog/layout/grid/format-audio.php:64
-#: template-parts/blog/layout/grid/format-gallery.php:111
-#: template-parts/blog/layout/grid/format-image.php:104
-#: template-parts/blog/layout/grid/format-video.php:72
+#: template-parts/blog/layout/grid/format-gallery.php:113
+#: template-parts/blog/layout/grid/format-image.php:105
+#: template-parts/blog/layout/grid/format-video.php:71
 #: template-parts/blog/layout/grid/format.php:78
 #: template-parts/blog/layout/standard/format-audio.php:74
-#: template-parts/blog/layout/standard/format-gallery.php:124
-#: template-parts/blog/layout/standard/format-image.php:120
+#: template-parts/blog/layout/standard/format-gallery.php:125
+#: template-parts/blog/layout/standard/format-image.php:121
 #: template-parts/blog/layout/standard/format-link.php:94
 #: template-parts/blog/layout/standard/format-quote.php:69
 #: template-parts/blog/layout/standard/format-video.php:74
-#: template-parts/blog/layout/standard/format.php:132
+#: template-parts/blog/layout/standard/format.php:133
 #: template-parts/header/page-header/single.php:89
 msgid "No Comments"
 msgstr ""
 
 #: comments.php:34 template-parts/blog/layout/grid/format-audio.php:64
-#: template-parts/blog/layout/grid/format-gallery.php:111
-#: template-parts/blog/layout/grid/format-image.php:104
-#: template-parts/blog/layout/grid/format-video.php:72
+#: template-parts/blog/layout/grid/format-gallery.php:113
+#: template-parts/blog/layout/grid/format-image.php:105
+#: template-parts/blog/layout/grid/format-video.php:71
 #: template-parts/blog/layout/grid/format.php:78
 #: template-parts/blog/layout/standard/format-audio.php:74
-#: template-parts/blog/layout/standard/format-gallery.php:124
-#: template-parts/blog/layout/standard/format-image.php:120
+#: template-parts/blog/layout/standard/format-gallery.php:125
+#: template-parts/blog/layout/standard/format-image.php:121
 #: template-parts/blog/layout/standard/format-link.php:94
 #: template-parts/blog/layout/standard/format-quote.php:69
 #: template-parts/blog/layout/standard/format-video.php:74
-#: template-parts/blog/layout/standard/format.php:132
+#: template-parts/blog/layout/standard/format.php:133
 #: template-parts/header/page-header/single.php:89
 msgid "One Comment"
 msgstr ""
 
 #: comments.php:34 template-parts/blog/layout/grid/format-audio.php:64
-#: template-parts/blog/layout/grid/format-gallery.php:111
-#: template-parts/blog/layout/grid/format-image.php:104
-#: template-parts/blog/layout/grid/format-video.php:72
+#: template-parts/blog/layout/grid/format-gallery.php:113
+#: template-parts/blog/layout/grid/format-image.php:105
+#: template-parts/blog/layout/grid/format-video.php:71
 #: template-parts/blog/layout/grid/format.php:78
 #: template-parts/blog/layout/standard/format-audio.php:74
-#: template-parts/blog/layout/standard/format-gallery.php:124
-#: template-parts/blog/layout/standard/format-image.php:120
+#: template-parts/blog/layout/standard/format-gallery.php:125
+#: template-parts/blog/layout/standard/format-image.php:121
 #: template-parts/blog/layout/standard/format-link.php:94
 #: template-parts/blog/layout/standard/format-quote.php:69
 #: template-parts/blog/layout/standard/format-video.php:74
-#: template-parts/blog/layout/standard/format.php:132
+#: template-parts/blog/layout/standard/format.php:133
 #: template-parts/header/page-header/single.php:89
 msgid "% Comments"
 msgstr ""
@@ -1138,45 +1159,45 @@ msgstr ""
 
 #. translators: %s: Name of current post
 
-#: inc/helpers/theme-setup.php:169
+#: inc/helpers/theme-setup.php:145
 msgid "Continue reading "
 msgstr ""
 
-#: inc/helpers/theme-setup.php:302
+#: inc/helpers/theme-setup.php:278
 msgid "Previous:"
 msgstr ""
 
-#: inc/helpers/theme-setup.php:309
+#: inc/helpers/theme-setup.php:285
 msgid "Next:"
 msgstr ""
 
-#: inc/helpers/theme-setup.php:349
+#: inc/helpers/theme-setup.php:325
 #: template-parts/blog/layout/standard/format-audio.php:53
-#: template-parts/blog/layout/standard/format-gallery.php:93
+#: template-parts/blog/layout/standard/format-gallery.php:94
 #: template-parts/blog/layout/standard/format-link.php:63
 #: template-parts/blog/layout/standard/format-quote.php:49
 #: template-parts/blog/layout/standard/format-video.php:53
-#: template-parts/blog/layout/standard/format.php:101
+#: template-parts/blog/layout/standard/format.php:102
 msgid "Written by"
 msgstr ""
 
-#: inc/helpers/theme-setup.php:351
+#: inc/helpers/theme-setup.php:327
 #: template-parts/blog/layout/standard/format-audio.php:55
-#: template-parts/blog/layout/standard/format-gallery.php:95
+#: template-parts/blog/layout/standard/format-gallery.php:96
 #: template-parts/blog/layout/standard/format-link.php:65
 #: template-parts/blog/layout/standard/format-quote.php:51
 #: template-parts/blog/layout/standard/format-video.php:55
-#: template-parts/blog/layout/standard/format.php:103
+#: template-parts/blog/layout/standard/format.php:104
 msgid "on"
 msgstr ""
 
-#: inc/helpers/theme-setup.php:353
+#: inc/helpers/theme-setup.php:329
 #: template-parts/blog/layout/standard/format-audio.php:57
-#: template-parts/blog/layout/standard/format-gallery.php:97
+#: template-parts/blog/layout/standard/format-gallery.php:98
 #: template-parts/blog/layout/standard/format-link.php:67
 #: template-parts/blog/layout/standard/format-quote.php:53
 #: template-parts/blog/layout/standard/format-video.php:57
-#: template-parts/blog/layout/standard/format.php:105
+#: template-parts/blog/layout/standard/format.php:106
 msgid " Posted in"
 msgstr ""
 
@@ -1259,35 +1280,35 @@ msgstr ""
 #. translators: draft saved date format, see http://php.net/date
 
 #: template-parts/blog/layout/grid/format-audio.php:76
-#: template-parts/blog/layout/grid/format-gallery.php:123
-#: template-parts/blog/layout/grid/format-image.php:116
-#: template-parts/blog/layout/grid/format-video.php:84
+#: template-parts/blog/layout/grid/format-gallery.php:125
+#: template-parts/blog/layout/grid/format-image.php:117
+#: template-parts/blog/layout/grid/format-video.php:83
 #: template-parts/blog/layout/grid/format.php:90
-#: template-parts/blog/layout/standard/format-gallery.php:105
+#: template-parts/blog/layout/standard/format-gallery.php:106
 #: template-parts/blog/layout/standard/format-link.php:75
-#: template-parts/blog/layout/standard/format.php:113
+#: template-parts/blog/layout/standard/format.php:114
 msgid "Continue reading %s"
 msgstr ""
 
 #: template-parts/blog/layout/grid/format-audio.php:84
-#: template-parts/blog/layout/grid/format-gallery.php:131
-#: template-parts/blog/layout/grid/format-image.php:124
-#: template-parts/blog/layout/grid/format-video.php:92
+#: template-parts/blog/layout/grid/format-gallery.php:133
+#: template-parts/blog/layout/grid/format-image.php:125
+#: template-parts/blog/layout/grid/format-video.php:91
 #: template-parts/blog/layout/grid/format.php:108
 #: template-parts/blog/layout/standard/format-audio.php:68
-#: template-parts/blog/layout/standard/format-gallery.php:119
-#: template-parts/blog/layout/standard/format-image.php:114
+#: template-parts/blog/layout/standard/format-gallery.php:120
+#: template-parts/blog/layout/standard/format-image.php:115
 #: template-parts/blog/layout/standard/format-link.php:88
 #: template-parts/blog/layout/standard/format-quote.php:63
 #: template-parts/blog/layout/standard/format-video.php:68
-#: template-parts/blog/layout/standard/format.php:126
+#: template-parts/blog/layout/standard/format.php:127
 msgid "Read More"
 msgstr ""
 
 #: template-parts/blog/layout/grid/format-audio.php:94
-#: template-parts/blog/layout/grid/format-gallery.php:141
-#: template-parts/blog/layout/grid/format-image.php:134
-#: template-parts/blog/layout/grid/format-video.php:102
+#: template-parts/blog/layout/grid/format-gallery.php:143
+#: template-parts/blog/layout/grid/format-image.php:135
+#: template-parts/blog/layout/grid/format-video.php:101
 #: template-parts/blog/layout/grid/format.php:102
 msgid "By"
 msgstr ""
@@ -1301,7 +1322,22 @@ msgstr ""
 msgid "Visit the site"
 msgstr ""
 
-#: template-parts/header/nav/serch.php:30 template-parts/serch/notfound.php:26
+#: template-parts/footer/footer.php:38
+msgctxt "copyright date format; check date() on php.net"
+msgid "Y"
+msgstr ""
+
+#: template-parts/header/nav/logo.php:24
+msgid "\t Skip Navigation to Content"
+msgstr ""
+
+#: template-parts/header/nav/menu-mobile.php:34
+msgid "close menu"
+msgstr ""
+
+#: template-parts/header/nav/search-form.php:24
+#: template-parts/header/nav/search-overlay.php:32
+#: template-parts/serch/notfound.php:26
 msgid "Search..."
 msgstr ""
 
@@ -1370,7 +1406,7 @@ msgid "IdealX"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "https://idealx.mtaman.me/"
+msgid "https://mtaman.me/ideal-wordpress-theme/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -1382,5 +1418,5 @@ msgid "Mohamed Taman"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://github.com/mtaman"
+msgid "https://mtaman.me/"
 msgstr ""

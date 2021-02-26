@@ -33,15 +33,16 @@ get_template_part( 'admin/inc/options-page/panels/panel', 'header' );
 
 								<li><a href="#"><?php esc_html_e( 'options', 'idealx' ); ?></a></li>
 							</ul>
-
 							<ul class="uk-switcher uk-margin">
 
 								<li><?php get_template_part( 'admin/inc/options-page/panels/panel', 'start' ); ?></li>
 
 								<li><?php get_template_part( 'admin/inc/options-page/panels/panel', 'options' ); ?></li>
-
+								
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
+			
+</div>

@@ -393,7 +393,7 @@ Kirki::add_field(
 			'priority'    => 2,
 			'output'      => array(
 				array(
-					'element' => '#tam-page-header.page-header ',
+					'element' => '#tam-page-header.page-header',
 
 				),
 			),
@@ -414,7 +414,7 @@ Kirki::add_field(
 			'priority' => 3,
 			'output'   => array(
 				array(
-					'element'  => '.page-header #color-overlay',
+					'element'  => '#tam-page-header #color-overlay',
 					'property' => 'background-color',
 				),
 			),

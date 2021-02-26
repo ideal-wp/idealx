@@ -16,7 +16,7 @@ class idealx_Walker_Nav_Menu extends Walker_Nav_Menu {
 	 */
 	public function start_lvl( &$output, $depth = 0, $args = array() ) {
 		$indent  = str_repeat( "\t", $depth );
-		$output .= "\n$indent<div class=\"uk-navbar-dropdown\"uk-dropdown=\"animation: uk-animation-slide-top-small; duration: 500\">\n<ul role=\"menu\" class=\"uk-nav uk-navbar-dropdown-nav\" >\n";
+		$output .= "\n$indent\n<ul role=\"menu\" class=\"uk-nav uk-navbar-dropdown-nav\" ><div class=\"taman-dropdown\">\n";
 	}
 
 	/**
@@ -32,7 +32,7 @@ class idealx_Walker_Nav_Menu extends Walker_Nav_Menu {
 	 */
 	public function end_lvl( &$output, $depth = 0, $args = array() ) {
 		$indent  = str_repeat( "\t", $depth );
-		$output .= "\n$indent</ul></div>";
+		$output .= "\n$indent</div></ul>";
 	}
 
 	/**
@@ -83,7 +83,7 @@ class idealx_Walker_Nav_Menu extends Walker_Nav_Menu {
 		if ( $args->has_children && $depth === 0 ) {
 			$atts['href']           = ! empty( $item->url ) ? $item->url : '';
 			 $atts['data-toggle']   = 'dropdown';
-			 $atts['class']         = 'dropdown-toggle';
+			 $atts['class']         = 'sf-with-ul dropdown-toggle';
 			 $atts['aria-haspopup'] = 'true';
 		} else {
 			$atts['href'] = ! empty( $item->url ) ? $item->url : '';
@@ -645,7 +645,7 @@ function idealx_uikit_top_menu() {
 					'theme_location' => 'top-menu',
 					'depth'          => 12,
 					'container'      => '',
-					'menu_class'     => 'uk-navbar-nav uk-visible@s',
+					'menu_class'     => 'sf-menu uk-navbar-nav uk-visible@s',
 					'fallback_cb'    => 'idealx_Walker_Nav_Menu::fallback',
 					'walker'         => new idealx_Walker_Nav_Menu(),
 				)

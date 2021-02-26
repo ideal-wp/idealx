@@ -31,16 +31,17 @@ $idealx_attachments = get_posts(
 		'posts_per_page' => 1,
 		'post_parent'    => $post->ID,
 		'exclude'        => get_post_thumbnail_id(),
-	)
+	),
+	wp_reset_postdata()
 );
 
 ?>
 <div class="" uk-grid>
 	<div class="uk-width-1-6 uk-visible@l">
 			<div class="post-datd-stand">
-				<span class="month-data"> <?php echo esc_html( the_time( 'M' ) ); ?></span>
-				<span class="day-data" ><?php echo esc_html( the_time( 'd' ) ); ?></span>
-				<span class="year-data" ><?php echo esc_html( the_time( 'Y' ) ); ?></span>
+				<span class="month-data"> <?php echo esc_html( get_the_time( 'M' ) ); ?></span>
+				<span class="day-data" ><?php echo esc_html( get_the_time( 'd' ) ); ?></span>
+				<span class="year-data" ><?php echo esc_html( get_the_time( 'Y' ) ); ?></span>
 			</div>
 	</div>
 
@@ -72,11 +73,11 @@ $idealx_attachments = get_posts(
 							class=" uk-panel uk-flex uk-flex-center uk-flex-middle  uk-card-media-top uk-cover-container uk-height-large">
 							<?php
 							echo '<a href="';
-							esc_url( the_permalink() );
+							echo esc_url( get_the_permalink() );
 							echo '" class="thumbnail-wrapper">';
 							echo '<img data-src="';
 							echo esc_url( idealx_catch_that_image() );
-							echo '" alt="' . esc_html( the_title() )
+							echo '" alt="' . esc_attr( get_the_title() )
 							. '" uk-img>';
 							echo '</a>';
 							?>
@@ -91,7 +92,7 @@ $idealx_attachments = get_posts(
 							class=" uk-panel uk-flex uk-flex-center uk-flex-middle  uk-card-media-top uk-cover-container uk-height-large ">
 							<?php
 							echo '<a href="';
-							esc_url( the_permalink() );
+							echo esc_url( get_the_permalink() );
 							echo '" class="thumbnail-wrapper">';
 							echo '<img data-src="';
 							echo esc_url( idealx_catch_that_image() );
@@ -116,7 +117,7 @@ $idealx_attachments = get_posts(
 						</div>
 						<div id="tam-comment-meta">
 
-							<a class="uk-button uk-button-text" href="<?php the_permalink(); ?>#comments">
+							<a class="uk-button uk-button-text" href="<?php echo esc_url( get_permalink() ); ?>#comments">
 							<?php comments_number( esc_html__( 'No Comments', 'idealx' ), esc_html__( 'One Comment', 'idealx' ), esc_html__( '% Comments', 'idealx' ) ); ?> </a>
 
 						</div>

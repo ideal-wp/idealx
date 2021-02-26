@@ -35,7 +35,7 @@ if ( ( is_single() && 'post' === $idealx_posttype ) ) {
 
 	get_template_part( '/template-parts/header/page-header/single' );
 
-} elseif ( is_page() && 'page' === $idealx_posttype ) {
+} elseif ( is_page() && 'page' === $idealx_posttype && ! is_front_page() ) {
 	get_template_part( '/template-parts/header/page-header/pages' );
 
 }

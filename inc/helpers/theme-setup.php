@@ -46,11 +46,27 @@ require_once IDEALX_THEME_DIRECTORY . '/inc/helpers/woocommerce.php';
 // Hero section control.
 require_once IDEALX_THEME_DIRECTORY . '/template-parts/home-hero-section/hero-section-control.php';
 
-// content width  defined.
-if ( ! isset( $content_width ) ) {
 
-	$content_width = 900;
+/**
+ * Add skip link after body tag.
+ *
+ * @since v 1.0.8
+ */
+if ( ! function_exists( 'idealx_skip_link_after_bodytag' ) ) {
+	/**
+	 * Add skip link after body tag.
+	 */
+	function idealx_skip_link_after_bodytag() {
+
+		echo '<a id= "skip-nav" class="screenreader-text" href= "#idealx-content" >' . esc_html__( 'Skip Navigation to Content', 'idealx' ) . '</a>';
+
+	}
+
+	add_action( 'wp_body_open', 'idealx_skip_link_after_bodytag' );
+
 }
+
+
 
 	/**
 	 * Theme setup.
@@ -58,6 +74,12 @@ if ( ! isset( $content_width ) ) {
 	 * @since v 1.0.0
 	 */
 function idealx_after_wp_theme_setup() {
+
+	// content width  defined.
+	if ( ! isset( $content_width ) ) {
+
+		$content_width = 900;
+	}
 
 	add_theme_support( 'title-tag' );
 
@@ -88,18 +110,6 @@ function idealx_after_wp_theme_setup() {
 
 	// Add theme support for Yoast SEO breadcrumbs.
 	add_theme_support( 'yoast-seo-breadcrumbs' );
-	// Custom background.
-	$defaults = array(
-		'default-color'          => '#eee',
-		'default-image'          => '',
-		'default-repeat'         => 'no-repeat',
-		'default-size'           => 'auto',
-		'default-attachment'     => 'scroll',
-		'wp-head-callback'       => '_custom_background_cb',
-		'admin-head-callback'    => '',
-		'admin-preview-callback' => '',
-	);
-	add_theme_support( 'custom-background', $defaults );
 
 	add_theme_support(
 		'custom-logo',
@@ -111,22 +121,6 @@ function idealx_after_wp_theme_setup() {
 			'header-text' => array( 'site-title', 'site-description' ),
 		)
 	);
-
-	$header_defaults = array(
-		'default-image'          => '',
-		'width'                  => 1200,
-		'height'                 => 450,
-		'flex-height'            => true,
-		'flex-width'             => true,
-		'uploads'                => true,
-		'random-default'         => false,
-		'header-text'            => true,
-		'default-text-color'     => '',
-		'wp-head-callback'       => '',
-		'admin-head-callback'    => '',
-		'admin-preview-callback' => '',
-	);
-	add_theme_support( 'custom-header', $header_defaults );
 
 }
 add_action( 'after_setup_theme', 'idealx_after_wp_theme_setup' );
@@ -144,12 +138,16 @@ function idealx_filter_front_page_template( $template ) {
 add_filter( 'frontpage_template', 'idealx_filter_front_page_template' );
 
 /**
- * Filters the maximum number of words in a post excerpt.
+ * Filter the excerpt length to 50 words.
  *
- * @param excerptLength $length number of words in a post excerpt.
- * @since v1.0.0
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
  */
 function idealx_custom_excerpt_length( $length ) {
+	if ( is_admin() ) {
+
+		return $length;
+	}
 	return 35;
 }
 add_filter( 'excerpt_length', 'idealx_custom_excerpt_length', 999 );
@@ -343,13 +341,13 @@ function idealx_post_meat_imge() {
 	?>
 
 <div class="uk-overlay uk-overlay-primary uk-position-bottom">
-		<h3 class="uk-article-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+<h3 class="uk-article-title"><a href="<?php echo esc_url( get_the_permalink() ); ?>"><?php echo esc_html( get_the_title() ); ?></a></h3>
 
 		<p class="uk-article-meta">
 		<?php esc_html_e( 'Written by', 'idealx' ); ?>
 		<?php the_author_posts_link(); ?>
 		<span class="uk-hidden@l"><?php esc_html_e( 'on', 'idealx' ); ?>
-			<?php echo esc_html( the_time( 'F d,y' ) ); ?></span>
+			<?php echo esc_html( get_the_time( 'F d,y' ) ); ?></span>
 		<?php esc_html_e( ' Posted in', 'idealx' ); ?>
 		<?php idealx_get_primary_category( $idealx_category ); ?>
 		</p>
@@ -358,6 +356,7 @@ function idealx_post_meat_imge() {
 
 	<?php
 }
+
 
 /**
  * URLs from all gallery images in a post.
@@ -382,7 +381,7 @@ function idealx_show_gallery_image_urls() {
 		// Loop through each image in each gallery.
 		foreach ( $gallery as $idealx_image ) {
 
-			$idealx_image_list .= '<li class="post-gallery "><img src="' . $idealx_image . '" alt="" uk-cover></li>';
+			$idealx_image_list .= '<li class="post-gallery "><img src="' . esc_url( $idealx_image ) . '" alt="" uk-cover></li>';
 
 		}
 	}

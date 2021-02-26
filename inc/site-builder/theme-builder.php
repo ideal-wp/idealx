@@ -78,7 +78,7 @@ function idealx_sidebar_disable() {
 	)
 	&& ( 'post' === $idealx_posttype ) ) {
 
-		if ( ! empty( $idealx_options['is_post_sidebar'] ) || true === $idealx_options['is_post_sidebar'] ) {
+		if ( ! empty( $idealx_options['is_post_sidebar'] ) && true === $idealx_options['is_post_sidebar'] ) {
 
 			echo 'uk-container-small';
 		}

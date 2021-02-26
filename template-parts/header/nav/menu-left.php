@@ -11,7 +11,18 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-get_template_part( 'template-parts/header/nav/serch' );
+
+/** Get Serach options mood */
+function idealx_search_mood_innav() {
+	$idealx_options = idealx_get_theme_options();
+	$moode          = 'form';
+	if ( ! empty( $idealx_options['shearch_nav_mod'] ) ) {
+		$moode = $idealx_options['shearch_nav_mod'];
+	}
+
+	return $moode;
+}
+get_template_part( 'template-parts/header/nav/search', idealx_search_mood_innav() );
 ?>
 	<div class="uk-navbar-left nav-overlay">
 

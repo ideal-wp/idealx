@@ -21,6 +21,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( class_exists( 'Kirki' ) ) {
 	$idealx_core_theme_options = get_option( 'idealx_options_control' );
 }
+
+
+
+
 /**
  *
  * Loading Dynamic js via WP ajax.
@@ -47,6 +51,9 @@ function idealx_core_ad_dynamic_js() {
 	}
 	exit;
 }
-add_action( 'wp_ajax_ad_dynamic_js', 'idealx_core_ad_dynamic_js' );
-add_action( 'wp_ajax_nopriv_ad_dynamic_js', 'idealx_core_ad_dynamic_js' );
-add_action( 'admin_enqueue_scripts', 'idealx_core_ad_dynamic_js_enqueue' );
+
+	add_action( 'wp_ajax_ad_dynamic_js', 'idealx_core_ad_dynamic_js' );
+	add_action( 'wp_ajax_nopriv_ad_dynamic_js', 'idealx_core_ad_dynamic_js' );
+	add_action( 'admin_enqueue_scripts', 'idealx_core_ad_dynamic_js_enqueue' );
+
+

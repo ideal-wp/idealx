@@ -31,11 +31,11 @@ The ideal WordPress theme is fast, fully customizable, and ideal is a theme that
 
 = Is there theme documentation? =
 
-Yes, go here: https://ideal.mtaman.me/docs/  
+Yes, go here: https://ideal.mtaman.com/docs/  
 
 = Is there demo content available? =
 
-Yes, go here: https://ideal.mtaman.me 
+Yes, go here: https://ideal.mtaman.com
 
 = Is there a free support form for this theme? =
 
